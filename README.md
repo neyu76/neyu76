@@ -1,0 +1,76 @@
+# 🎬 Animal Drama Studio — Viral Series Production System
+
+A complete, repeatable framework for producing serialized **AI-animated animal
+drama** shorts (TikTok / Reels / Shorts) — reverse-engineered from the breakout
+series **"Dog Swings Alone"** and generalized so it works for **any animal cast**,
+not just dog/cat/wolf.
+
+> Core idea: don't make random clips. Run a proven **rags → ruin → revenge →
+> rebirth** engine with cast you can swap (beaver, lion, ox, owl, shark, sparrow…),
+> a recurring promise object, and poetic-justice payoff. Serialize it, cliffhang
+> every part, and let viewers binge the playlist.
+
+---
+
+## How to use this repo
+
+1. **Learn the system** — read `/studio-bible/` in order (01 → 06).
+2. **Start a series** — copy `/series-templates/TEMPLATE-series-bible.md` to
+   `/series/your-series.md` and fill in cast + beat map.
+3. **See it done** — read `/series-templates/EXAMPLE-beaver-builds-alone.md`, a
+   full series built with a brand-new cast to prove the formula scales.
+4. **Write each part** — use the per-part template in `03-episode-blueprint.md`.
+5. **Produce** — follow `06-production-pipeline.md` (prompt templates + checklist).
+
+---
+
+## Map of the system
+
+| File | What it gives you |
+|------|-------------------|
+| `studio-bible/01-story-engine.md` | The universal 7-beat arc, 5 emotional levers, the promise/payoff loop, anti-patterns |
+| `studio-bible/02-character-archetypes.md` | The 6 core roles + animal→role casting tables + 5 ready-to-shoot cast presets (**the "scale to any animal" part**) |
+| `studio-bible/03-episode-blueprint.md` | Per-part structure, runtime/shot/word numbers, cliffhanger menu, copy-paste part template, QA |
+| `studio-bible/04-visual-and-editing.md` | 3D render look, color-grade-by-emotion table, camera language, hard-cut editing, sound |
+| `studio-bible/05-dialogue-and-hooks.md` | Dialogue rules, Gen Z/Alpha slang kit, reusable line templates, title formula |
+| `studio-bible/06-production-pipeline.md` | Tool stack, character design tokens, image/video/TTS prompt templates, consistency tactics, posting cadence |
+| `series-templates/TEMPLATE-series-bible.md` | Blank fill-in template to launch a new series |
+| `series-templates/EXAMPLE-beaver-builds-alone.md` | Worked example (Beaver/Lion/Peacock/Owl/Hyena) — no dog/cat/wolf |
+| `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
+
+---
+
+## The formula in one screen
+
+**Arc (per series, 6-8 parts):**
+`LOSS → INJUSTICE → ENDURANCE → AWAKENING → KARMA → REBIRTH → ULTIMATE REVENGE`
+
+**Cast (per series, swap the animals):**
+`HERO (honest builder) · TYRANT (rich predator) · BETRAYER (trusted insider) ·
+INNOCENT (the child anchor) · JUSTICE (calm authority) · HENCHMAN (leaks the secret)`
+
+**Glue (what makes it feel authored):**
+a **promise object** + a **catchphrase**, an **insult to reverse**, and a
+**poetic-justice payload** planted early and detonated in the finale.
+
+**Format:** 9:16, ~65s/part, shots 1.5-3s, 100% hard cuts, burned-in captions,
+cliffhanger every part, one playlist per series.
+
+---
+
+## Pick a cast and go (presets)
+
+- **Builder's Betrayal:** Beaver · Lion · Peacock · Owl · Hyena
+- **The Farmer's Land:** Ox · Crocodile · Fox · Bear · Rat
+- **Feathers & Greed:** Sparrow · Eagle · Flamingo · Elephant · Vulture
+- **The Baker's Recipe:** Bear · Tiger · Cat · Owl · Weasel
+- **Underwater Empire:** Sea Turtle · Shark · Dolphin · Orca · Eel
+
+See `studio-bible/02-character-archetypes.md` for the full casting tables and rules.
+
+---
+
+## Responsible production notes
+- Check each AI tool's license/usage terms before publishing monetized content, and keep an asset/tool log.
+- Add a clear "AI-generated" disclosure where the platform requires it.
+- Keep characters fictional; avoid depicting real people or real brands.
