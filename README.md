@@ -38,6 +38,9 @@ not just dog/cat/wolf.
 | `series-templates/EXAMPLE-beaver-builds-alone.md` | Worked example (Beaver/Lion/Peacock/Owl/Hyena) — no dog/cat/wolf |
 | `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
 | `.kiro/skills/script-animal-drama/SKILL.md` | **One-command script generator** — give it a TOPIC + LENGTH (default 90-120s) and it runs 6 phases to output a production-ready short-form script (shooting script + clean TTS lines) |
+| `series-templates/topic-bank-30.md` | 30 viral-ready loglines (No. 1-30), cast + promise object + poetic-justice twist baked in |
+| `series-templates/topic-bank-30-batch2.md` | 30 more loglines (No. 31-60) across new themes, each tagged with MODE (standalone/series) + viral tier (S/A/B+) |
+| `production-prompts/MASTER-PROMPT-seedance-kling.md` | **Full production master prompt** — feeds a topic through 4 phases: Asset Bank (9:16), Seedance 2.0 10s prompts, KLING AI multi-shot 10s prompts (<=2500 chars), and a TikTok title + bilingual (EN/VI) scene-by-scene review for CapCut. Paced at 130-145 WPM |
 
 ---
 
