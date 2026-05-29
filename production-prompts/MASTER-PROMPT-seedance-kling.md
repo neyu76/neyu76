@@ -144,7 +144,11 @@ Then end with EXACTLY:
 
 ## SECTION — INPUT CONTRACT & DEFAULT BEHAVIOR
 
-- User provides `TOPIC_DATA` (a logline) and optionally `LENGTH` (default 90-120s -> target ~100s), `MODE` (default standalone), `TONE` (default heartbreaking-then-satisfying).
+- `TOPIC_DATA` may be EITHER:
+  - **(a) a one-line logline** (e.g., any entry from `series-templates/topic-bank-30.md`) — Phase 0 then invents the cast, scenes, and dialogue; OR
+  - **(b) a rich HANDOFF block** produced by the `script-animal-drama` skill (Phase 7), containing TITLE / MODE / LENGTH / TONE / N_SCENES, a CAST & ASSET HANDLES list, a THROUGH-LINE, and a LOCKED `SCENE LIST` with dialogue.
+  - **If (b) is provided, ADOPT it verbatim** — do NOT re-invent the story. In Phase 0, take the cast/@Handles/design tokens, the scene order, the per-scene beat/grade/setting/action, and the exact dialogue lines as given; your job is only to expand them into the Asset Bank (Phase 1), Seedance prompts (Phase 2), KLING prompts (Phase 3), and the bilingual review (Phase 4). Keep every spoken line identical to the handoff; translate to Vietnamese only in Phase 4.
+- Optional overrides: `LENGTH` (default 90-120s -> target ~100s), `MODE` (default standalone), `TONE` (default heartbreaking-then-satisfying). A rich handoff already carries these.
 - Begin with PHASE 0 (silent), then print PHASE 1. Wait for "Continue" between every phase.
 - Honor the WPM band (130-145) and the silent-climax allowance. Keep lines 4-10 words.
 - Honor the 15-asset cap and the >16-scene batching rule in Phases 2 and 3.
