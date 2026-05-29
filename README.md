@@ -37,6 +37,25 @@ not just dog/cat/wolf.
 | `series-templates/TEMPLATE-series-bible.md` | Blank fill-in template to launch a new series |
 | `series-templates/EXAMPLE-beaver-builds-alone.md` | Worked example (Beaver/Lion/Peacock/Owl/Hyena) — no dog/cat/wolf |
 | `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
+| `.kiro/skills/script-animal-drama/SKILL.md` | **One-command script generator** — give it a TOPIC + LENGTH (default 90-120s) and it runs 6 phases to output a production-ready short-form script (shooting script + clean TTS lines) |
+
+---
+
+## ⚡ Generate a script in one command (the Skill)
+
+This repo ships a Kiro **skill** that turns the whole bible into a script generator.
+Give it a topic and a length; it plays a "100M-view animation showrunner", runs 6
+phases (Concept & Casting → Beat Map → Shot Outline → Draft → Punch-up → Final Clean),
+and outputs:
+- **Layer 1 — Shooting script** (shot-by-shot, visual direction + grade + dialogue)
+- **Layer 2 — Clean voiceover lines** (bracket-free, per character, paste straight into ElevenLabs/TTS)
+- **Layer 3 — Shot prompt sheet** (optional image/video-gen prompts)
+
+**Inputs:** `TOPIC` · `LENGTH` (default 90-120s) · `MODE` (standalone / series-part / pilot) · `TONE`.
+
+To activate it in your own Kiro environment, copy `.kiro/skills/script-animal-drama/`
+to your workspace `.kiro/skills/` (or `~/.kiro/skills/` for global use), then ask
+Kiro for an "animal drama script" with your topic.
 
 ---
 
