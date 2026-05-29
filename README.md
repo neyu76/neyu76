@@ -41,6 +41,7 @@ not just dog/cat/wolf.
 | `series-templates/topic-bank-30.md` | 30 viral-ready loglines (No. 1-30), cast + promise object + poetic-justice twist baked in |
 | `series-templates/topic-bank-30-batch2.md` | 30 more loglines (No. 31-60) across new themes, each tagged with MODE (standalone/series) + viral tier (S/A/B+) |
 | `production-prompts/MASTER-PROMPT-seedance-kling.md` | **Full production master prompt** — feeds a topic through 4 phases: Asset Bank (9:16), Seedance 2.0 10s prompts, KLING AI multi-shot 10s prompts (<=2500 chars), and a TikTok title + bilingual (EN/VI) scene-by-scene review for CapCut. Paced at 130-145 WPM |
+| `series/baker-last-loaf/` | **Worked full series** — all 7 parts of "The Baker's Last Loaf" (topic #1) scripted with the skill: a series bible + Parts 1-7 (shooting script + clean TTS voiceover lines each) |
 
 ---
 
