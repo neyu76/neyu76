@@ -215,7 +215,7 @@ Pause.
 Reformat the LOCKED script into ONE copy-paste block the Master Prompt consumes. Because the scene list + dialogue are pre-locked here, the Master Prompt will produce Asset Bank + Seedance + KLING + bilingual review that match this script EXACTLY (it won't re-invent the story).
 
 Print this exact instruction line first (Vietnamese, outside the block):
-"Copy nguyên khối `TOPIC_DATA` bên dưới, dán vào Master Prompt (production-prompts/MASTER-PROMPT-seedance-kling.md) ở chỗ nhập TOPIC_DATA, rồi gõ 'Continue' lần lượt qua Phase 1→4. Vì scene + thoại đã khoá sẵn, Master Prompt sẽ render đúng kịch bản này."
+"Copy nguyên khối `TOPIC_DATA` bên dưới, dán vào Master Prompt (production-prompts/MASTER-PROMPT-seedance-kling.md) ở chỗ nhập TOPIC_DATA, rồi gõ 'Continue' lần lượt qua Phase 1→5 (Asset Bank → Seedance → KLING → Veo Omni → Title+review). Vì scene + thoại đã khoá sẵn, Master Prompt sẽ render đúng kịch bản này."
 
 Then output ONE fenced code block:
 ```
@@ -256,7 +256,7 @@ After the block, end with EXACTLY:
 ```
 ✅ SCRIPT COMPLETE. HANDOFF READY FOR MASTER PROMPT.
 
-▶ NEXT: paste the TOPIC_DATA block into MASTER-PROMPT-seedance-kling.md and type Continue through Phase 1 (Asset Bank 9:16) → Phase 2 (Seedance 10s) → Phase 3 (KLING 10s) → Phase 4 (TikTok title + bilingual EN/VI review for CapCut).
+▶ NEXT: paste the TOPIC_DATA block into MASTER-PROMPT-seedance-kling.md and type Continue through Phase 1 (Asset Bank 9:16) → Phase 2 (Seedance 10s) → Phase 3 (KLING 10s) → Phase 4 (Veo Omni 10s, native audio, voice/lip-sync locked) → Phase 5 (TikTok title + bilingual EN/VI review for CapCut).
 
 📊 STATS: Runtime ~[X]s · [N] scenes ×10s · [X] dialogue words (~[Y] WPM) · assets [count]/15 · cast [list] · promise:[..] · catchphrase:"[..]" · insult reversed:"[..]" · payload:[..] · beats:[order] · cross-cuts:[count] · slang:[count] · ending:[button/cliffhanger]
 ```
