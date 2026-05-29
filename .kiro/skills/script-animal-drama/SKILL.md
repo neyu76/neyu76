@@ -39,6 +39,8 @@ TONE:   [heartbreaking / revenge-satisfying / dramatic — default heartbreaking
 Chỉ đưa TOPIC → mặc định LENGTH 90-120s, MODE standalone, TONE heartbreaking-then-satisfying, chạy luôn.
 Nói "find one for me" → Phase 1 đẻ 5 concept cho user chọn.
 
+**🔒 NẾU TOPIC LÀ MỘT "SERIES BRIEF" (từ skill `topic-animal-drama`):** ADOPT NGUYÊN VĂN — không đổi tên loài, không recast, không đổi twist, không đổi hướng arc. Trong Phase 1 chỉ chép lại brief đã khoá (cast/@Handle/design token/through-line/beat map) và CHỌN PART để viết; tự set MODE theo part (Part 1 = pilot · part giữa = series-part · part cuối = finale + button). Các @Handle, promise object, catchphrase, insult, payload, và beat của part PHẢI khớp 100% với brief. Việc của skill chỉ là MỞ RỘNG part đó thành scene 10s — đây là cơ chế chống trôi/bịa sai hướng.
+
 Chạy đủ **7 phase**, KHÔNG skip. Giữa các phase in kết quả rồi mời user gõ `go` (hoặc "run all" để chạy thẳng tới Final + Handoff).
 
 ---
