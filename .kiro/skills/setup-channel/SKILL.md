@@ -105,22 +105,21 @@ Pause for approval / swaps.
 ```
 Pause.
 
-## PHASE 4 — LOGO LOCKUPS + IMAGE PROMPTS (square 1:1) ⭐ FULL LOCKUP, TEXT BAKED IN
-For each name: emblem idea, layout (A circular badge / B square block), font pairing, and a LONG DETAILED LOGO PROMPT (1:1) that renders the emblem + the channel-name wordmark + tagline together. Follow the prompt-construction order in OUTPUT TRUTH. Recommend Recraft V3 / Ideogram 3.0 for crisp text.
+## PHASE 4 — LOGO LOCKUPS + IMAGE PROMPTS (square 1:1) ⭐ FULL-BLEED SQUARE BLOCK, TEXT BAKED IN
+For each name: emblem idea, font pairing, and a LONG DETAILED LOGO PROMPT (1:1) that renders a FULL-BLEED SQUARE BLOCK — the brand color fills the whole 1:1 frame edge-to-edge (no floating circle on white), with emblem + channel-name wordmark + tagline locked inside and a thin inset keyline border. Recommend Recraft V3 / Ideogram 3.0 for crisp text.
 ```
 ═══ PHASE 4: LOGOS ═══
-RENDER WITH: Recraft V3 (Vector/Logo style) or Ideogram 3.0 (Design) for accurate text. If using Midjourney/Flux, render the emblem only and set the wordmark in Canva/Figma.
+RENDER WITH: Recraft V3 (Vector/Logo style) or Ideogram 3.0 (Design) for accurate text. If using Midjourney/Flux, render the block + emblem and set the wordmark in Figma/Canva.
 
 #[n] [NAME]
   Emblem: [single niche symbol + line style: monoline / solid silhouette / engraved]
-  Layout: [A circular badge (Living Earth) / B square block (BBC)]
   Font: wordmark [font] · tagline [font]
-  Full logo prompt (1:1):
+  Full square-block logo prompt (1:1):
   ```
-  [Vibe] broadcast channel logo for a [niche] brand, flat 2D vector emblem-and-wordmark lockup, perfectly centered, square 1:1, isolated on a solid [bg-color-name] background hex [#bg]. A [circular badge with a thin [accent] ring / BBC-style [accent] block]. Centered and stacked: [emblem description in detail, drawn in [accent]]; a slim horizontal divider rule; the wordmark "[NAME]" in [font-style description, e.g. an elegant high-contrast engraved serif], all capitals, wide even letter-spacing, in [text-color-name] hex [#text]; beneath it a small tagline "[TAGLINE]" in tiny tracked small-caps [accent]. Symmetrical, balanced, generous negative space, premium, timeless, ultra-crisp edges, professional kerning. Spell exactly: [NAME]. Flat vector only — no photo, no 3D bevel, no gradient, no drop shadow, no texture noise, no extra words, correct spelling. --ar 1:1
+  Flat 2D vector channel logo, FULL-BLEED SQUARE BLOCK filling the entire 1:1 frame edge to edge in a solid [bg-color-name] hex [#bg] — no outer margin, no rounded corners, no white background, no circular badge, the whole square IS the logo. A thin [accent] hex [#accent] inset keyline border runs just inside all four edges. Centered vertical lockup with generous padding: at the top [emblem description, drawn in [accent]]; a slim horizontal divider rule; the wordmark "[NAME]" in [font-style description], all capitals, wide even letter-spacing, [text-color-name] hex [#text]; at the bottom a small tagline "[TAGLINE]" in tiny tracked [accent] small-caps. Symmetrical, balanced, premium, ultra-crisp edges, professional kerning. Spell exactly: [NAME]. Flat vector only — no photo, no 3D, no gradient, no drop shadow, no extra words, correct spelling. --ar 1:1
   ```
 ...
-BUILD NOTE: if any letter renders wrong, regenerate or fix the wordmark in Figma with the named font. Export PNG (transparent + on-bg) at 1024×1024+.
+BUILD NOTE: keep all text/emblem inside the central ~80% (circular crop safe). If a letter renders wrong, regenerate or set the wordmark in Figma with the named font over the color block. Export PNG (color block + transparent-emblem) at 1024×1024+.
 ```
 Pause.
 
