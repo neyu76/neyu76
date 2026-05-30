@@ -98,3 +98,27 @@ See `studio-bible/02-character-archetypes.md` for the full casting tables and ru
 - Check each AI tool's license/usage terms before publishing monetized content, and keep an asset/tool log.
 - Add a clear "AI-generated" disclosure where the platform requires it.
 - Keep characters fictional; avoid depicting real people or real brands.
+
+
+---
+
+## 🌎 Market localization — South America (LatAm)
+
+A full localized pipeline lives in `markets/latam/` + two localized skills.
+Same 7-beat engine, **telenovela-flavored** for South America: dialogue in
+**Spanish (es-419)** or **Brazilian Portuguese (pt-BR)**, a **South-American
+fauna cast** (capybara hero, jaguar/caiman tyrant, macaw betrayer, condor
+justice), local names + slang, and Veo Omni voice locks that pin **language +
+accent + gender** (fixes male→female voice flips and wrong-character lip-sync).
+
+| File | What it gives you |
+|------|-------------------|
+| `markets/latam/00-market-playbook.md` | The localization brain: language strategy, telenovela thesis, fauna casting table, names, slang, settings, music, hashtags, posting calendar |
+| `.kiro/skills/topic-animal-drama-latam/SKILL.md` | LatAm topic generator — 20 locked SERIES BRIEFs in es/pt with VOICE PROFILEs |
+| `.kiro/skills/script-animal-drama-latam/SKILL.md` | LatAm script generator — es/pt dialogue, 10s scenes, handoff to the LatAm master prompt |
+| `markets/latam/MASTER-PROMPT-latam.md` | LatAm master prompt (Seedance + KLING + **Veo Omni** with es/pt voice+accent locks) + es/pt title & bilingual review |
+| `markets/latam/channel-setup.md` | Channel names, usernames, capybara avatar/banner prompts, bilingual bios (es/pt), launch checklist |
+
+**LatAm pipeline:** `topic-animal-drama-latam` → `script-animal-drama-latam` →
+`markets/latam/MASTER-PROMPT-latam.md`. Recommended: run two channels —
+`@patasykarma` (es) and `@patasekarma` (pt).
