@@ -37,11 +37,13 @@ not just dog/cat/wolf.
 | `series-templates/TEMPLATE-series-bible.md` | Blank fill-in template to launch a new series |
 | `series-templates/EXAMPLE-beaver-builds-alone.md` | Worked example (Beaver/Lion/Peacock/Owl/Hyena) — no dog/cat/wolf |
 | `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
+| `reference/living-earth-tv-breakdown.md` | **Second format case study** — the `@LivingEarthTV` AI wildlife-mystery micro-doc: curiosity-gap framework, 3 hook formulas, 3 viral scripts with shot-by-shot + WPM analysis (source for the wildlife master prompt) |
 | `.kiro/skills/topic-animal-drama/SKILL.md` | **Topic generator (start of the pipeline)** — produces N topics (default 20), all SERIES, each a fully-locked SERIES BRIEF (cast + @Handles + design tokens + promise object + catchphrase + insult + poetic-justice payload + per-part beat map + tier). Anti-drift: nothing is left for a later AI to guess |
 | `.kiro/skills/script-animal-drama/SKILL.md` | **One-command script generator (v2, master-prompt-aligned)** — TOPIC + LENGTH (default 90-120s) → 7 phases producing a shooting script + clean TTS lines, with scenes locked to 10s clips / 9:16 / 130-145 WPM. Phase 7 emits a copy-paste `TOPIC_DATA` handoff block that feeds straight into the master prompt |
 | `series-templates/topic-bank-30.md` | 30 viral-ready loglines (No. 1-30), cast + promise object + poetic-justice twist baked in |
 | `series-templates/topic-bank-30-batch2.md` | 30 more loglines (No. 31-60) across new themes, each tagged with MODE (standalone/series) + viral tier (S/A/B+) |
 | `production-prompts/MASTER-PROMPT-seedance-kling.md` | **Full production master prompt (V2.0)** — feeds a topic through 5 phases: Asset Bank (9:16), Seedance 2.0 10s, KLING AI multi-shot 10s, **Veo Omni 10s (native audio, with lip-sync + voice-gender locks)**, and a TikTok title + bilingual (EN/VI) scene review for CapCut. Paced at 130-145 WPM |
+| `production-prompts/MASTER-PROMPT-wildlife-doc.md` | **Second master prompt (V1.0 — wildlife mystery doc)** — the `@LivingEarthTV` format. 7 phases: Asset Bank (16:9, handle has NO `@`), **Bait Image (ảnh mồi — ultra-detailed documentary still, references `@assets`, seeds image-to-video)**, Seedance 2.0, KLING AI, **Veo Omni (single off-screen narrator V.O., anti-anthropomorphism / anti-talking-animal locks)**, and a TikTok title + bilingual (EN/VI) review. Fixed 10s motion, paced 120-165 WPM |
 | `series/baker-last-loaf/` | **Worked full series** — all 7 parts of "The Baker's Last Loaf" (topic #1) scripted with the skill: a series bible + Parts 1-7 (shooting script + clean TTS voiceover lines each) |
 
 ---
