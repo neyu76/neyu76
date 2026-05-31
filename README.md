@@ -162,6 +162,16 @@ kindness early, pay it off as the rescue) — instead of a villain and a revenge
 | `cozy-lane/TEMPLATE-cozy-series-bible.md` | Blank fill-in template to launch a new cozy series |
 | `cozy-lane/EXAMPLE-bramble-and-wisp.md` | Worked example — "Bramble & Wisp: Hollow Glen Tales" (bear cub + snowy owlet + firefly lantern), a 7-episode Season 1 incl. the hero nature episode "The Broken Forest," with condensed **wordless** beat scripts |
 | `cozy-lane/MASTER-PROMPT-cozy-veo-omni.md` | The **production master prompt** for the cozy lane: single-engine **VEO Omni** reference-to-video, **16:9 · 10s · 100% wordless**, unlimited 16:9 Asset Bank (≤7 refs/clip), **REFERENCE-ROLE-LOCK + PHYSICS-GUARD**, 6-beat Comfort Arc, EN+es+pt title package + EN/VI review + CapCut handoff. Requests input if none given (no auto-invention) |
+| `.kiro/skills/topic-cozy-nature/SKILL.md` | **Cozy topic generator (start of the cozy pipeline)** — locks SERIES CONSTANTS (the fixed merch-able duo + prop + world + silent ritual) once, then emits N locked EPISODE BRIEFS (default 12 = a season) rotating the guest-in-need; each brief locks pillar + worry loop + kindness-echo + 6-beat map + tier. Anti-drift, fixed-IP moat, no villain |
+| `.kiro/skills/script-cozy-nature/SKILL.md` | **Cozy wordless script generator** — TOPIC (or an EPISODE BRIEF) → 7 phases producing a **wordless shooting script + an audio/music design** (no dialogue, no narrator), clips locked to 10s / 16:9. Phase 7 emits a copy-paste `TOPIC_DATA` block that feeds straight into the cozy master prompt |
+
+### The cozy production chain
+```
+topic-cozy-nature  →  script-cozy-nature  →  cozy-lane/MASTER-PROMPT-cozy-veo-omni.md
+ (SERIES CONSTANTS    (wordless script +     (Asset Bank 16:9 · VEO Omni 10s ≤7-ref
+  + EPISODE BRIEFS)     TOPIC_DATA handoff)    ROLE-LOCK + PHYSICS-GUARD · audio · EN/es/pt + EN/VI)
+```
+Mirrors the revenge pipeline (`topic-animal-drama → script-animal-drama → MASTER-PROMPT-seedance-kling`), but wordless, 16:9, single-engine, and ending **safe & warm**.
 
 ### The cozy formula in one screen
 **Arc (per series & per episode):**
