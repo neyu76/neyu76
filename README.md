@@ -161,6 +161,7 @@ kindness early, pay it off as the rescue) — instead of a villain and a revenge
 | `cozy-lane/06-production-pipeline.md` | Cozy AI prompt templates (still / image-to-video / music / foley / end-card), frozen design tokens, **bedtime-compilation assembly**, **localize-first publishing**, the Shorts funnel, checklists |
 | `cozy-lane/TEMPLATE-cozy-series-bible.md` | Blank fill-in template to launch a new cozy series |
 | `cozy-lane/EXAMPLE-bramble-and-wisp.md` | Worked example — "Bramble & Wisp: Hollow Glen Tales" (bear cub + snowy owlet + firefly lantern), a 7-episode Season 1 incl. the hero nature episode "The Broken Forest," with condensed **wordless** beat scripts |
+| `cozy-lane/MASTER-PROMPT-cozy-veo-omni.md` | The **production master prompt** for the cozy lane: single-engine **VEO Omni** reference-to-video, **16:9 · 10s · 100% wordless**, unlimited 16:9 Asset Bank (≤7 refs/clip), **REFERENCE-ROLE-LOCK + PHYSICS-GUARD**, 6-beat Comfort Arc, EN+es+pt title package + EN/VI review + CapCut handoff. Requests input if none given (no auto-invention) |
 
 ### The cozy formula in one screen
 **Arc (per series & per episode):**
