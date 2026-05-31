@@ -122,3 +122,61 @@ accent + gender** (fixes male→female voice flips and wrong-character lip-sync)
 **LatAm pipeline:** `topic-animal-drama-latam` → `script-animal-drama-latam` →
 `markets/latam/MASTER-PROMPT-latam.md`. Recommended: run two channels —
 `@patasykarma` (es) and `@patasekarma` (pt).
+
+
+
+---
+
+## 🌿 Second lane — the Cozy Lane (healing / no-dialogue / bedtime)
+
+A complete **parallel system** in `cozy-lane/` for a *different* kind of channel:
+**cozy, (near-)wordless, nature-rescue stories** built around a **fixed, merch-able
+signature duo**, shipped **localize-first**. It is the studio's second lane — same
+production muscle, **opposite emotional engine**.
+
+> Built by reverse-engineering the competitor in
+> `reference/roro-dodo-tales-breakdown.md` (Roro & Dodo Tales), then attacking the
+> exact weaknesses that dossier found. Where the main lane farms **catharsis**
+> (revenge/karma), the cozy lane farms **reassurance** (comfort/healing). It is
+> **not** a reskin of the revenge engine — it has its own arc, pacing, and look.
+
+**Core idea:** run a proven **calm → disruption → effort → restoration** engine with
+a constant duo, a **signature prop** (a firefly lantern / music box) that doubles as
+the **merch product + emotional barometer**, and a **kindness-echo** (plant a tiny
+kindness early, pay it off as the rescue) — instead of a villain and a revenge twist.
+
+### Why a cozy lane (vs cloning the competitor)
+- **Don't clone** (swap-character copycat **loses** — late, no moat, AI quality-inflation erodes the "pretty render" USP).
+- **Win with the 3 things the competitor lacks:** a **merch-able duo + prop moat**, a **localize-first wedge** (wordless = ~free to localize; reuse the LatAm es/pt pipeline), and **out-execution** (weekly cadence, SEO, bedtime long-form, Shorts funnel, community).
+
+### Map of the cozy lane
+| File | What it gives you |
+|------|-------------------|
+| `cozy-lane/00-overview-and-strategy.md` | The lane brain: positioning vs the competitor, the moat, the localization wedge, Hero/Hub/Hygiene content strategy, pillars, cadence, monetization, anti-copycat checklist |
+| `cozy-lane/01-comfort-engine.md` | The **6-beat Comfort Arc** (CALM → RIPPLE → REACH → EFFORT & SETBACK → TENDERNESS → RESTORATION), 5 emotional levers, the signature-prop + kindness-echo + silent-ritual loops, anti-patterns |
+| `cozy-lane/02-character-archetypes.md` | The cozy roles (Protector / Wonder / Guest-in-need / World-Force / Gentle Foil / Chorus), **merch-first duo design rules**, cozy casting tables, 5 ready-to-shoot duo presets |
+| `cozy-lane/03-episode-blueprint.md` | Per-episode structure, **dual-format** (16:9 long-form ~8 min + 9:16 Shorts), hook & worry-loop menus, the **bedtime 45–60 min compilation** variant, QA |
+| `cozy-lane/04-visual-and-editing.md` | Soft-plush render identity, **warm-dominant cool-dip-return-to-gold** grade, slow 4–8s pacing (+ soft dissolves), no-text thumbnail system, consistency checklist |
+| `cozy-lane/05-sound-and-wordless-storytelling.md` | **Telling story with no words** (image + sound + prop), leitmotifs, non-verbal vocalizations, prop-as-narrator, the title + thumbnail open-loop formula, localization notes |
+| `cozy-lane/06-production-pipeline.md` | Cozy AI prompt templates (still / image-to-video / music / foley / end-card), frozen design tokens, **bedtime-compilation assembly**, **localize-first publishing**, the Shorts funnel, checklists |
+| `cozy-lane/TEMPLATE-cozy-series-bible.md` | Blank fill-in template to launch a new cozy series |
+| `cozy-lane/EXAMPLE-bramble-and-wisp.md` | Worked example — "Bramble & Wisp: Hollow Glen Tales" (bear cub + snowy owlet + firefly lantern), a 7-episode Season 1 incl. the hero nature episode "The Broken Forest," with condensed **wordless** beat scripts |
+
+### The cozy formula in one screen
+**Arc (per series & per episode):**
+`CALM → RIPPLE → REACH → EFFORT & SETBACK → TENDERNESS → RESTORATION`
+
+**Cast (constant duo + rotating guest):**
+`PROTECTOR (calm caregiver) · WONDER (curious, tends the prop) · GUEST-IN-NEED (rotates each ep) · WORLD/FORCE (impersonal conflict — weather, time, a felled grove) · GENTLE FOIL + CHORUS (optional)`
+
+**Glue (what makes it feel authored):**
+a **signature prop** (merch + emotional barometer), a **silent ritual** (the wordless
+catchphrase), and a **kindness-echo** (a small kindness planted early returns as the
+rescue) — and **effort, not magic**, always solves it.
+
+**Format:** 16:9 long-form (~8 min) + 9:16 Shorts + monthly 45–60 min bedtime
+compilation; slow 4–8s shots; **no dialogue** (non-verbal vocals only) → **localizes
+for free** (EN + es/pt now via `markets/latam/`, then hi/ar/vi); ends **safe & warm**.
+
+> Run the two lanes as **two channels off one pipeline**: the revenge engine
+> (`studio-bible/`) for catharsis, the comfort engine (`cozy-lane/`) for reassurance.
