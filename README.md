@@ -122,3 +122,45 @@ accent + gender** (fixes male→female voice flips and wrong-character lip-sync)
 **LatAm pipeline:** `topic-animal-drama-latam` → `script-animal-drama-latam` →
 `markets/latam/MASTER-PROMPT-latam.md`. Recommended: run two channels —
 `@patasykarma` (es) and `@patasekarma` (pt).
+
+
+---
+
+## 🇺🇸 New genre + market — US Sad-Story Human Drama (photoreal)
+
+A second, **photoreal human** pipeline lives in `markets/us/` + two skills + a
+dedicated master prompt. It is the human-drama cousin of the animal-drama saga —
+**same emotional engine** (protected innocent, betrayal, endurance, rescue,
+poetic-justice/reunion, cliffhangers), but **real-looking people in American
+English (en-US)** instead of animated animals. Reverse-engineered from the German
+"@heartwarming_stories4" tearjerker channel and ported to the **United States**.
+
+What makes this genre different from the animal saga:
+- **Photoreal, NOT animated.** Cinematic US film look, 35mm, cool blue-grey grade,
+  pathetic-fallacy snow/rain.
+- **Two-track audio.** SCENE 1 = an acted **HOOK** with real lip-synced English
+  dialogue (Veo Omni); SCENE 2→N = **silent b-roll + one narrator voiceover**
+  (ElevenLabs). Only the hook lip-syncs.
+- **The 3-PARTY HOOK ("Triangle of Cruelty").** The opening 10 seconds field **≥3
+  interacting characters** (AGGRESSOR + VICTIM + THIRD-PARTY: a co-victim, a
+  complicit witness, or a transactional stranger) in **3 beats, one speaker per
+  beat**, the other two reacting in silence.
+- **Longer runtime.** ~240-300s (4-5 min) of **10-second scenes** at 140-150 WPM,
+  every part ending on a **hard cliffhanger** that farms "Part 2!" comments.
+
+| File | What it gives you |
+|------|-------------------|
+| `markets/us/00-market-playbook.md` | The US localization brain: language, thesis, photoreal human-cast table, American names, settings, moral-outrage idiom kit, music, hashtags, posting calendar, monetization, **content-safety guardrails**, tiers |
+| `.kiro/skills/topic-sad-story-drama/SKILL.md` | US topic generator — 20 hard-locked SERIES BRIEFs (en-US) with the 3-party hook, hero prop, catch-line, label-to-reverse, withheld truth, per-part 5-Act beat map |
+| `.kiro/skills/script-sad-story-drama/SKILL.md` | US script generator — 7 phases, English dialogue + narrator, 10s scenes, two-track audio, Phase 7 emits a `TOPIC_DATA` handoff |
+| `production-prompts/MASTER-PROMPT-sad-story-drama.md` | US master prompt (V1.2) — Asset Bank (16:9) + seed images (9:16, A/B) + Seedance + KLING silent b-roll + **Veo Omni for the 3-party HOOK with en-US voice lock** + English title + narrator script + EN/VI review |
+| `markets/us/channel-setup.md` | Channel names, handles, avatar/banner prompts, bios, launch checklist (incl. the AI-generated label), pipeline quick-start |
+
+**US sad-story pipeline:** `topic-sad-story-drama` → `script-sad-story-drama` →
+`production-prompts/MASTER-PROMPT-sad-story-drama.md`. Suggested channel:
+**"Heartfelt Stories"** / `@heartfeltstories`.
+
+> ⚠️ **Responsible use (this genre depicts children in distress):** keep
+> characters fictional (no real people or cases), keep cruelty emotional/neglect
+> (never graphic or exploitative), keep a hopeful arc, and **always turn on the
+> platform's AI-generated label**. See `markets/us/00-market-playbook.md` §9.
