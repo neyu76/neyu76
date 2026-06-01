@@ -74,3 +74,28 @@ Let evil **win cruelly** at Rock Bottom (the retention engine), then land karma,
 **Reference (gold standard):** `reference/dog-swings-alone-breakdown.md`.
 
 **Install the skills:** copy `.kiro/skills/topic-drama-cinematic/` and `.kiro/skills/script-drama-cinematic/` into your workspace `.kiro/skills/` (or `~/.kiro/skills/`), then trigger with "cinematic drama topic" / "cinematic drama script".
+
+
+---
+
+## Markets / Localization
+
+The Cinematic Drama pipeline ships in three locales. The **engine is identical**
+(6-beat arc, 4-Act Audio Dynamic structure, visual-art rules, ≤15 `@Handle` assets,
+triple engine + Veo voice-lock, CapCut handoff); only **language, cast fauna, names,
+sincere insults, settings, music, and voice locale** change. Each market has a
+playbook (the localization brain) that its skills + master prompt reference.
+
+| Market | Language | Skills | Master prompt | Playbook + channel kit |
+|--------|----------|--------|---------------|------------------------|
+| **English (base)** | en | `topic-drama-cinematic`, `script-drama-cinematic` | `production-prompts/MASTER-PROMPT-drama-cinematic.md` | — |
+| **South America** | es-419 / pt-BR | `topic-drama-cinematic-latam`, `script-drama-cinematic-latam` | `markets/latam-cinematic/MASTER-PROMPT-drama-cinematic-latam.md` | `markets/latam-cinematic/00-market-playbook.md` · `channel-setup.md` |
+| **Germany** | de-DE | `topic-drama-cinematic-de`, `script-drama-cinematic-de` | `markets/germany/MASTER-PROMPT-drama-cinematic-de.md` | `markets/germany/00-market-playbook.md` · `channel-setup.md` |
+
+**Market notes:**
+- **South America** — telenovela culture; family-vs-money melodrama is native. South-American fauna (capybara hero, jaguar/caiman tyrant, macaw betrayer, condor justice). Run two channels (Spanish `es-419` + Brazilian Portuguese `pt-BR`). Brand: *Corazón Salvaje / Coração Selvagem*. Spoken dialogue in the locale.
+- **Germany** — Grimm / Reineke-Fuchs fable tradition; values Gerechtigkeit, Handwerk, Familie. German/European fauna (Dachs/Biber hero, Fuchs/Wolf tyrant, Elster betrayer, Uhu/Bär justice). Strong dubbing culture → native German (`de-DE`) voice is mandatory. Brand: *Pfoten & Karma / Tierische Schicksale*. Quality bar is high — restraint and clean craft are the moat.
+
+Each localized skill/master prompt enforces its own **voice-lock in the target
+language** (no English audio on the SA/DE channels) and keeps the **no-meme-slang**
+rule. The `markets/latam/` folder (older viral pipeline) is separate and unchanged.
