@@ -122,3 +122,50 @@ accent + gender** (fixes male→female voice flips and wrong-character lip-sync)
 **LatAm pipeline:** `topic-animal-drama-latam` → `script-animal-drama-latam` →
 `markets/latam/MASTER-PROMPT-latam.md`. Recommended: run two channels —
 `@patasykarma` (es) and `@patasekarma` (pt).
+
+
+---
+
+## 🇺🇸 Market localization — United States (Sad-Story Drama · photoreal · en-US)
+
+A separate **photoreal human tearjerker** pipeline localized for the **U.S.
+English-speaking market** — abandoned / sold / orphaned children and cast-out
+elders, betrayal → endurance → rescue → hard cliffhanger that farms "Part 2!".
+This is the *people, not animals* line, reverse-engineered from German
+sad-story channels and rebuilt for American audiences.
+
+| File | What it gives you |
+|------|-------------------|
+| `.kiro/skills/topic-sad-story-drama-us/SKILL.md` | **US topic generator** — 20 locked SERIES BRIEFs in en-US, each with a 3-PARTY HOOK (aggressor + victim + third party), a hero prop, catch-line, label-to-reverse, per-part 5-Act beat map, and the villain's profanity line |
+| `.kiro/skills/script-sad-story-drama-us/SKILL.md` | **US script generator** — TOPIC/BRIEF → 7 phases → shooting script + clean lines (HOOK dialogue + narrator block) + a `TOPIC_DATA` handoff. Two-track audio, 10s scenes, 140-150 WPM |
+| `production-prompts/MASTER-PROMPT-sad-story-drama-us.md` | **US master prompt (V1.0-US)** — Asset Bank (16:9) → Seed images (9:16) → **Frame-to-Video body** → **Seedance/KLING/Veo hook (one prompt each)** → EN/VI CapCut review |
+
+**US pipeline:** `topic-sad-story-drama-us` → `script-sad-story-drama-us` →
+`production-prompts/MASTER-PROMPT-sad-story-drama-us.md`.
+
+### What changed vs. the German sad-story pipeline
+- **Market & language:** American English (en-US) dialogue + narration + captions
+  (Vietnamese only in the review). American names, settings (Greyhound station,
+  snowy Rust Belt town, trailer, roadside diner, county cemetery, motel), USD,
+  and Cash App / Venmo / PayPal donation lines.
+- **Restructured motion (the big change):** the body is no longer multi-shot
+  Seedance/KLING. Instead —
+  - **BODY (Scene 2 → N) = Frame-to-Video:** each body scene is **one
+    continuous single-shot** clip animated from its seed image — **no multi-shot,
+    no internal hard cut, no scene transition** (subtle push-in / parallax /
+    drift only). Hard cuts happen only between scenes in CapCut.
+  - **HOOK (Scene 1) = one prompt per engine:** Seedance, KLING, and Veo Omni
+    each emit **a single prompt for the hook only**, just like Veo. Seedance/KLING
+    are the silent fallbacks; Veo Omni is the native-audio lip-sync master take.
+- **Villain profanity in the hook:** the aggressor opens the command and/or the
+  coldest line with American profanity ("What the hell", "What the f***", "Holy
+  shit", "Get the hell out", "I don't give a damn"). **Only the adult villain
+  curses** — never the child, the rescuer, or the narrator — and **no slurs**.
+  The spoken Veo audio keeps the curse; the burned CapCut caption censors it
+  ("f***") so the first seconds stay platform-safe.
+
+### Responsible production notes (this line)
+- Keep all people and stories **fictional**; do not depict real individuals.
+- Add the platform's **AI-generated disclosure** on every upload.
+- Censor profanity in on-screen captions and keep it out of the title/caption
+  text to protect reach; villain profanity stays in the spoken hook only.
