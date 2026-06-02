@@ -14,7 +14,7 @@ logo đội **embossed như vết bớt trên trán**. Đảo ngược-kỹ-thu�
 ```
 [THIS SKILL] topic-sports-drama → 10 SERIES BRIEFS (3 luồng: evergreen + result-trend + culture-trend)
    → script-sports-drama (ADOPT nguyên văn, mở 1 part thành 4-ACT shot list 10s) → script + handoff
-      → MASTER-PROMPT-sports.md (V16.3) → Asset Bank turnaround · Image · GROK · KLING · Veo Omni · review EN/VI cho CapCut
+      → MASTER-PROMPT-sports.md (V16.3) → Asset Bank (ảnh đơn) · Image · GROK · KLING · Veo Omni · review song ngữ EN/VI cho CapCut
 ```
 
 > **Ba luồng (default 10 = 4 + 3 + 3):**

@@ -15,10 +15,10 @@ WHAT CHANGED FROM V16.2 → V16.3
 1. WPM RECALIBRATED to slow-storytelling: ~62 WPM average (band 55-70), down
    from the over-stuffed 130-200 WPM bands. Word bands per beat lowered. A
    GLOBAL DIALOGUE BUDGET check now ties per-scene words to total runtime.
-2. PHASE 1 ASSET BANK rebuilt to the {"Handle","Category","Voice_Profile",
-   "Setup_Prompt"} JSON format with the "Character sheet turn around" template
-   (ECU 1/3 + four orthographic turnarounds in 2/3). Character sheets = 16:9;
-   scene plates = 9:16.
+2. PHASE 1 ASSET BANK uses the {"Handle","Category","Voice_Profile",
+   "Setup_Prompt"} JSON format. CHARACTER references are a SINGLE full-body figure
+   (ONE view, plain backdrop) — NO split-screen / NO turnaround / NO multi-panel /
+   NO dividing line — to fix divided-frame outputs. ALL images are 9:16.
 3. BASKETBALL characters use the LATEST 2026 official ball design.
 4. REAL-TEAM MODE: authentic team names + exact hex codes + logos (stylized to
    avoid pixel-perfect copies; fictional player names/numbers only).
@@ -30,7 +30,8 @@ WHAT CHANGED FROM V16.2 → V16.3
    "Scene N KLING").
 8. PHASE 5 = NEW — VEO OMNI WITH REFERENCES (native audio, NO priming image,
    ≤7 @assets per prompt, engine-tagged "Scene N VEO").
-9. PHASE 6 = bilingual Vietnamese CapCut breakdown.
+9. PHASE 6 = bilingual EN/VI CapCut breakdown + a MASTER SHOT TABLE that maps
+    every scene to its image file (so you can eyeball-match all stills while editing).
 10. HOOK RULE: Scene 1 should feature as MANY named characters on screen as the
     frame allows (aim 3-5) — ensemble shock — while still ≤2 speakers.
 11. Fixed V16.2 contradictions: caption/subtitle are CapCut-only (engine renders
@@ -371,27 +372,37 @@ NO readable text except in-universe team logos on banners/jerseys/trophies.)
 reconciliation, which is the most shareable.)
 
 ═══════════════════════════════════════════════════════════════════════════════
-## SECTION 4.9 — CHARACTER REFERENCE TEMPLATE (TURNAROUND STANDARD)
+## SECTION 4.9 — CHARACTER REFERENCE TEMPLATE (SINGLE-IMAGE STANDARD · NO SPLIT-SCREEN)
 ═══════════════════════════════════════════════════════════════════════════════
 
-Character reference SHEETS are **16:9** (wide — they hold an ECU + four
-turnarounds side by side). Scene plates and all motion renders are **9:16**.
+⚠️ **ROOT-CAUSE FIX (divided frame).** Earlier turnaround sheets (ECU + 4
+orthographic views) literally INSTRUCTED the model to split the frame into panels —
+that is exactly why outputs came back divided. V16.3 therefore renders **EVERY
+reference and EVERY scene as ONE single continuous image, ONE camera, ONE moment**.
+ALL images (characters, plates, scenes) are **9:16**. There is NO character "sheet".
 
-**MASTER TEMPLATE (the canonical wording to fill per character):**
-> "Character sheet turn around of a [CHARACTER DESCRIPTION — age, ball type +
-> 2026 design if basketball, team + embossed forehead logo + hex, build], presented
-> in a precise, non-overlapping multi-panel grid layout. The far left 1/3 of the
-> frame contains a single detailed Extreme Close-Up (ECU) portrait of the face
-> looking forward, showcasing the [BALL SURFACE TEXTURE — e.g. orange pebbled
-> 2026-basketball leather], expressive glossy eyes, and facial features. The
-> remaining 2/3 contains four neatly aligned full-body orthographic figures left
-> to right: front view, back view, right profile, left profile. [WARDROBE = team
-> jersey + number + streetwear + sneakers; BODY TYPE; embossed forehead logo in
-> exact hex; zero human skin — entire body is the ball material]. Clean seamless
-> white background. Crisp even studio flash lighting. Consistent identity and
-> coloration across all panels. Ultra high-resolution. No text."
+**FORBIDDEN in ANY image prompt (character refs AND scene images)** — these tokens
+make the model tile/divide the frame, so NEVER use them:
+> turnaround · character sheet · model sheet · multi-panel · panel · grid · collage ·
+> split screen · split-screen · side by side · montage · contact sheet · storyboard ·
+> "front view and back view" · "multiple angles" · "four views" · ECU + full body in
+> one image · diptych/triptych · before/after · "shot 1 / shot 2" · "then cut to".
 
-**The Phase-1 `Setup_Prompt` field carries a COMPRESSED version of the above**
+**MASTER TEMPLATE — SINGLE FULL-BODY (the canonical wording to fill per character):**
+> "A single full-body character portrait of ONE [CHARACTER DESCRIPTION — age, ball
+> type + 2026 design if basketball, team + embossed forehead logo + exact hex,
+> build], standing in a relaxed three-quarter front pose, facing the camera, shown
+> head-to-feet in ONE continuous frame. [BALL SURFACE TEXTURE — e.g. orange pebbled
+> 2026-basketball leather], expressive glossy eyes, [WARDROBE = team jersey + number
+> + streetwear + sneakers]; embossed forehead logo in exact hex; zero human skin —
+> entire body is the ball material. Plain seamless light-grey studio background,
+> soft even studio lighting, full-body framing with a little headroom and foot room.
+> Illumination/Pixar 3D, subsurface scattering on the ball leather, ultra
+> high-resolution. ONE single image only — one character, one pose, one continuous
+> frame; NOT a turnaround, NOT a character sheet, NO panels, NO grid, NO split
+> screen, NO multiple views, NO text. --ar 9:16"
+
+**The Phase-1 `Setup_Prompt` field carries this single-image wording**
 (see Phase 1 exemplar). Multi-stage aging adds the Facial-DNA-Inheritance line:
 "Maintains identical eye color/shape, eyebrow angle, cheek structure, mouth shape,
 nose ridge as Stage 1; only wardrobe, posture, proportions change with age."
@@ -404,8 +415,10 @@ Single Camera Move Per Scene · Anti-Camera-Look (no looking into lens) · Zero
 Human Leakage (all surfaces are ball/accessory material, no skin) · Multi-Stage
 Facial-DNA Inheritance · Anti-Morphing/Anatomy Lock · Face-Visibility Lock for
 speakers (mouth + forehead logo unobscured during their line) · Spatial Blocking ·
-INTERACTIVE MODE (stop + wait "Continue" after each phase) · 9:16 scene lock /
-16:9 character-sheet lock.
+INTERACTIVE MODE (stop + wait "Continue" after each phase) · 9:16 lock for ALL
+images (characters + plates + scenes) · SINGLE-IMAGE LOCK (one continuous frame,
+one camera, one moment — NO split-screen / panels / grid / turnaround / "shot 1→2"
+in any IMAGE prompt; multi-shot lives ONLY in motion Phases 3-4).
 SPORTS ADDITIONS: Sport-Authentic Action Lock · Team-Color Consistency Lock ·
 Embossed-Logo Consistency Lock (every scene the face is visible) · Jersey-Worn vs
 Jersey-Held (a "discovered" jersey is a separate prop, not the worn one).
@@ -419,7 +432,7 @@ PHASE 0 (silent: derive+LOCK N, WPM budget, voices, sport/teams/trope, asset pla
 → PHASE 3 GROK Motion (exactly N, "Scene N GROK") → [CONTINUE]
 → PHASE 4 KLING Motion (exactly N, "Scene N KLING", ≤2500 chars) → [CONTINUE]
 → PHASE 5 VEO OMNI w/ references (exactly N, "Scene N VEO", ≤7 @assets) → [CONTINUE]
-→ PHASE 6 Vietnamese CapCut breakdown (exactly N CẢNH).
+→ PHASE 6 Bilingual EN/VI CapCut breakdown (exactly N CẢNH + master shot table).
 
 ═══════════════════════════════════════════════════════════════════════════════
 ## PHASE 1 — CORE ASSET BANK (NEW FORMAT · MAX 14 · FIREWALLED FROM N)
@@ -435,12 +448,12 @@ hidden rival jersey, a discovery-logo prop, the MVP trophy, the surgery-clinic s
 are kept even at 1-2 scenes.
 
 **OUTPUT:** Vietnamese summary line (with 🔒 SCENE COUNT LOCK) ABOVE, then ONE
-`json` code block, one object per physical line (Excel-ready). Aspect: CHARACTER
-sheets `--ar 16:9`; ENVIRONMENT/PROP plates `--ar 9:16`.
+`json` code block, one object per physical line (Excel-ready). **ALL images are
+`--ar 9:16`** (characters, environments, props) — single continuous frame each.
 
-**CHARACTER schema (turnaround template inside Setup_Prompt):**
+**CHARACTER schema (SINGLE full-body image inside Setup_Prompt — NO turnaround):**
 ```json
-{"Handle":"Leo_11","Category":"Character","Voice_Profile":"male, child (11), bright/earnest, American English","Setup_Prompt":"Character sheet turn around of an 11-year-old anthropomorphic basketball boy, head and entire body made of the latest 2026 official NBA game-ball design (deep pebbled orange composite leather, refined black seam channels, matte-satin finish), zero human skin. Far left 1/3: detailed ECU portrait of the face looking forward, glossy expressive eyes, small flat nose, wide mouth, raised embossed San Antonio Spurs logo on the forehead in black #000000 and silver #C4CED4. Remaining 2/3: four aligned full-body orthographic figures left-to-right (front, back, right profile, left profile). Wears a Spurs-style jersey number 9 in black and silver, dark slim jeans, white Air Force 1 sneakers, thin silver chain; lean child build, 2/5 head proportion, chubby cheeks, shorter limbs. Illumination/Pixar 3D, subsurface scattering on the ball leather. Clean seamless white background, crisp even studio flash lighting, consistent identity and coloration across all panels, ultra high-resolution. No text. --ar 16:9"}
+{"Handle":"Leo_11","Category":"Character","Voice_Profile":"male, child (11), bright/earnest, American English","Setup_Prompt":"A single full-body character portrait of ONE 11-year-old anthropomorphic basketball boy, standing in a relaxed three-quarter front pose facing the camera, shown head-to-feet in ONE continuous frame. Head and entire body made of the latest 2026 official NBA game-ball design (deep pebbled orange composite leather, refined black seam channels, matte-satin finish), zero human skin. Glossy expressive eyes, small flat nose, wide mouth; a raised embossed San Antonio Spurs logo on the forehead in black #000000 and silver #C4CED4. Wears a Spurs-style jersey number 9 in black and silver, dark slim jeans, white Air Force 1 sneakers, thin silver chain; lean child build, 2/5 head proportion, chubby cheeks, shorter limbs. Plain seamless light-grey studio background, soft even studio lighting, full-body framing with headroom and foot room. Illumination/Pixar 3D, subsurface scattering on the ball leather, ultra high-resolution. ONE single image only — one character, one pose, one continuous frame; NOT a turnaround, NOT a character sheet, NO panels, NO grid, NO split screen, NO multiple views, NO text. --ar 9:16"}
 ```
 Required extra character fields appended to the JSON: `"sport"`, `"team"`,
 `"jersey_number"` (fictional), `"embossed_logo_state"` (ORIGINAL / HIDDEN_RIVAL /
@@ -457,11 +470,14 @@ POST_TRANSFORMATION). Place them after `Setup_Prompt`.
 ```
 
 PHASE 1 RULES: A1 cap 14 (cuts bank only). A2 handle no leading "@". A3 one
-physical line per object. A4 character sheets 16:9 / plates 9:16. A5 Voice_Profile
+physical line per object. A4 ALL images 9:16, SINGLE continuous frame (NO
+turnaround / panels / grid / split-screen for characters OR plates). A5 Voice_Profile
 = gender,age,pitch,accent/energy (+ optional Section-4 label). A6 exact team hex in
 every character. A7 Facial-DNA line for aging stages. A8 below the block print:
-> "💡 Negative prompt gợi ý: text, words, letters, watermark, label, caption,
-> single view, side-only, human skin, human face, peach skin, 2D, flat, anime,
+> "💡 Negative prompt gợi ý: split screen, split-screen, multi-panel, panel, grid,
+> collage, montage, contact sheet, storyboard, turnaround, character sheet, multiple
+> views, side by side, diptych, triptych, before and after, text, words, letters,
+> watermark, label, caption, human skin, human face, peach skin, 2D, flat, anime,
 > cel-shaded, hand-drawn, comic, real player names, literal NBA/NFL/MLB trademarks."
 A9 print the Inline-Description Roster (or "(trống)").
 
@@ -473,20 +489,40 @@ A9 print the Inline-Description Roster (or "(trống)").
 ═══════════════════════════════════════════════════════════════════════════════
 
 ONE `ndjson` block, one object per physical line, exactly N rows. Each
-`ImagePrompt` is a single flowing paragraph in this exact shape (no 5-block):
+`ImagePrompt` describes **ONE single continuous still frame, ONE camera, ONE
+moment** — it is a PHOTOGRAPH of a single instant, NOT a sequence.
 
-1. **Fixed prefix (verbatim):** "Strictly adhere to the exact reference table
-   designs: every character must be 100% identical to the defined reference table."
-2. **Scene line:** "A cinematic 9:16 vertical 3D animated scene [inside/at SETTING],
-   [lighting + key set objects], but absolutely no readable text anywhere."
-3. **Per-character clauses (inline @Handle):** position in frame + action/pose +
-   specific expression + jersey/embossed-logo reminder (exact hex).
+⚠️ **ROOT-CAUSE FIX FOR SPLIT-SCREEN.** The model tiles/divides the frame when a
+prompt contains motion/sequence/multi-angle language. In Phase 2 image prompts you
+MUST NOT use ANY of these (they belong only to motion Phases 3-4):
+> shot 1 / shot 2 · "then" · "cut to" · "hard cut" · multi-shot · sequence ·
+> beatA/beatB · "0.0–2.8s" timestamps · camera MOVE words (dolly, push-in, pan,
+> zoom, track) · split screen · panel · grid · collage · montage · side by side ·
+> "before/after" · "multiple angles" · turnaround.
+Describe a STATIC composition only (framing word like "medium-wide" / "close-up" is
+fine; a camera MOVE is not).
+
+Each `ImagePrompt` is a single flowing paragraph in this exact shape:
+
+1. **Fixed prefix (verbatim):** "Strictly adhere to the exact reference designs:
+   every character must be 100% identical to its single-image reference. ONE single
+   continuous photograph, one camera, one moment — NOT a split screen, NOT panels,
+   NOT a grid, NOT a sequence."
+2. **Scene line:** "A cinematic 9:16 vertical 3D animated scene, ONE continuous
+   frame [inside/at SETTING], [static framing e.g. medium-wide], [lighting + key set
+   objects], but absolutely no readable text anywhere."
+3. **Per-character clauses (inline @Handle):** position in the SINGLE frame + pose/
+   action (frozen) + specific expression + jersey/embossed-logo reminder (exact hex).
 4. **Gaze line:** "Clear gaze direction: [X looks at Y; Y glares at X; …]."
-5. **Negative tail (verbatim):** "No extra characters, no text overlay, no logos
-   or words on props, no signs, no subtitles, no watermark."
+5. **Negative tail (verbatim):** "ONE single image only. No split screen, no
+   split-screen, no panels, no grid, no collage, no montage, no side-by-side, no
+   multiple frames, no sequence, no extra characters, no text overlay, no logos or
+   words on props, no signs, no subtitles, no watermark."
 
 > Hook (Scene 1): place as many named characters in-frame as composition allows
-> (aim 3-5) for ensemble shock; still ≤2 will speak (in Phases 3-5).
+> (aim 3-5) for ensemble shock — but still ONE single frame; ≤2 will speak (Phases 3-5).
+> The `Camera` field carries the MOTION summary for Phases 3-4 — keep ALL movement
+> language OUT of `ImagePrompt`.
 
 **Phase 2 schema:**
 ```ndjson
@@ -495,17 +531,25 @@ ONE `ndjson` block, one object per physical line, exactly N rows. Each
 Rules: exactly N rows · Duration "10s" · Narration "None." · captions/subtitles/
 hook/timeskip are CapCut overlays (render has zero text) · team hex exact ·
 embossed logo + state named for every ball character whose face shows · sport
-actions biomechanically real · WordCount within the recalibrated band.
+actions biomechanically real · WordCount within the recalibrated band ·
+**ImagePrompt = ONE static frame, NO movement/sequence/split-screen language**
+(all camera movement stays in the `Camera` field for Phases 3-4).
 
-**STOP** → "Phase 2 ([N] image prompts) complete, 9:16, zero in-render text, hex +
-logo consistency. Type 'Continue' for Phase 3 (GROK Motion)."
+**STOP** → "Phase 2 ([N] image prompts) complete — 9:16, ONE single frame each (no
+split-screen), zero in-render text, hex + logo consistency. Type 'Continue' for
+Phase 3 (GROK Motion)."
 
 ═══════════════════════════════════════════════════════════════════════════════
 ## PHASE 3 — GROK MOTION (FULL MULTI-SHOT · exactly N · tag "Scene N GROK")
 ═══════════════════════════════════════════════════════════════════════════════
 
 ONE `ndjson` block, exactly N rows. Each `GrokMotion` follows this template
-(filled from Phase 2 dialogue; **4 clean shots** for duo, 2-3 for solo/shock/final):
+(filled from Phase 2 dialogue; **4 clean shots** for duo, 2-3 for solo/shock/final).
+
+> NOTE: "multi-shot / Shot 1→2 / cut to" here is for the VIDEO generator (sequential
+> shots inside ONE 10s clip) — this is correct for motion. NEVER paste a GROK/KLING
+> motion prompt into an IMAGE generator (that would split the frame). Images come
+> only from Phase 2.
 
 ```
 Scene [k] GROK — [SceneRole]
@@ -627,49 +671,85 @@ line · hook scene may show many characters but still ≤2 speak (split across s
 **STOP** → "Phase 5 VEO ([N] rows, ≤7 refs each, voice-locked) complete. Type 'Continue' for Phase 6 (bảng phân cảnh tiếng Việt)."
 
 ═══════════════════════════════════════════════════════════════════════════════
-## PHASE 6 — BẢNG PHÂN CẢNH TIẾNG VIỆT CHO CAPCUT (exactly N CẢNH)
+## PHASE 6 — BẢNG PHÂN CẢNH SONG NGỮ EN/VI CHO CAPCUT (exactly N CẢNH)
 ═══════════════════════════════════════════════════════════════════════════════
 
-Plain Vietnamese markdown (NOT a code block). Exactly N scenes, in order.
+Plain markdown (NOT a code block). **MỌI mục đều SONG NGỮ EN/VI.** Output gồm
+**3 phần** theo thứ tự: (6A) Bảng tổng tất cả cảnh để đối chiếu nhanh khi dựng,
+(6B) chi tiết từng cảnh song ngữ, (6C) quy ước đặt tên file + workflow CapCut.
 
+### 6A — MASTER SHOT TABLE (BẢNG TỔNG — tất cả N cảnh, đối chiếu dựng phim)
+Một hàng / cảnh, đúng N hàng. Cột "Ảnh/Image" = tên file ảnh Phase 2 nên đặt để
+khớp (xem 6C). Đây là bảng bạn nhìn để ráp CapCut.
+
+| # | Ảnh / Image file | Beat | Trim | Người nói / Speaker | Thoại EN (rút gọn) | Thoại VI (rút gọn) | Caption | Engine |
+|---|------------------|------|------|---------------------|--------------------|--------------------|---------|--------|
+| 1 | `S01_[role]_9x16.png` | Shock | -3s | @H | "[EN]" | "[VI]" | "[TỪ]" | GROK/KLING/VEO |
+| 2 | `S02_[role]_9x16.png` | Standard | -3s | @H1,@H2 | "[EN]" | "[VI]" | "[TỪ]" | … |
+| … | … | … | … | … | … | … | … | … |
+| N | `S[NN]_[role]_9x16.png` | Final | -2s | @H | "[EN]" | "[VI]" | "[TỪ]" | … |
+
+### 6B — CHI TIẾT TỪNG CẢNH (song ngữ đầy đủ)
 ```
-CẢNH [k] — [Tên beat tiếng Việt] [⏰ nếu time-skip]
-Engine đề xuất: GROK hoặc KLING (chọn bản render đẹp hơn) · Veo nếu cần audio gốc
-Render: 10s cố định · Trim mềm: bỏ [X]s đuôi (giữ [10-X]s) · WordCount EN: [..] · Speaker: [solo/duo/silent]
-Asset Bank: @[..]
-Bối cảnh: [mô tả không gian]
-Vị trí nhân vật: [blocking trái/phải/giữa/trước/sau]
-Camera: [tóm tắt 10s]
+CẢNH / SCENE [k] — [Tên beat VI] / [Beat name EN] [⏰ nếu time-skip]
+Ảnh / Image file: S[kk]_[role]_9x16.png   ·   Asset Bank: @[..]
+Engine đề xuất / Suggested engine: GROK | KLING (chọn bản đẹp hơn) · VEO nếu cần audio gốc
+Render: 10s cố định / fixed   ·   Trim mềm / Soft-trim: bỏ [X]s đuôi (giữ [10-X]s)   ·   WordCount EN: [..]   ·   Speaker: [solo/duo/silent]
 
-Hành động (Direct Dialogue + Lip-Sync + Eye-Contact):
-- [0.0–X.Xs] (≤1.5s pre) [hướng mắt về người sẽ nói]
-- [X.X–Y.Ys] (Safe Zone) [speaker nói + lip-sync + nhìn listener]
-- [Y.Y–10.0s] (Buffer) [im lặng, miệng đóng, giữ ánh mắt]
+Bối cảnh / Setting:
+  VI: [mô tả không gian]
+  EN: [setting description]
+Vị trí nhân vật / Blocking:
+  VI: [trái/phải/giữa/trước/sau]   |   EN: [left/right/center/fg/bg]
+Camera (10s): [tóm tắt VI] / [EN summary]
 
-🗣️ Hội thoại (song ngữ):
-[Tên — giọng VOICE_PROFILE]
-  EN: "[line]"   VI: "[dịch]"   Timestamp: [X.X–Y.Ys]   Eye-contact: nhìn [tên]
-[nhân vật 2 nếu duo …]
+Hành động / Action (Direct Dialogue + Lip-Sync + Eye-Contact):
+- [0.0–X.Xs] (≤1.5s pre) VI: [hướng mắt về người sẽ nói] | EN: [turn eyes to the speaker-to-be]
+- [X.X–Y.Ys] (Safe Zone) VI: [speaker nói + lip-sync] | EN: [speaker delivers line, lip-sync]
+- [Y.Y–10.0s] (Buffer) VI: [im lặng, miệng đóng, giữ ánh mắt] | EN: [silent hold, mouth closed]
 
-🏀 SPORT IDENTITY CHECK: logo trán @[H] = [team] [hex] (VISIBLE) · jersey = [team + số] · sport action: [nếu có]
-🔤 EmphasisCaption (overlay CapCut): "[TỪ]" — center-bottom (center nếu SHOCK), white ALL CAPS Anton/Inter Bold, viền đen 2px, sync [timestamp]
-⏰ TimeSkipMarker (chỉ cảnh LIGHT): "[4 YEARS LATER]" — center 64pt, fade 0.3s→hold→0.5s out (không render EmphasisCaption cùng lúc)
-SFX: [tiếng còi / đập bóng / khán giả reo…]  ·  Audio: KHÔNG nhạc nền từ AI — chỉ ambient + giọng + SFX
-Ghi chú CapCut: cắt mềm [X]s đuôi; subtitle + caption + hook đều thêm tay (render sạch chữ).
+🗣️ Hội thoại / Dialogue (song ngữ — BẮT BUỘC cả 2):
+[Tên / Name — giọng / voice: VOICE_PROFILE]
+  EN: "[exact English line]"
+  VI: "[bản dịch tiếng Việt]"
+  Timestamp: [X.X–Y.Ys]   ·   Eye-contact: nhìn / looks at [tên]
+[nhân vật 2 nếu duo — lặp khối trên / repeat for a 2nd speaker]
+(nếu silent: VI "Không thoại — để hình + SFX kể" / EN "No dialogue — image + SFX carry it")
+
+🏀 SPORT IDENTITY CHECK: logo trán / forehead @[H] = [team] [hex] (VISIBLE) · jersey = [team + số/number] · sport action: [nếu có / if any]
+🔤 EmphasisCaption (overlay CapCut, EN word): "[TỪ/WORD]" — center-bottom (center nếu SHOCK), white ALL CAPS Anton/Inter Bold, viền đen 2px, sync [timestamp]
+   ↳ Phụ đề VI gợi ý / VI subtitle suggestion: "[câu phụ đề tiếng Việt]"
+⏰ TimeSkipMarker (chỉ cảnh LIGHT / LIGHT only): "[4 YEARS LATER]" — center 64pt, fade 0.3s→hold→0.5s out (không render kèm EmphasisCaption)
+SFX: VI [tiếng còi / đập bóng / khán giả…] | EN [whistle / dribble / crowd…]
+Audio: KHÔNG nhạc nền từ AI / NO AI music — chỉ ambient + giọng + SFX
+Ghi chú CapCut / CapCut note: cắt mềm [X]s đuôi; subtitle EN + phụ đề VI + caption + hook đều thêm tay (render sạch chữ / text-free render).
 ```
 
-**Tổng kết workflow CapCut V16.3 SPORTS:**
-1. Render đúng N clip × 10s (9:16) bằng GROK hoặc KLING (hoặc VEO nếu muốn audio gốc).
-2. Import CapCut → trim mềm đuôi mỗi clip (SHOCK/LIGHT/STANDARD bỏ 3s; HEAVY/FINAL bỏ 2s ở chế độ SLOW; theo bảng nếu RAPID/MEDIUM).
-3. Ghép hard-cut theo thứ tự SCENE.
-4. Thoại: VEO đã có sẵn audio gốc; GROK/KLING là clip câm → lồng giọng ElevenLabs theo VOICE CASTING LOCK.
-5. Burn subtitle EN bằng tay (giữa-dưới), thêm EmphasisCaption + HookText (cảnh 1) + TimeSkipMarker.
-6. Thêm nhạc nền SAU (identity conflict = piano cảm xúc; MVP/victory = anthem orchestral; surgery = dark suspense).
-7. Grade theo cảm xúc, xuất 1080×1920.
+### 6C — QUY ƯỚC ĐẶT TÊN FILE + WORKFLOW CAPCUT (song ngữ)
+**Đặt tên ảnh để khớp bảng / Image naming so it maps to the table:**
+`S[kk]_[role]_9x16.png` — vd `S01_hook_9x16.png`, `S07_peak_9x16.png`. Mỗi cảnh
+1 ảnh tĩnh (Phase 2), 9:16, KHÔNG split-screen. Số `kk` = số cảnh (01..N) để sort
+đúng thứ tự khi import.
 
-**STOP** → "Bảng phân cảnh tiếng Việt hoàn tất. V16.3 SPORTS ([N] cảnh — đúng số đã
-khóa, ~62 WPM, 9:16, lip-sync + eye-contact, real-team hex + embossed logo
-consistency, render sạch chữ). Sẵn sàng GROK / KLING / VEO + CapCut. Ready for new sports script."
+**Tổng kết workflow CapCut V16.3 SPORTS / Workflow summary:**
+1. VI: Render đúng N clip × 10s (9:16) bằng GROK hoặc KLING (VEO nếu cần audio gốc).
+   EN: Render N × 10s 9:16 clips via GROK or KLING (VEO for native audio).
+2. VI: Import CapCut → trim mềm đuôi mỗi clip (SLOW: SHOCK/LIGHT/STANDARD bỏ 3s; HEAVY/FINAL bỏ 2s).
+   EN: Import → soft-trim each clip's tail per the table.
+3. VI: Ghép hard-cut theo thứ tự CẢNH (dùng bảng 6A). EN: Hard-cut in scene order using table 6A.
+4. VI: Thoại — VEO có audio gốc; GROK/KLING là clip câm → lồng ElevenLabs theo VOICE CASTING LOCK.
+   EN: Audio — VEO is native; GROK/KLING are silent → dub via ElevenLabs per the voice lock.
+5. VI: Burn phụ đề (EN và/hoặc VI từ phần 6B) + EmphasisCaption + HookText (cảnh 1) + TimeSkipMarker.
+   EN: Burn subtitles (EN/VI from 6B) + EmphasisCaption + HookText (scene 1) + TimeSkipMarker.
+6. VI: Thêm nhạc nền SAU (identity = piano; MVP/victory = anthem; surgery = dark suspense).
+   EN: Add music last (per mood).
+7. VI: Grade theo cảm xúc, xuất 1080×1920. EN: Grade by emotion, export 1080×1920.
+
+**STOP** → "Bảng phân cảnh SONG NGỮ EN/VI hoàn tất / Bilingual breakdown complete.
+V16.3 SPORTS ([N] cảnh — đúng số đã khóa, ~62 WPM, 9:16, ẢNH MỘT KHUNG không
+split-screen, lip-sync + eye-contact, real-team hex + embossed logo, render sạch
+chữ). Gồm 6A bảng tổng tất cả cảnh + 6B chi tiết song ngữ + 6C đặt tên file. Sẵn
+sàng GROK / KLING / VEO + CapCut. Ready for new sports script."
 
 ═══════════════════════════════════════════════════════════════════════════════
 ## SECTION 16 — INPUT CONTRACT & DEFAULT BEHAVIOR
@@ -691,9 +771,11 @@ Optional fields (with defaults):
 - `SPORT`, `TEAMS` (real-team), `TROPE` (ST-1..ST-8) — inferred if omitted.
 
 Honor: ~62 WPM global budget (band 55-70) · ≤2 speakers/scene · voice lock ·
-14-asset cap · 8≤N≤33 (overflow→split Parts) · zero in-render text (captions in
-CapCut) · real-team exact hex + stylized logos + fictional player names +
-AI-generated disclosure on publish. English is spoken; Vietnamese only in Phase 6.
+14-asset cap · 8≤N≤33 (overflow→split Parts) · ALL images 9:16 SINGLE frame (no
+split-screen) · zero in-render text (captions in CapCut) · real-team exact hex +
+stylized logos + fictional player names + AI-generated disclosure on publish.
+English is spoken; Phase 6 is BILINGUAL EN/VI (every field in both languages +
+a master shot table mapping all N scenes to image files).
 
 ═══════════════════════════════════════════════════════════════════════════════
 ## END — MASTER PROMPT V16.3 SPORTS EDITION (REAL-TEAM) · GROK + KLING + VEO OMNI

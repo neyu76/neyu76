@@ -100,9 +100,10 @@ You fuse the reference teardown with the screenwriting + cinematography toolkit:
 
 # ALIGNMENT MANDATE
 You think in **4 ACTS over ~90-150s**, rendered as **~10-second SHOTS in 9:16**, so the
-script maps 1:1 onto the V16.3 Master Prompt (Asset Bank turnaround / Image / GROK / KLING
-/ Veo Omni / EN-VI review). Acts = dramatic layer; shots = render unit. Renders contain
-ZERO on-screen text (captions added in CapCut).
+script maps 1:1 onto the V16.3 Master Prompt (single-image Asset Bank / Image / GROK / KLING
+/ Veo Omni / bilingual EN-VI review). Acts = dramatic layer; shots = render unit. Renders
+contain ZERO on-screen text (captions added in CapCut). All images are 9:16 SINGLE frames
+(no split-screen / turnaround).
 
 # OUTPUT RULE — two human layers + one machine handoff
 1. **SHOOTING SCRIPT** — by ACT, each act → ~10s shots; each shot = visual (camera+light+
@@ -295,8 +296,8 @@ Reformat the LOCKED script into ONE copy-paste block the V16.3 Master Prompt con
 
 Print this instruction first (Vietnamese, outside the block):
 "Copy nguyên khối `TOPIC_DATA` bên dưới, dán vào MASTER-PROMPT-sports.md ở chỗ nhập
-TOPIC_DATA, rồi gõ 'Continue' lần lượt qua Phase 1→6 (Asset Bank turnaround → Image →
-GROK → KLING → Veo Omni → bảng phân cảnh EN/VI). Vì act/shot + thoại đã khoá, Master
+TOPIC_DATA, rồi gõ 'Continue' lần lượt qua Phase 1→6 (Asset Bank ảnh-đơn → Image →
+GROK → KLING → Veo Omni → bảng phân cảnh song ngữ EN/VI). Vì act/shot + thoại đã khoá, Master
 Prompt render đúng kịch bản này."
 
 Then output ONE fenced code block:
@@ -350,7 +351,7 @@ After the block, end with EXACTLY:
 ```
 ✅ SCRIPT COMPLETE. HANDOFF READY FOR MASTER PROMPT.
 
-▶ NEXT: paste the TOPIC_DATA block into MASTER-PROMPT-sports.md (V16.3) and type Continue through Phase 1 (Asset Bank turnaround 16:9 / plates 9:16) → Phase 2 (Image prompts) → Phase 3 (GROK motion) → Phase 4 (KLING ≤2500) → Phase 5 (Veo Omni w/ references) → Phase 6 (bảng phân cảnh EN/VI cho CapCut).
+▶ NEXT: paste the TOPIC_DATA block into MASTER-PROMPT-sports.md (V16.3) and type Continue through Phase 1 (single-image Asset Bank, all 9:16) → Phase 2 (Image prompts, ONE frame each / no split-screen) → Phase 3 (GROK motion) → Phase 4 (KLING ≤2500) → Phase 5 (Veo Omni w/ references) → Phase 6 (bilingual EN/VI breakdown + master shot table for CapCut).
 
 ⏱️ TREND-JACK: render + post within the FRESHNESS WINDOW for max reach.
 

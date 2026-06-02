@@ -80,7 +80,7 @@ dung là **drama gia đình + bản sắc fan đội bóng**: bất công → b�
 | **Trẻ em** | Đầu to hơn (2/5), má phính; teen 1/3; người lớn 1/3 đầy đủ. |
 | **Bối cảnh** | Phòng khách-đền-thờ-đội-bóng · nhà xuống cấp · garage · hành lang trường · sân vận động · sân sau tập lúc bình minh · tiệm tạp hóa. |
 
-**Character sheet = 16:9** (1 ECU + 4 góc xoay), **cảnh & motion = 9:16**.
+**Mọi ảnh = 9:16, MỘT KHUNG duy nhất** (không split-screen / turnaround), **cảnh & motion = 9:16**.
 
 ---
 
@@ -133,12 +133,12 @@ chỉ có **~4-6s nói**, phần còn lại là **giữ phản ứng im lặng**
 ### Bước ③ — `MASTER-PROMPT-sports.md` (V16.3) — 6 phase, engine **GROK + KLING + Veo**
 | Phase | Ra gì |
 |-------|-------|
-| 1 Asset Bank | Character sheet turnaround (16:9) + plate 9:16, real-team hex, bóng 2026 |
-| 2 Image Prompts | Ảnh từng cảnh 9:16, format "Strictly adhere…" + @asset + gaze + no-text |
+| 1 Asset Bank | Ảnh nhân vật MỘT KHUNG full-body (9:16, không split-screen) + plate 9:16, real-team hex, bóng 2026 |
+| 2 Image Prompts | Ảnh từng cảnh 9:16 MỘT KHUNG (cấm từ ngữ multi-shot/chuyển cảnh để khỏi chia màn hình) + @asset + gaze + no-text |
 | 3 GROK Motion | Multi-shot 4 cảnh/clip, tag `Scene N GROK` |
 | 4 KLING Motion | Bản gọn của GROK, **≤2500 ký tự**, tag `Scene N KLING` |
 | 5 Veo Omni w/ refs | Audio gốc, **không ảnh mồi**, **≤7 @asset**, tag `Scene N VEO` |
-| 6 Bảng phân cảnh | Song ngữ EN/VI cho CapCut |
+| 6 Bảng phân cảnh | Song ngữ EN/VI đầy đủ + BẢNG TỔNG tất cả cảnh↔ảnh để dựng CapCut |
 
 > **Render sạch chữ 100%.** Caption/subtitle/EmphasisCaption/time-skip đều thêm tay trong CapCut.
 
@@ -242,7 +242,7 @@ khuôn khi viết series mới. Đòn bẩy tái dùng: **trẻ em được bả
 1. Gọi **`topic-sports-drama`** → nhận 10 brief (4 evergreen + 3 result-trend + 3 culture-trend). Chọn 1.
 2. Dán brief vào **`script-sports-drama`**, chọn `PART 1` → nhận shooting script + lời TTS + khối **TOPIC_DATA**.
 3. Dán **TOPIC_DATA** vào **`MASTER-PROMPT-sports.md`**, gõ `Continue` lần lượt Phase 1→6.
-4. Lấy **Asset Bank** tạo character sheet (16:9) + plate (9:16) trên Midjourney/Flux.
+4. Lấy **Asset Bank** tạo ảnh nhân vật MỘT KHUNG full-body (9:16) + plate (9:16) trên Midjourney/Flux (không split-screen).
 5. Lấy **GROK / KLING** (hoặc **Veo Omni**) render từng cảnh 10s (9:16).
 6. Ráp **CapCut** theo bảng phân cảnh EN/VI: trim → ghép → lồng tiếng/sub → nhạc → grade → xuất.
 7. Đăng kèm nhãn AI; nếu là trend-jack, **đăng trong freshness window**.

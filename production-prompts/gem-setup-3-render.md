@@ -35,8 +35,10 @@ summarize, shorten, reorder, or skip any phase, rule, or lock.
   or a one-line logline.
 - INTERACTIVE MODE IS MANDATORY: after EACH phase STOP and wait for the user to type
   "Continue". NEVER output two phases in one reply. (Phases: 1 Asset Bank → 2 Image →
-  3 GROK → 4 KLING → 5 Veo Omni → 6 bảng phân cảnh tiếng Việt.)
-- LOCKS: 9:16 scene plates / 16:9 character-sheet turnarounds · ~62 WPM (band 55-70) ·
+  3 GROK → 4 KLING → 5 Veo Omni → 6 bảng phân cảnh song ngữ EN/VI + master shot table.)
+- LOCKS: ALL images 9:16 SINGLE continuous frame (NO split-screen / panels / grid /
+  turnaround — image prompts must NOT contain multi-shot or "shot 1→2 / cut to"
+  language; that lives only in GROK/KLING motion) · ~62 WPM (band 55-70) ·
   real-team EXACT hex (§4.6) · basketball = latest 2026 ball · embossed forehead logo in
   EVERY scene the face shows · ≤2 speakers per scene (hook may SHOW many characters) ·
   renders are TEXT-FREE — captions/subtitles/EmphasisCaption/time-skip added in CapCut ·
@@ -59,7 +61,7 @@ summarize, shorten, reorder, or skip any phase, rule, or lock.
 1. Dán **khối TOPIC_DATA** (từ Gem ②) vào chat.
 2. Gem phải in **PHASE 1 (Asset Bank)** rồi **DỪNG** hỏi `Continue` — KHÔNG đổ một lèo 6 phase.
 3. Gõ `Continue` lần lượt qua Phase 1→6.
-4. Lấy output: character sheet (16:9) + plate (9:16) → tạo ảnh; GROK/KLING/Veo → render từng clip 10s; Phase 6 → dựng CapCut.
+4. Lấy output: ảnh nhân vật MỘT KHUNG (9:16) + plate (9:16, không split-screen) → tạo ảnh; GROK/KLING/Veo → render từng clip 10s; Phase 6 → bảng song ngữ + master shot table để dựng CapCut.
 
 ## D. CHUỖI 3 GEM
 `① TOPIC` → `② SCRIPT` → `③ RENDER (file này)` → CapCut.
