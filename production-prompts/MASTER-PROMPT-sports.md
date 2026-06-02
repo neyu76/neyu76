@@ -781,9 +781,15 @@ print Phase 1 and wait for "Continue" between every phase (1→2→3→4→5→6
 
 `TOPIC_DATA` may be:
 - **(a) a one-line logline** (e.g. "The Thunder boy the Spurs family threw away") —
-  Phase 0 invents cast / teams / voices / scenes / dialogue; OR
+  Phase 0 invents cast / teams / voices / scenes / dialogue. **HOOK-INSULT LOCK:** Scene 1
+  MUST open on a cruel slur/trash-talk line from the villain to the weak character in the
+  first 0-3s (e.g. "That jersey straight trash, cuh." / "Girls don't play football."),
+  followed by the victim's short, cowed reply. NEVER open Scene 1 soft/expository. (If the
+  topic skill already supplied a HOOK INSULT LINE, use it verbatim.) Do NOT clone known
+  premises (orphan-thrown-out, hidden-rival-jersey-caught, viral-cry-filter, rejected-
+  daughter-MVP) — invent a fresh injustice; OR
 - **(b) a rich handoff / scene list** — ADOPT it verbatim (keep spoken lines
-  identical; translate only in Phase 6).
+  identical incl. the HOOK INSULT LINE; translate only in Phase 6).
 
 Optional fields (with defaults):
 - `RUNTIME` (default 120s) · `PACE` (V14-RAPID / V16-MEDIUM / **V16-SLOW** default)
