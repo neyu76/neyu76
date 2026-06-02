@@ -24,8 +24,9 @@ WHAT CHANGED FROM V16.2 → V16.3
    avoid pixel-perfect copies; fictional player names/numbers only).
 5. PHASE 2 IMAGE PROMPTS rewritten to the flowing "Strictly adhere to the exact
    reference table designs…" @asset format (no 5-block).
-6. PHASE 3 = GROK MOTION (full multi-shot, 4-shot template, engine-tagged
-   "Scene N GROK").
+6. PHASE 3 = GROK MOTION (FULL, verbose 4-shot template — header + exact line + a `→`
+   delivery sentence + a silent-reaction line for EVERY other on-screen character +
+   full "Motion and camera notes", engine-tagged "Scene N GROK"; ~180-320 words/scene).
 7. PHASE 4 = KLING MOTION (condensed Grok, ≤2500 chars, engine-tagged
    "Scene N KLING").
 8. PHASE 5 = NEW — VEO OMNI WITH REFERENCES (native audio, NO priming image,
@@ -543,60 +544,80 @@ Phase 3 (GROK Motion)."
 ## PHASE 3 — GROK MOTION (FULL MULTI-SHOT · exactly N · tag "Scene N GROK")
 ═══════════════════════════════════════════════════════════════════════════════
 
-ONE `ndjson` block, exactly N rows. Each `GrokMotion` follows this template
-(filled from Phase 2 dialogue; **4 clean shots** for duo, 2-3 for solo/shock/final).
+ONE `ndjson` block, exactly N rows. Each `GrokMotion` is a **LONG, DETAILED** block
+following the template below — **fill it FULLY, do NOT compress.** Match the depth of
+the reference exemplar: every shot has a header line, the speaker's exact line, a `→`
+delivery sentence, AND a separate silent-reaction line for EVERY OTHER named character
+on screen. **4 clean shots** for duo; 2-3 for solo/shock/final. Aim ~180-320 words per
+scene block (this is intentionally verbose — Grok needs the detail to act it out).
 
 > NOTE: "multi-shot / Shot 1→2 / cut to" here is for the VIDEO generator (sequential
 > shots inside ONE 10s clip) — this is correct for motion. NEVER paste a GROK/KLING
 > motion prompt into an IMAGE generator (that would split the frame). Images come
 > only from Phase 2.
 
+**FULL GROK TEMPLATE (fill every bracket; keep this structure verbatim):**
 ```
 Scene [k] GROK — [SceneRole]
-10 seconds, 3D animated style, natural smooth motion, smart multi-shot, stable
-cinematic camera, no text overlay, no on-screen text.
+10 seconds, 3D animated style, natural smooth motion, smart multi-shot, stable cinematic camera, no text overlay, no on-screen text.
 
-Character lock: Keep [Name (age), …] 100% identical to the reference image
-throughout. Do not deform, morph, redesign, resize, re-age, replace, or change
-faces, team logos, outfits, shoes, body proportions, colors, or textures during
-motion or cuts. Preserve [SETTING] layout and starting positions: [blocking].
+Character lock: Keep [Name1 (age), Name2 (age), Name3 (age), Name4 (age)] 100% identical to the attached reference image throughout the whole video. Do not deform, morph, redesign, resize, replace, re-age, or change faces, team logos, outfits, shoes, body proportions, colors, or textures during motion or camera cuts. Preserve the exact [SETTING] layout and the characters' relative positions from the image: [Name1 at frame left doing X, Name2 front-right facing Name1, Name3 centered slightly behind Name2, Name4 back-right watching silently].
 
-Setting: [environment + lighting + key objects]. Emotion: [stakes].
+Setting: [Environment + time of day. Lighting source(s), atmosphere, key props in frame]. Emotion: [2-4 emotion words].
 
-Shot 1 [0.0–2.8s] — [framing], [camera move]. [Speaker] speaks first with no
-delay, looking directly at [Listener]: "[exact line]"
-→ [delivery + physical action + eyes]. [Other characters] silent: [reactions].
+Shot 1 [0.0–2.8s] — [Shot size + angle + eye-level], [subtle camera move e.g. slight slow dolly in].
+[Speaker1] speaks first with no delay, looking directly at [Listener] while [physical action with the prop/hands]: "[EXACT Phase-2 line]"
+→ [Speaker1]'s voice is [tone adjectives]. [2-3 sentences of micro-action: hand/prop movement, glance, breathing, brow/mouth detail].
+[Other char A] stays silent but [specific reaction: body tensing, chin lift, etc.].
+[Other char B] [specific silent reaction + where the eyes go].
+[Other char C] stays silent, [specific silent reaction + posture].
 
-Shot 2 [2.8–6.2s] — Cut to [framing favoring next speaker], [angle].
-[Speaker2] to [Listener]: "[exact line]"
-→ [delivery + action + eyes]. [Others] silent: [reactions].
+Shot 2 [2.8–6.2s] — Cut to [shot size favoring the next speaker] from [angle], [slight angle note for intensity].
+[Speaker2] [reaction verb] at [Listener], [head/step movement]: "[EXACT Phase-2 line]"
+→ [Speaker2]'s voice is [tone]. [2-3 sentences: gesture toward prop, eyes locked, jaw/nostril detail].
+[Other char] goes silent, [recoil/posture change but still holding their object].
+[Other char] [silent reaction].
+[Other char] silently [looks from X to Y], [distress/hands detail].
 
-Shot 3 [6.2–8.7s] — Cut to [framing], subtle push-in.
-[Speaker3] to [Listener]: "[exact line]"  (or "No new dialogue." for solo/final)
-→ [delivery/reactions].
+Shot 3 [6.2–8.7s] — Cut to [shot size including the 3rd character between the two], [subtle push-in].
+[Speaker3] speaks [firmly/softly] to [Listener] while [turning face toward them]: "[EXACT Phase-2 line]"  (if solo/final scene: "No new dialogue.")
+→ [Speaker3]'s voice is [tone]. [Step forward from background, hand gesture, emotional grounding].
+[Other char] falls silent, [eyes flick toward Speaker3, emotion momentarily checked].
+[Other char] turns eyes toward [Speaker3], [state].
+[Other char] remains silent, [worried/looking detail].
 
-Shot 4 [8.7–10.0s] — Cut back to [wide composition], stable, very slight push.
-No new dialogue. Hold the tension: [each character's silent reaction].
+Shot 4 [8.7–10.0s] — Cut back to a [medium-wide] [N]-character composition, stable camera, very slight slow push.
+No new dialogue.
+→ Hold the tension. [Name1] [breathing + clutching prop + eyes moving between the others]. [Name2] [rigid stance + angry breathing + glare]. [Name3] [gaze fixed, waiting for an answer]. [Name4] [shaken/ashamed, eyes lowered then back up].
+All reactions must remain natural and restrained, with no exaggerated cartoon motion.
 
 Motion and camera notes:
-- Professional cinematic multi-shot, but only [2-4] clear shots total.
-- Medium / medium-wide framing; do not zoom too close.
-- Subtle smooth camera only (light dolly/push-in), no heavy shake.
-- Lip-sync ONLY for the active speaker per segment; non-speakers react silently
-  (facial expression, breathing, posture shift, eye movement) with mouths closed.
-- Eye-contact: [Speaker→Listener pairs per shot]. [Silent characters] never speak.
-- [Ambient micro-motion: dust motes, swaying bulb, etc.]; static set objects stay static.
-- Fast enough to feel alive, but realistic, human-like, emotionally believable.
+- Use professional cinematic multi-shot changes, but only [2-4] clear shots total.
+- Keep framing medium or medium-wide; do not zoom too close.
+- Camera movement should be subtle and smooth only: light dolly-in or push-in, no excessive shake.
+- Lip-sync only for the speaking character in each segment.
+- Non-speaking characters must only react silently with facial expressions, breathing, posture shifts, and eye movement.
+- When speaking: [Name1] looks at [Name2], [Name2] looks at [Name1], [Name3] looks at [Name2].
+- [Name4] never speaks in this scene; [he/she] only reacts with [emotion] facial expressions.
+- [Ambient micro-motion line 1 — e.g. dust motes float gently in the lamp light].
+- [Ambient micro-motion line 2 — e.g. the hanging bulb may sway very subtly].
+- [Static-set line — e.g. tools, shelves, oil cans, toolbox remain static].
+- Embossed team logo on each character's forehead stays in the same position, color, and raised-relief style throughout.
+- Keep all motion fast enough to feel alive, but still realistic, human-like, and emotionally believable.
 ```
 
 **Phase 3 schema:**
 ```ndjson
-{"Scene":"🎬 SCENE [k] GROK","Duration":"10s","BeatWeight":"[..]","CapCutTrim":"[2-5]s","GrokMotion":"[full template joined with \n\n]"}
+{"Scene":"🎬 SCENE [k] GROK","Duration":"10s","BeatWeight":"[..]","CapCutTrim":"[2-5]s","GrokMotion":"[the FULL long template above, joined with \n\n on one physical line]"}
 ```
-Rules: rows = N · exact Phase-2 dialogue quoted per shot · no speaker-window
-overlap (0.1-0.3s gaps) · non-speakers "mouth closed" · speaking start ≤1.5s ·
-dialogue finishes before trim · embossed logo stays visible · TimeSkipMarker (if
-any) handled as a CapCut overlay note (not rendered).
+Rules: rows = N · **GrokMotion is the FULL verbose template — never collapse a shot to
+one line** · every shot has its `→` delivery sentence + a separate silent-reaction line
+for EACH other on-screen character · exact Phase-2 dialogue quoted per shot · no
+speaker-window overlap (0.1-0.3s gaps) · non-speakers "mouth closed / silent" · speaking
+start ≤1.5s · dialogue finishes before trim · the "Motion and camera notes" block has the
+per-name eye-contact line + who never speaks + 2-3 ambient lines + the embossed-logo line ·
+embossed logo stays visible · TimeSkipMarker (if any) handled as a CapCut overlay note
+(not rendered).
 
 **STOP** → "Phase 3 GROK ([N] rows) complete. Type 'Continue' for Phase 4 (KLING, condensed ≤2500)."
 
