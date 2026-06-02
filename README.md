@@ -37,6 +37,10 @@ not just dog/cat/wolf.
 | `series-templates/TEMPLATE-series-bible.md` | Blank fill-in template to launch a new series |
 | `series-templates/EXAMPLE-beaver-builds-alone.md` | Worked example (Beaver/Lion/Peacock/Owl/Hyena) — no dog/cat/wolf |
 | `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
+| `reference/sports-head-drama-breakdown.md` | Competitive teardown of the **sports-head drama** niche (FilmVibe + aistory.us): hooks, visual tokens, formulas |
+| `reference/thunder-boy-spurs-series-scripts.md` | Full 5-part worked example in the sports-head niche (orphan + NBA-fandom drama) |
+| `strategy/competing-concepts.md` | 10 alternative skins for the same engine + decision matrix + launch picks |
+| `strategy/sports-head-drama-concept.md` | How to turn the sports-head niche into a channel on the existing pipeline (cast presets, cold-opens, reuse map) |
 | `.kiro/skills/topic-animal-drama/SKILL.md` | **Topic generator (start of the pipeline)** — produces N topics (default 20), all SERIES, each a fully-locked SERIES BRIEF (cast + @Handles + design tokens + promise object + catchphrase + insult + poetic-justice payload + per-part beat map + tier). Anti-drift: nothing is left for a later AI to guess |
 | `.kiro/skills/script-animal-drama/SKILL.md` | **One-command script generator (v2, master-prompt-aligned)** — TOPIC + LENGTH (default 90-120s) → 7 phases producing a shooting script + clean TTS lines, with scenes locked to 10s clips / 9:16 / 130-145 WPM. Phase 7 emits a copy-paste `TOPIC_DATA` handoff block that feeds straight into the master prompt |
 | `series-templates/topic-bank-30.md` | 30 viral-ready loglines (No. 1-30), cast + promise object + poetic-justice twist baked in |
