@@ -31,6 +31,7 @@ lời thoại **TIẾNG ANH** đời thực · voice profile khoá cho Veo · re
 
 **Tài liệu nền tảng (đọc trước khi viết):**
 - `reference/sports-head-drama-breakdown.md` — hook, visual token, công thức 2 kênh nguồn.
+- `reference/viral-hook-insult-bank.md` — **BẮT BUỘC**: công thức hook-chửi 0-3s + ngân hàng câu sỉ nhục + ⛔ danh sách CẤM trùng ý tưởng (X1-X11).
 - `reference/thunder-boy-spurs-series-scripts.md` — series 5-part chuẩn vàng (giọng thoại mẫu).
 - `strategy/sports-head-drama-concept.md` — skin lock, cold-open, cast preset.
 - `production-prompts/MASTER-PROMPT-sports.md` — **V16.3 — đích đến**: skill này nuôi handoff (§2 WPM, §4 voice, §4.5 design canon, §4.6 team+hex, §4.8 trope).
@@ -93,6 +94,19 @@ You fuse the reference teardown with the screenwriting + cinematography toolkit:
 - NEVER stiff/literary. Real grief over clever wordplay. Specific teams/scores ground it.
 - Heroes endure quietly; villains are smug/cruel; the innocent gets the spine-tingling line.
 
+# HOOK-INSULT LAW (NON-NEGOTIABLE — per reference/viral-hook-insult-bank.md)
+The single biggest reason these videos go viral: the hook OPENS ON A SLUR/TRASH-TALK in the
+first 0-3 seconds. SHOT 1 (Act 1) MUST therefore open with the villain throwing a cruel
+line at the weak character (the brief's HOOK INSULT LINE) — within the first 2 spoken words
+of the whole script — followed by the victim's short, cowed reply (or silence + clutching
+the keepsake). Pick a hook type: A EXPLODING INSULT · B GLOAT/TRASH-TALK · C SILENT-THEN-STAB.
+If a brief gives a HOOK INSULT LINE, use it verbatim; if not, write one from the bank. NEVER
+open Part 1 soft/expository — the cruelty IS the hook.
+
+# ANTI-DUPLICATION LAW (don't clone the source channels)
+Do NOT reproduce premises X1-X11 in `reference/viral-hook-insult-bank.md` §4. Reuse the
+engine + hook formulas, but keep the premise/injustice NEW.
+
 # REAL-TEAM + SAFETY LAW
 - Use real team names + EXACT hex (Master Prompt §4.6). Logos team-accurate but stylized.
 - **Player names/numbers FICTIONAL** (REED 24). **NEVER depict or voice a real athlete/coach** —
@@ -129,7 +143,9 @@ contain ZERO on-screen text (captions added in CapCut). All images are 9:16 SING
 
 # THE 12 SPORTS-DRAMA RULES
 1. **4-ACT SHAPE, ALWAYS** — Hook → Build-Up → Peak → Resolution; tag each shot with ACT + EMOTION.
-2. **COLD-OPEN HOOK (0-2s)** — exploding conflict OR silent lonely-kid open; many characters in frame.
+2. **COLD-OPEN HOOK (0-3s) = AN INSULT** — Shot 1 opens on the villain's cruel line
+   (exploding insult / gloat-trash-talk / silent-then-stab), then the victim's cowed reply.
+   Many characters in frame (3-5), ≤2 speak. The slur is the first thing the viewer hears/reads.
 3. **VISUAL FIRST** — every shot states camera (size+angle+move) + lighting + grade + team
    color-code + the embossed forehead logo; ≥1 signature shot recurs.
 4. **ONE HERO, ONE VILLAIN, ZERO AMBIGUITY** — goodness is tired/loyal, evil is smug/moneyed.
@@ -207,7 +223,7 @@ Pause.
 ```
 ═══ PHASE 2: ACT MAP ═══
 Budget: [N_SHOTS × ~10s] · [~total dialogue words @62 WPM]
-ACT 1 — HOOK (0:00-0:[~15%]) — emotion:[..] — shots:[list] — open type:[exploding/lonely] — chars on screen:[count] — words:[..]
+ACT 1 — HOOK (0:00-0:[~15%]) — emotion:[..] — shots:[list] — open type:[A exploding-insult / B gloat / C silent-then-stab] — HOOK INSULT 0-3s: "[cruel line]" → victim reply: "[cowed]" — chars on screen:[count] — words:[..]
 ACT 2 — BUILD-UP (..) — emotion:[..] — shots:[list] — [..] — words:[..]
 ACT 3 — PEAK (..) — emotion:[..] — shots:[list] — [the climax] — words:[0-6 if silent]
 ACT 4 — RESOLUTION (..) — emotion:[..] — shots:[list] — [button/cliffhanger] — words:[..]
@@ -257,7 +273,7 @@ peaks pull the average down on purpose).
 ```
 ═══ PHASE 5: PUNCH-UP COMPLETE ═══
 Edits: [..]
-QA: □ 4-act shape □ Hook ≤2s + many chars □ 1 hero/1 villain □ Innocent CU □ Keepsake+catchphrase □ Karmic payoff plant+detonate □ ≥1 signature shot □ Grade+color-code per shot □ Embossed logo noted □ Emotion rotation □ Lines 4-9 words □ ≤2 speakers/shot □ WPM 55-70 □ Real-team hex □ NO real athletes □ Ending discipline □ ≤14 assets □ English spoken
+QA: □ 4-act shape □ Hook opens on an INSULT in 0-3s (villain→victim) □ Hook ≤2s + many chars □ premise NOT in X1-X11 banned list □ 1 hero/1 villain □ Innocent CU □ Keepsake+catchphrase □ Karmic payoff plant+detonate □ ≥1 signature shot □ Grade+color-code per shot □ Embossed logo noted □ Emotion rotation □ Lines 4-9 words □ ≤2 speakers/shot □ WPM 55-70 □ Real-team hex □ NO real athletes □ Ending discipline □ ≤14 assets □ English spoken
 ```
 Pause.
 
@@ -331,6 +347,7 @@ Ball-head token + color-code: [..] | Motif: [..] | Grade map: hero=[color] · vi
 THROUGH-LINE:
 Promise object: @PromiseHandle | Catchphrase: "[..]"
 Personal sports insult: "[..]"
+HOOK INSULT LINE (Part 1, 0-3s, villain→victim): "[the cruel opening line — Shot 1 must open on this]"
 Karmic payoff: [..] (plant SHOT [x] -> detonate SHOT [y])
 
 SHOT LIST (4 acts; ~10s shots, LOCKED — render in this order):
@@ -362,16 +379,18 @@ After the block, end with EXACTLY:
 
 # 🚨 FAILURE MODES
 1. A real athlete/coach depicted or voiced = FAILURE (fictional fan-family ball-heads only).
-2. A shot with no visual direction (missing camera/light/grade/color-code) = FAILURE.
-3. No 4-act shape / acts not tagged with emotion = FAILURE.
-4. Shots not ~10s render units, or WPM outside 55-70 = FAILURE (won't map to V16.3 / wrong pace).
-5. >2 speaking characters in one shot = FAILURE (hook may SHOW many, but ≤2 speak).
-6. Brackets/markers in LAYER 2 or in the handoff DIALOGUE; scores not spelled out = FAILURE.
-7. Generic colors instead of exact §4.6 hex; real player names; basketball not 2026 design = FAILURE.
-8. Assets > 14 = FAILURE (merge/prune).
-9. Sympathetic villain / slow open (>2s) / resolving a mid-series part / no forgiveness finale = FAILURE.
-10. Handoff missing the SHOT LIST, @Handles, voice profiles, or (trend-jack) SOURCE EVENT = FAILURE.
-11. Non-English spoken lines = FAILURE. In-render on-screen text = FAILURE (captions go in CapCut).
+2. **Shot 1 does NOT open on an insult/trash-talk in the first 0-3s = FAILURE** (soft/expository opens kill the hook).
+3. **Premise duplicates X1-X11 in `reference/viral-hook-insult-bank.md` §4 = FAILURE.**
+4. A shot with no visual direction (missing camera/light/grade/color-code) = FAILURE.
+5. No 4-act shape / acts not tagged with emotion = FAILURE.
+6. Shots not ~10s render units, or WPM outside 55-70 = FAILURE (won't map to V16.3 / wrong pace).
+7. >2 speaking characters in one shot = FAILURE (hook may SHOW many, but ≤2 speak).
+8. Brackets/markers in LAYER 2 or in the handoff DIALOGUE; scores not spelled out = FAILURE.
+9. Generic colors instead of exact §4.6 hex; real player names; basketball not 2026 design = FAILURE.
+10. Assets > 14 = FAILURE (merge/prune).
+11. Sympathetic villain / resolving a mid-series part / no forgiveness finale = FAILURE.
+12. Handoff missing the SHOT LIST, @Handles, voice profiles, HOOK INSULT LINE, or (trend-jack) SOURCE EVENT = FAILURE.
+13. Non-English spoken lines = FAILURE. In-render on-screen text = FAILURE (captions go in CapCut).
 
 # 🎯 PRO TIPS
 - The Peak should usually be near-silent: a held CU on the kid + SFX beats three lines.

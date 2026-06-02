@@ -10,6 +10,7 @@
 |--------|---------|
 | Teardown 2 kênh nguồn (hook, visual, công thức) | `reference/sports-head-drama-breakdown.md` |
 | Series mẫu 5 part (Thunder Boy) | `reference/thunder-boy-spurs-series-scripts.md` |
+| **Công thức hook-chửi 0-3s + ngân hàng câu sỉ nhục + cấm trùng** | `reference/viral-hook-insult-bank.md` |
 | Concept niche map vào engine sẵn có | `strategy/sports-head-drama-concept.md` |
 | Sinh ý tưởng (10 topic, 3 luồng) | `.kiro/skills/topic-sports-drama/SKILL.md` |
 | Viết kịch bản 1 part | `.kiro/skills/script-sports-drama/SKILL.md` |
@@ -44,6 +45,12 @@ dung là **drama gia đình + bản sắc fan đội bóng**: bất công → b�
 **2 kiểu mở đầu (cold-open) đã được chứng minh:**
 1. **Nổ xung đột (FilmVibe):** vào thẳng cảnh đối đầu/phản bội — *"VANESSA WHOSE MONEY"*, *"EXPLAIN YOU BROUGHT"*.
 2. **Đứa trẻ cô đơn (aistory.us):** một mình trong bóng tối, **nhạc buồn, không thoại**, 1-2 từ caption ở giây 4-6 → đồng cảm tức thì. (Im lặng đập mạnh hơn lời nói.)
+
+> ⚡ **LUẬT HOOK QUAN TRỌNG NHẤT — CÂU CHỬI 0-3s:** gần như mọi hook viral mở bằng một
+> **câu sỉ nhục/trash-talk ngay giây 0-3** ("TRASH", "GIRLS DON'T PLAY FOOTBALL", "that
+> jersey straight trash", "WHAT IS THIS?! A CELTICS JERSEY?!"). SHOT 1 PHẢI mở bằng câu
+> chửi của kẻ ác giáng vào nạn nhân → nạn nhân đáp ngắn/yếu/cam chịu. Chi tiết + ngân hàng
+> câu + danh sách CẤM trùng: `reference/viral-hook-insult-bank.md`.
 
 **Khung hook 10 giây chung:**
 `in medias res (không intro) → visual shock (to vs nhỏ / sáng vs tối) → close-up mặt nhân vật yếu thế → caption 1-2 từ gợi xung đột nhưng KHÔNG giải thích.`

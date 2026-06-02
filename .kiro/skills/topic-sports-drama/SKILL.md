@@ -31,6 +31,7 @@ logo đội **embossed như vết bớt trên trán**. Đảo ngược-kỹ-thu�
 
 **Tài liệu nền tảng (đọc trước khi sinh topic):**
 - `reference/sports-head-drama-breakdown.md` — teardown 2 kênh nguồn (hook, visual token, công thức).
+- `reference/viral-hook-insult-bank.md` — **BẮT BUỘC**: công thức hook-chửi 0-3s + ngân hàng câu sỉ nhục + ⛔ danh sách CẤM trùng ý tưởng.
 - `reference/thunder-boy-spurs-series-scripts.md` — series 5-part chuẩn vàng của niche.
 - `strategy/sports-head-drama-concept.md` — cách map niche vào engine sẵn có.
 - `production-prompts/MASTER-PROMPT-sports.md` — **V16.3**: nơi tiêu thụ handoff (§2 WPM, §4.6 team+hex, §4.8 trope).
@@ -104,6 +105,23 @@ name + team + design token + @Handle + voice profile), the VISUAL SIGNATURE, the
 INSIGHT, the promise object + catchphrase, the central injustice, the trope (ST-1..ST-8),
 and the per-part 6-beat arc with its 4-ACT shape. Every brief ends with a DRIFT-LOCK telling
 the script skill to ADOPT verbatim and only expand into a 4-act shot list.
+
+# HOOK-INSULT LOCK (the #1 viral lever — per reference/viral-hook-insult-bank.md)
+Almost EVERY viral hook opens on a SLUR/TRASH-TALK/INSULT in the first 0-3 seconds ("TRASH",
+"GIRLS DON'T PLAY FOOTBALL", "that jersey straight trash", "WHAT IS THIS?! A CELTICS JERSEY?!").
+Therefore EVERY brief MUST lock a **HOOK INSULT LINE** — the exact cruel line the villain
+throws at the weak character within the first 0-3s of Part 1 — plus the weak character's
+short, cowed reply. This is SEPARATE from (and usually harsher than) the through-line's
+general "personal insult". Build the hook around the punch.
+
+# ANTI-DUPLICATION LOCK (do NOT clone the source channels)
+The premises in `reference/viral-hook-insult-bank.md` §4 (X1-X11) are ALREADY USED by the
+source channels — NEVER regenerate them. You may reuse the ENGINE and the hook FORMULAS, but
+each brief's PREMISE + specific injustice must be NEW. To stay clear: change the injustice
+mechanism (e.g. rigged youth scholarship · swapped trophy · thrown junior game · left at the
+airport after a loss · stolen playbook · forced retirement) OR the sport/teams/relationship
+(NHL brothers · MLS mother-son · baseball grandpa-grandson) OR the karma trigger (NOT a Game 7
+— a draft, the villain's own injury, a recording, a will).
 
 # CASTING — 6 ROLES → SPORTS (fill all; never reuse one ball/team for two roles)
 - **HERO** — protagonist ball-kid (orphan / underdog / loyal "wrong-team" fan).
@@ -225,6 +243,14 @@ THROUGH-LINE (LOCKED):
 - Personal sports insult: "[e.g., That jersey straight trash / Girls can't play / You're a Thunder loser]"
 - Karmic payoff: [a game result / MVP / same humiliation / the meme turning] (plant Part [x] -> detonate Part [y])
 
+🔥 HOOK (Part 1, 0-3s — the viral punch; per viral-hook-insult-bank.md):
+- Hook type: [A EXPLODING INSULT / B GLOAT-TRASH-TALK / C SILENT-THEN-STAB]
+- HOOK INSULT LINE (villain, 0-3s): "[the cruel opening line]"
+- Victim's cowed reply (3-7s): "[short/weak/submissive, or silent + clutches keepsake]"
+- Hook visual: [size contrast + color-code + accusing prop in frame + camera angle]
+- End-of-hook button (7-10s): [1-word caption / cut-off line, e.g. "EXPLAIN" / "WHOSE" / "I WANNA…"]
+- Anti-dup check: this premise is NOT any of X1-X11 — new injustice = [what's new]
+
 6-BEAT ARC -> PARTS (each part also runs the 4-ACT shape):
 - Part 1 | HOPE & ALLEGIANCE | [one line] | 4-act peak: [..] | cliffhanger: [..]
 - Part 2 | INJUSTICE         | [one line] | 4-act peak: [..] | cliffhanger: [..]
@@ -275,13 +301,13 @@ Pause.
 ```
 ═══ PHASE 2: CONCEPT SPRAY ═══
 [EVERGREEN]
-#1 | "[TITLE]" | [TIER] | [SPORT] | [TROPE] | Hero [team] vs Villain [team] | injustice:[phrase] | ache:[phrase] | look:[motif]
+#1 | "[TITLE]" | [TIER] | [SPORT] | [TROPE] | Hero [team] vs Villain [team] | injustice:[phrase] | HOOK INSULT 0-3s: "[cruel line]" | ache:[phrase] | look:[motif]
 ... (×4)
 [RESULT-TREND]
-#5 | "[TITLE]" | [TIER] | rides: [SOURCE EVENT + date] | angle:[..] | freshness:[post-by] | ache:[phrase]
+#5 | "[TITLE]" | [TIER] | rides: [SOURCE EVENT + date] | angle:[..] | HOOK INSULT 0-3s: "[line]" | freshness:[post-by] | ache:[phrase]
 ... (×3)
 [CULTURE-TREND]
-#8 | "[TITLE]" | [TIER] | rides: [TREND FORMAT/sound/slang] | freshness:[N days] | format:[standalone/2-3 part] | ache:[phrase]
+#8 | "[TITLE]" | [TIER] | rides: [TREND FORMAT/sound/slang] | HOOK INSULT 0-3s: "[line]" | freshness:[N days] | format:[standalone/2-3 part] | ache:[phrase]
 ... (×3)
 ```
 Ask the user to approve or list numbers to swap. Pause.
@@ -289,9 +315,11 @@ Ask the user to approve or list numbers to swap. Pause.
 ### PHASE 3 — FULL SERIES BRIEFS (the locked spec)
 Expand every approved concept into the full SERIES BRIEF SCHEMA. **BATCHING:** output in
 groups of 4, then pause for "Continue". Verify each: assets ≤ 14 · no ball/team in two
-roles · cruel mid-series cliffhanger · warm restoration · real-team hex · trope tagged ·
-ball-head VISUAL SIGNATURE · (result-trend) SOURCE EVENT + FRESHNESS + FALLBACK ·
-(culture-trend) TREND FORMAT + RIDES SLANG/SOUND + FRESHNESS + FALLBACK · NO real athletes.
+roles · **HOOK INSULT LINE present (a real slur/trash-talk in the 0-3s of Part 1)** ·
+**premise NOT in the X1-X11 banned list** · cruel mid-series cliffhanger · warm restoration ·
+real-team hex · trope tagged · ball-head VISUAL SIGNATURE · (result-trend) SOURCE EVENT +
+FRESHNESS + FALLBACK · (culture-trend) TREND FORMAT + RIDES SLANG/SOUND + FRESHNESS +
+FALLBACK · NO real athletes.
 
 ### PHASE 4 — EXPORT & HANDOFF
 ```
@@ -326,15 +354,17 @@ Then end with EXACTLY:
 ## 🚨 FAILURE MODES
 1. A real athlete/coach used as a character or given dialogue = FAILURE (fictional fan-family ball-heads only).
 2. A brief missing ANY locked field = FAILURE.
-3. A RESULT-TREND brief without SOURCE EVENT + link + FRESHNESS + FALLBACK = FAILURE.
-4. A CULTURE-TREND brief without TREND FORMAT + RIDES SLANG/SOUND + link + FRESHNESS + FALLBACK = FAILURE.
-5. Trend streams NOT built from a live search, or built from stale events = FAILURE.
-6. Phase 1 missing the STREAM STATISTICS block, or stream counts not matching SPLIT = FAILURE.
-7. No cruel mid-series cliffhanger / no warm restoration = FAILURE.
-8. Culture-trend turned into pure comedy (no drama/injustice/grace) = FAILURE.
-9. Generic colors instead of exact §4.6 hex; real player names = FAILURE.
-10. Same ball/team in two roles, or assets > 14 = FAILURE.
-11. A standalone evergreen/result topic (must be series), non-English spoken lines, or missing DRIFT-LOCK = FAILURE.
+3. **A brief missing the HOOK INSULT LINE (a real slur/trash-talk in the first 0-3s) = FAILURE** (this is the #1 viral lever).
+4. **A premise that duplicates X1-X11 in `reference/viral-hook-insult-bank.md` §4 = FAILURE** (clone of the source channels).
+5. A RESULT-TREND brief without SOURCE EVENT + link + FRESHNESS + FALLBACK = FAILURE.
+6. A CULTURE-TREND brief without TREND FORMAT + RIDES SLANG/SOUND + link + FRESHNESS + FALLBACK = FAILURE.
+7. Trend streams NOT built from a live search, or built from stale events = FAILURE.
+8. Phase 1 missing the STREAM STATISTICS block, or stream counts not matching SPLIT = FAILURE.
+9. No cruel mid-series cliffhanger / no warm restoration = FAILURE.
+10. Culture-trend turned into pure comedy (no drama/injustice/grace) = FAILURE.
+11. Generic colors instead of exact §4.6 hex; real player names = FAILURE.
+12. Same ball/team in two roles, or assets > 14 = FAILURE.
+13. A standalone evergreen/result topic (must be series), non-English spoken lines, or missing DRIFT-LOCK = FAILURE.
 
 ## 🎯 PRO TIPS
 - "cuh" & slang = a REGISTER every stream uses; the CULTURE stream just rides a *specific*

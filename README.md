@@ -39,6 +39,7 @@ not just dog/cat/wolf.
 | `reference/dog-swings-alone-breakdown.md` | Full analysis + 7-part scripts of the source series |
 | `reference/sports-head-drama-breakdown.md` | Competitive teardown of the **sports-head drama** niche (FilmVibe + aistory.us): hooks, visual tokens, formulas |
 | `reference/thunder-boy-spurs-series-scripts.md` | Full 5-part worked example in the sports-head niche (orphan + NBA-fandom drama) |
+| `reference/viral-hook-insult-bank.md` | **The 0-3s "hook = insult" formula** + a bank of trash-talk/slur opening lines + visual-hook recipe + a ⛔ banned-premise list (X1-X11) so new topics don't clone the source channels. Locked into both sports skills |
 | `strategy/competing-concepts.md` | 10 alternative skins for the same engine + decision matrix + launch picks |
 | `strategy/sports-head-drama-concept.md` | How to turn the sports-head niche into a channel on the existing pipeline (cast presets, cold-opens, reuse map) |
 | `strategy/PLAYBOOK-sports-head-vi.md` | **One-stop Vietnamese playbook** for the whole sports-head pipeline — consolidates the channel analysis, viral formula, visual/character design, ~62 WPM pacing, the dual-stream topic + script skills, the V16.3 master prompt, the trend-jack ("bú fame") workflow, team-hex quick ref, brand-safety, QA checklist, and an A→Z quick-start |
