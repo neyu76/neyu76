@@ -1,6 +1,6 @@
 ---
 name: script-sports-drama
-description: Viết kịch bản short-form cho 1 PART của series "sports-head drama" (nhân vật ĐẦU LÀ QUẢ BÓNG thể thao trong áo đội thật) kiểu @film.vibe88 / @aistory.us — drama gia đình & bản sắc fan, bất công + karma + đoàn tụ. Hỗ trợ 2 luồng: EVERGREEN (drama vượt thời gian) và TREND-JACK ("bú fame" — bám kết quả trận đấu/khoảnh khắc nóng, khoá SOURCE EVENT + freshness window). Đóng vai showrunner + DOP. Xương sống = 4-ACT (Hook/Build-Up/Peak/Resolution), mỗi act gắn EMOTION target; bên dưới act là SHOT render ~10s (9:16) khớp Master Prompt. Mỗi shot khoá: camera + lighting + grade + ball-head/embossed-logo + dialogue (TIẾNG ANH, slang đời thực) + speaker. Pace SLOW STORYTELLING ~62 WPM (cho phép im lặng). Đồng bộ MASTER-PROMPT-sports.md V16.3 (@Handle, BeatWeight, team+hex thật, 2026 ball, trần 14 asset, ≤2 speaker/cảnh, render sạch chữ). Input: TOPIC (logline HOẶC series brief) + PART + LENGTH + TONE. Output 7 phase: Concept&Casting, Act Map, Shot Outline, Draft, Punch-up, Final Clean (shooting script + clean TTS lines), Phase 7 TOPIC_DATA HANDOFF. Trigger: "sports drama script", "kịch bản bóng đầu", "ball-head drama script", "viết part sports", "trend-jack sports script", "Thunder Boy script", "handoff sports". Kết thúc bằng: SCRIPT COMPLETE. HANDOFF READY FOR MASTER PROMPT.
+description: Viết kịch bản short-form cho 1 PART của series "sports-head drama" (nhân vật ĐẦU LÀ QUẢ BÓNG thể thao trong áo đội thật) kiểu @film.vibe88 / @aistory.us — drama gia đình & bản sắc fan, bất công + karma + đoàn tụ. Hỗ trợ 3 luồng: EVERGREEN (drama vượt thời gian), RESULT TREND-JACK ("bú fame" kết quả/tin trận — khoá SOURCE EVENT), CULTURE TREND-JACK (bám sound/slang/format TikTok đang hot như "cuh" — khoá TREND FORMAT); cả 2 luồng trend có FRESHNESS WINDOW. Đóng vai showrunner + DOP. Xương sống = 4-ACT (Hook/Build-Up/Peak/Resolution), mỗi act gắn EMOTION target; bên dưới act là SHOT render ~10s (9:16) khớp Master Prompt. Mỗi shot khoá: camera + lighting + grade + ball-head/embossed-logo + dialogue (TIẾNG ANH, slang đời thực) + speaker. Pace SLOW STORYTELLING ~62 WPM (cho phép im lặng). Đồng bộ MASTER-PROMPT-sports.md V16.3 (@Handle, BeatWeight, team+hex thật, 2026 ball, trần 14 asset, ≤2 speaker/cảnh, render sạch chữ). Input: TOPIC (logline HOẶC series brief) + PART + LENGTH + TONE. Output 7 phase: Concept&Casting, Act Map, Shot Outline, Draft, Punch-up, Final Clean (shooting script + clean TTS lines), Phase 7 TOPIC_DATA HANDOFF. Trigger: "sports drama script", "kịch bản bóng đầu", "ball-head drama script", "viết part sports", "trend-jack sports script", "Thunder Boy script", "handoff sports". Kết thúc bằng: SCRIPT COMPLETE. HANDOFF READY FOR MASTER PROMPT.
 ---
 
 # Script Sports Drama — Ball-Head 4-Act Script Generator (v1 · EN market · REAL-TEAM)
@@ -18,8 +18,11 @@ bóng thể thao trong áo đội thật) kiểu `@film.vibe88` / `@aistory.us`.
 2. **Xương sống = 4-ACT** (Hook → Build-Up → Peak → Resolution), mỗi act gắn **EMOTION target**.
 3. **Pace SLOW STORYTELLING ~62 WPM** (khớp Master Prompt V16.3) — thoại ngắn, nhiều
    khoảng lặng giữ cảm xúc. KHÁC hẳn pace viral nhanh.
-4. **Hai luồng:** EVERGREEN và TREND-JACK (bám kết quả trận/khoảnh khắc nóng — khoá
-   SOURCE EVENT + FRESHNESS WINDOW; thoại có thể nhắc tỉ số thật, vd "Spurs took Game 7, one eleven to one oh three").
+4. **Ba luồng:** EVERGREEN · RESULT TREND-JACK (bám kết quả trận/khoảnh khắc nóng — khoá
+   SOURCE EVENT; thoại có thể nhắc tỉ số thật, vd "Spurs took Game 7, one eleven to one oh
+   three") · CULTURE TREND-JACK (bám sound/slang/format TikTok đang hot — khoá TREND FORMAT
+   + RIDES SLANG/SOUND; punchier, slang-forward, có thể standalone/2-3 part). Cả 2 luồng
+   trend khoá FRESHNESS WINDOW.
 
 **Vẫn giữ (để render được):** 9:16 · render **SHOT ~10s** (act gom nhiều shot) · `@Handle`
 + trần **14 asset** · **≤2 nhân vật NÓI/cảnh** (nhiều nhân vật có mặt OK, nhất là hook) ·
@@ -44,7 +47,7 @@ TOPIC:  [series brief từ topic-sports-drama HOẶC logline cụ thể HOẶC "
 PART:   [Part mấy của series — default Part 1 (pilot)]
 LENGTH: [90 / 120 / 150 giây — default 90-150s, target ~120s]
 TONE:   [heartbreaking / tense / cathartic — default heartbreaking-then-hopeful]
-STREAM: [evergreen / trend-jack — auto-detect từ brief; trend-jack thì giữ SOURCE EVENT + freshness]
+STREAM: [evergreen / result-trend / culture-trend — auto-detect từ brief; trend thì giữ SOURCE EVENT/TREND FORMAT + freshness]
 ```
 
 Chỉ đưa TOPIC → default PART 1, LENGTH 90-150s, TONE heartbreaking-then-hopeful, chạy
@@ -53,7 +56,7 @@ luôn. "find one for me" → Phase 1 đẻ 5 concept (kèm gợi ý 1-2 trend n�
 **🔒 NẾU TOPIC LÀ "SERIES BRIEF" (từ `topic-sports-drama`):** ADOPT NGUYÊN VĂN — không
 đổi loại bóng/đội, không recast, không đổi injustice/visual signature, KHÔNG depict cầu
 thủ thật. Phase 1 chỉ chép lại brief đã khoá (cast/@Handle/voice/team+hex/visual
-signature/through-line/trope/SOURCE EVENT) và CHỌN PART; set MODE theo part (Part 1 =
+signature/through-line/trope/SOURCE EVENT hoặc TREND FORMAT) và CHỌN PART; set MODE theo part (Part 1 =
 pilot · part giữa = series-part kết cliffhanger · part cuối = finale + golden button + tha
 thứ). Việc của skill: MỞ RỘNG part đó thành **4-ACT shot list ~10s ở ~62 WPM**.
 
@@ -144,11 +147,22 @@ ZERO on-screen text (captions added in CapCut).
 12. **CLEAN TTS LINES + ZERO IN-RENDER TEXT** — spell numbers/scores in words ("one eleven to
     one oh three"); punctuation-only pauses; ZERO brackets; captions/subtitles/EmphasisCaption added in CapCut.
 
-# TREND-JACK RULES (Stream B only)
+# TREND-JACK RULES — RESULT (Stream B)
 - Keep the brief's `SOURCE EVENT` + `FRESHNESS WINDOW` at the top of every output.
 - Dialogue MAY reference the real result/teams/score (spelled in words) — but NEVER name or
   voice a real athlete. The losing/winning is a TEAM fact that drives family karma.
-- If "find one for me" is trend-jack, run a quick live search to ground the event + date.
+- If "find one for me" is result-trend, run a quick live search to ground the event + date.
+
+# TREND-JACK RULES — CULTURE/SLANG/SOUND (Stream C, "brainrot lane")
+- Keep the brief's `TREND FORMAT` + `RIDES SLANG/SOUND` + `FRESHNESS WINDOW` at the top.
+- Lean the dialogue HARDER into the specific trending slang/audio the brief rides (cuh,
+  "we got cooked", "fold", "it's giving") — but it stays a REGISTER on top of real emotion.
+- May be **standalone or 2-3 parts** and a touch **punchier** — but KEEP the spine
+  (injustice → turn → grace). NOT pure comedy; the kid still aches, karma still lands.
+- Still ~62 WPM target (slang is dense but short); silent holds still allowed.
+- If the trend rides a specific TikTok SOUND, note it in the SFX/handoff as "sync beats to
+  the trending audio (added in CapCut)" — the render stays NO-MUSIC; the sound goes on in edit.
+- NEVER name/voice a real athlete; ride the culture/format, not real people.
 
 # BANNED STIFF VOCAB
 No delve / leverage / robust / tapestry / navigate(fig) / furthermore / comprehensive /
@@ -164,11 +178,12 @@ the locked fields verbatim + pick the PART. If "find one for me" → 5 concepts 
 trend ideas from a quick search), pause for a pick.
 ```
 ═══ PHASE 1: CONCEPT LOCKED ═══
-SERIES TITLE: [..]   PART: [n] — "[PART TITLE]"   MODE: [pilot/series-part/finale]   STREAM: [evergreen/trend-jack]
+SERIES TITLE: [..]   PART: [n] — "[PART TITLE]"   MODE: [pilot/series-part/finale]   STREAM: [evergreen/result-trend/culture-trend]
 SPORT: [..]   TEAMS (real+hex): hero [Team #hex] vs villain [Team #hex]
 LENGTH: [~120s]   TONE: [..]   SPOKEN: English   PACE: ~62 WPM
 N_SHOTS: [round(LENGTH/10)]   DIALOGUE BUDGET: [~words @62 WPM]
-[TREND-JACK] SOURCE EVENT: [teams + result + date + link] | FRESHNESS WINDOW: post-by [date]
+[RESULT-TREND] SOURCE EVENT: [teams + result + date + link] | FRESHNESS WINDOW: post-by [date]
+[CULTURE-TREND] TREND FORMAT: [sound/slang/format + where + date + link] | RIDES SLANG/SOUND: [..] | FRESHNESS WINDOW: post-by [date]
 THIS PART'S BEAT (6-beat arc): [HOPE&ALLEGIANCE/INJUSTICE/ROCK BOTTOM/THE TURN/KARMA/RESTORATION]   TROPE: [ST-#]
 PART LOGLINE: [what happens + the emotion + the button, one sentence]
 CAST (assign @Handle + voice; total unique assets incl. worlds+objects ≤ 14):
@@ -250,7 +265,8 @@ Remove tracking. Output both layers. Layer 2 = 100% bracket-free, numbers/scores
 ```
 ═══ PHASE 6: FINAL SCRIPT ═══
 SERIES: [..]  PART: [n] — "[..]"  MODE: [..]  STREAM: [..]  RUNTIME: ~[X]s  SHOTS: [N]×~10s  DIALOGUE WORDS: [X] (~[WPM] WPM)
-[TREND-JACK] SOURCE EVENT: [..] | FRESHNESS WINDOW: post-by [date]
+[RESULT-TREND] SOURCE EVENT: [..] | FRESHNESS WINDOW: post-by [date]
+[CULTURE-TREND] TREND FORMAT: [..] | RIDES SLANG/SOUND: [..] | FRESHNESS WINDOW: post-by [date]
 
 ──────── LAYER 1 — SHOOTING SCRIPT (by act) ────────
 ACT 1 — HOOK | EMOTION: [..]
@@ -286,11 +302,12 @@ Prompt render đúng kịch bản này."
 Then output ONE fenced code block:
 ```
 TOPIC_DATA:
-SERIES TITLE: [..] | PART: [n] — "[..]" | MODE: [pilot/series-part/finale] | STREAM: [evergreen/trend-jack]
+SERIES TITLE: [..] | PART: [n] — "[..]" | MODE: [pilot/series-part/finale] | STREAM: [evergreen/result-trend/culture-trend]
 RUNTIME: [X]s | PACE: V16-SLOW (~62 WPM) | TONE: [..] | N_SHOTS: [N] (~10s each) | DIALOGUE_BUDGET: [~X] words | SPOKEN LANG: English
 SPORT: [NBA/NFL/...] | TEAMS: hero [Team #hex] vs villain [Team #hex] | TROPE: [ST-#]
 THIS PART'S BEAT (6-beat arc): [..]
-[TREND-JACK] SOURCE EVENT: [teams + result + date] | FRESHNESS WINDOW: post-by [date]
+[RESULT-TREND] SOURCE EVENT: [teams + result + date] | FRESHNESS WINDOW: post-by [date]
+[CULTURE-TREND] TREND FORMAT: [sound/slang/format + where + date] | RIDES SLANG/SOUND: [..] | FRESHNESS WINDOW: post-by [date]
 PART LOGLINE: [one sentence]
 
 CAST & ASSET HANDLES (total assets <= 14; reuse these EXACT tokens + voice profiles; basketball = latest 2026 ball):

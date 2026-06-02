@@ -11,7 +11,7 @@
 | Teardown 2 kênh nguồn (hook, visual, công thức) | `reference/sports-head-drama-breakdown.md` |
 | Series mẫu 5 part (Thunder Boy) | `reference/thunder-boy-spurs-series-scripts.md` |
 | Concept niche map vào engine sẵn có | `strategy/sports-head-drama-concept.md` |
-| Sinh ý tưởng (20 topic, 2 luồng) | `.kiro/skills/topic-sports-drama/SKILL.md` |
+| Sinh ý tưởng (10 topic, 3 luồng) | `.kiro/skills/topic-sports-drama/SKILL.md` |
 | Viết kịch bản 1 part | `.kiro/skills/script-sports-drama/SKILL.md` |
 | Render prompt (Asset/Image/GROK/KLING/Veo) | `production-prompts/MASTER-PROMPT-sports.md` (V16.3) |
 
@@ -105,19 +105,26 @@ chỉ có **~4-6s nói**, phần còn lại là **giữ phản ứng im lặng**
 ## 6. PIPELINE TỔNG THỂ (4 bước)
 
 ```
-① topic-sports-drama   → 20 SERIES BRIEF (10 evergreen + 10 trend-jack), khoá cứng
+① topic-sports-drama   → 10 SERIES BRIEF (3 luồng: 4 evergreen + 3 result-trend + 3 culture-trend), khoá cứng
 ② script-sports-drama  → mở 1 PART thành 4-ACT shot list ~10s @62 WPM + handoff TOPIC_DATA
 ③ MASTER-PROMPT-sports → 6 phase render: Asset Bank → Image → GROK → KLING → Veo Omni → bảng EN/VI
 ④ CapCut               → ghép 10s clip, trim, lồng tiếng/sub, nhạc, grade, xuất 1080×1920
 ```
 
-### Bước ① — Skill `topic-sports-drama` (default 20, 2 luồng)
-- **EVERGREEN (10):** drama vượt thời gian (ST-1…ST-8), đăng lúc nào cũng được.
-- **TREND-JACK (10) — "bú fame":** PHASE 1 chạy **tìm kiếm thời gian thực** → dựng **TREND
-  BOARD** sự kiện nóng → bạn chọn → mỗi topic khoá **SOURCE EVENT + FRESHNESS WINDOW (hạn
-  đăng) + EVERGREEN FALLBACK**.
+### Bước ① — Skill `topic-sports-drama` (default 10, 3 luồng)
+- **A — EVERGREEN (4):** drama vượt thời gian (ST-1…ST-8), đăng lúc nào cũng được.
+- **B — RESULT TREND-JACK (3) — "bú fame" KẾT QUẢ:** PHASE 1 chạy **search thời gian thực** →
+  **EVENT BOARD** sự kiện thể thao nóng → khoá **SOURCE EVENT + FRESHNESS WINDOW + FALLBACK**.
+- **C — CULTURE TREND-JACK (3) — "bú fame" VĂN HOÁ/SLANG/SOUND ("brainrot lane"):** PHASE 1
+  search **sound/slang/format TikTok đang viral** (cuh, "we got cooked", audio trend) →
+  **FORMAT BOARD** → khoá **TREND FORMAT + RIDES SLANG/SOUND + FRESHNESS (rất ngắn)**.
+  Có thể standalone/2-3 part, punchier — nhưng VẪN giữ drama (không phải comedy thuần).
+- **PHASE 1 in luôn THỐNG KÊ LUỒNG** (số topic mỗi luồng + sport/theme/tier/freshness).
 - Output: **SERIES BRIEF** khoá cứng (cast 6 vai + @Handle + token + voice + visual
   signature + audience insight + promise object + catchphrase + trope + 6-beat→part).
+
+> **Lưu ý:** "cuh"/slang là **lớp giọng (register)** dùng cho CẢ 3 luồng; luồng C chỉ là
+> luồng *cưỡi thêm* 1 sound/slang/format cụ thể đang trend.
 
 ### Bước ② — Skill `script-sports-drama` (viết 1 part)
 - Input: 1 brief (hoặc logline) + PART + LENGTH + TONE.
@@ -148,8 +155,14 @@ chỉ có **~4-6s nói**, phần còn lại là **giữ phản ứng im lặng**
 
 ## 7. "BÚ FAME" — QUY TRÌNH TREND-JACK CHI TIẾT
 
-1. **Search thời gian thực** lúc lên ý tưởng: Game 7 vừa xử, sweep, upset, trade bom tấn,
-   MVP/draft, khoảnh khắc courtside viral, hoặc **trận lớn sắp diễn ra** (hype trước Game 1).
+> **Có 2 loại trend để bú** (= 2 luồng riêng):
+> - **B — RESULT (kết quả/tin trận):** EVENT BOARD.
+> - **C — CULTURE (sound/slang/format TikTok):** FORMAT BOARD. Đây là lane #brainrot —
+>   cưỡi 1 sound/slang đang viral (cuh, "we got cooked", audio trend); freshness CỰC ngắn.
+
+1. **Search thời gian thực** lúc lên ý tưởng:
+   - *Result:* Game 7 vừa xử, sweep, upset, trade bom tấn, MVP/draft, khoảnh khắc courtside viral, hoặc **trận lớn sắp diễn ra** (hype trước Game 1).
+   - *Culture:* sound/audio TikTok đang lên, slang/meme đang trend, format/challenge.
 2. **TREND BOARD** → chọn sự kiện + ghi **nguồn + ngày**.
 3. **4 góc khai thác:**
    - (a) **Gia đình bên thắng vênh váo** → bully arc.
@@ -220,13 +233,13 @@ khuôn khi viết series mới. Đòn bẩy tái dùng: **trẻ em được bả
 - 2 kênh nguồn đang ở 32K–64K → **đòn bẩy là consistency**: ra **series đều tay**, đăng cả playlist, cliffhanger mọi part.
 - View không đều → **siết hook + chọn topic tốt** (dùng skill topic).
 - Mới English → **bản địa hóa** (pipeline `markets/latam/` có thể fork cho fan bóng đá Nam Mỹ — bộ tộc còn dữ hơn).
-- Đề xuất: chạy **song song 2 luồng** — evergreen (ổn định, an toàn) + trend-jack (bùng nổ, đúng thời điểm).
+- Đề xuất: chạy **song song 3 luồng** — evergreen (ổn định, an toàn) + result-trend (bùng nổ theo kết quả) + culture-trend (bám sound/slang/format).
 
 ---
 
 ## 13. QUICK-START (làm 1 video từ A→Z)
 
-1. Gọi **`topic-sports-drama`** → nhận 20 brief (10 evergreen + 10 trend-jack). Chọn 1.
+1. Gọi **`topic-sports-drama`** → nhận 10 brief (4 evergreen + 3 result-trend + 3 culture-trend). Chọn 1.
 2. Dán brief vào **`script-sports-drama`**, chọn `PART 1` → nhận shooting script + lời TTS + khối **TOPIC_DATA**.
 3. Dán **TOPIC_DATA** vào **`MASTER-PROMPT-sports.md`**, gõ `Continue` lần lượt Phase 1→6.
 4. Lấy **Asset Bank** tạo character sheet (16:9) + plate (9:16) trên Midjourney/Flux.
