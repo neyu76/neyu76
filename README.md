@@ -46,6 +46,7 @@ not just dog/cat/wolf.
 | `series-templates/topic-bank-30.md` | 30 viral-ready loglines (No. 1-30), cast + promise object + poetic-justice twist baked in |
 | `series-templates/topic-bank-30-batch2.md` | 30 more loglines (No. 31-60) across new themes, each tagged with MODE (standalone/series) + viral tier (S/A/B+) |
 | `production-prompts/MASTER-PROMPT-seedance-kling.md` | **Full production master prompt (V2.0)** — feeds a topic through 5 phases: Asset Bank (9:16), Seedance 2.0 10s, KLING AI multi-shot 10s, **Veo Omni 10s (native audio, with lip-sync + voice-gender locks)**, and a TikTok title + bilingual (EN/VI) scene review for CapCut. Paced at 130-145 WPM |
+| `production-prompts/MASTER-PROMPT-sports.md` | **Sports-head drama master prompt (V16.3, real-team)** — for the anthropomorphic sports-ball-head niche (see `reference/sports-head-drama-breakdown.md`). 6 phases: turnaround Asset Bank (16:9 sheets / 9:16 plates, 2026 basketball), 9:16 Image Prompts, **GROK** multi-shot motion, **KLING** condensed motion (≤2500), **Veo Omni with references** (native audio, ≤7 @assets, no priming image), + bilingual (EN/VI) CapCut breakdown. Slow-storytelling **~62 WPM**, real NFL/NBA/MLB/NHL/MLS teams + exact hex |
 | `series/baker-last-loaf/` | **Worked full series** — all 7 parts of "The Baker's Last Loaf" (topic #1) scripted with the skill: a series bible + Parts 1-7 (shooting script + clean TTS voiceover lines each) |
 
 ---
