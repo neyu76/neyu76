@@ -638,11 +638,12 @@ def main():
         cols = min(8, len(ims)); sheet = Image.new("RGB", (270 * cols, 480 * ((len(ims) + cols - 1) // cols)))
         for k, im in enumerate(ims): sheet.paste(im, ((k % cols) * 270, (k // cols) * 480))
         out = os.path.join(EP, sys.argv[3] if len(sys.argv) > 3 else "stills.jpg"); sheet.save(out, quality=90); print("stills", out); return
-    out = os.path.join(EP, "ep06_noaudio.mp4")
+    rng = os.environ.get("RANGE")                                   # "a:b" frame range -> part file (container RAM limit)
+    out = os.path.join(EP, "ep06_noaudio.mp4" if not rng else f"part_{rng.replace(':', '_')}.mp4")
     pr = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
                            "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", out], stdin=subprocess.PIPE)
-    nf = int(math.ceil(END * FPS))
-    for n in range(nf):
+    nf = int(math.ceil(END * FPS)); a0, a1 = (int(v) for v in rng.split(":")) if rng else (0, nf); a1 = min(a1, nf)
+    for n in range(a0, a1):
         pr.stdin.write(frame(n).tobytes())
         if n % 150 == 0: print("frame", n, "/", nf, flush=True)
     pr.stdin.close(); pr.wait(); print("wrote", out, "%.2f s" % (nf / FPS))
