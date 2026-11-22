@@ -19,3 +19,7 @@ baby_cry_over_water, cry_morph_screech, otter_creature_hiss, water_splash_grab, 
 
 ## ep05_nimerigar/ — riêng EP05 (3 file, 8 s, 40 credit, 19/11/2026)
 tiny_footsteps_gravel (3 s), arrow_whistle_thunk (2 s), little_people_chitter (3 s)
+
+## ep06_la_mala_hora/ — riêng EP06 (3 file, 7,5 s, 22/11/2026, ElevenLabs qua hub ThuyenMCP `tools/hub_sfx.py`)
+mala_hora_breath_hiss (2 s, tiếng của chính La Mala Hora — dùng cho jumpscare và lộ mặt), wool_drag_dirt (2,5 s), adobe_church_bell_far (3 s)
+Credit: bộ đếm pool không đổi (hub xoay key) nên chưa đo được; ước ~300 credit ElevenLabs.

@@ -1,0 +1,9 @@
+{
+ "job_id": "f490c3aa-08a3-4d4e-bffe-fd5578b87e57",
+ "voice": "GUDYcgRAONiI1nXDcNQQ",
+ "provider": "eleven",
+ "model": "eleven_v4",
+ "cost_chars": 1434,
+ "chars": 956,
+ "created": "2026-11-22T08:14:47.531626+00:00"
+}
