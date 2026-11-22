@@ -1,0 +1,13 @@
+{
+  "cuts": 31,
+  "avg_shot_sec": 2.36,
+  "max_shot_sec": 4.52,
+  "est_total_sec": 73.08,
+  "vertical_card_shots": 7,
+  "vertical_card_pct": 22.6,
+  "warnings": [],
+  "errors_overridden": [],
+  "script_txt": "/home/user/neyu76/dark_atlas/EP06_la_mala_hora/script.txt",
+  "shotlist_csv": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/EXPORT/05-TT-SHOTLIST-la-mala-hora.csv",
+  "timing_status": "ESTIMATED_FROM_RATE (re-anchor with T(word,n) on the real whisper transcript)"
+}

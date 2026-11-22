@@ -1,0 +1,74 @@
+{
+  "schema": "TIKTOK_LOCK_MANIFEST_V4",
+  "topic_id": "TT-001",
+  "slug": "la-mala-hora",
+  "track": "creator_rewards",
+  "mode": "clean_voiceover",
+  "script_version": 1,
+  "timing_status": "ESTIMATED",
+  "count_unit": "words",
+  "total_spoken_units": 176,
+  "total_beats": 20,
+  "non_speech_seconds": 0.0,
+  "estimated_center_seconds": 72.3,
+  "estimated_range_seconds": [
+    69.5,
+    76.5
+  ],
+  "creator_rewards_60s_safe": true,
+  "lossless_token_roundtrip": true,
+  "seam_count": 4,
+  "beat_pacing_summary": {
+    "total_beats": 20,
+    "first_beat_est_sec": 4.11,
+    "max_single_beat_est_sec": 5.34,
+    "avg_beat_est_sec": 3.62,
+    "spoken_beats_per_10s": 2.77,
+    "max_beat_threshold_sec": 6.0,
+    "beats_exceeding_threshold": []
+  },
+  "opening_fyp_audit": {
+    "first_beat_est_sec": 4.11,
+    "beats_in_windows": {
+      "0_3s_swipe_gate": 1,
+      "3_15s_premise": 3,
+      "15_30s_escalation": 4
+    },
+    "sentences_in_0_15s": 6,
+    "avg_sentence_units_0_15s": 7.17,
+    "max_sentence_units_0_15s": 18,
+    "max_open_sentence_threshold": 20,
+    "long_sentences_0_15s": [],
+    "question_in_0_30s": false,
+    "contiguity_numeric_or_clock_anchors_0_30s": [
+      "1910"
+    ],
+    "fyp_throttle_watchlist_hits_0_30s": [],
+    "frame0_safezone_text": "IN NEW MEXICO, IF...",
+    "frame0_safezone_status": "PASS_SAFEZONE_MAX_2_LINES",
+    "warnings": []
+  },
+  "dark_atlas_template_audit": {
+    "total_words": 176,
+    "ellipsis_count": 2,
+    "center_estimate_sec": 72.3,
+    "blockers": [],
+    "warnings": []
+  },
+  "profile_id": "darkatlas-us-states-en",
+  "files": {
+    "01_script": {
+      "path": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/EXPORT/01-TT-SCRIPT-la-mala-hora.txt",
+      "sha256": "d81b98d513eb2f7be54377de9ae410cc1d9526a6cc0dd7bc0bb448d0f7b1d7df"
+    },
+    "02_voice": {
+      "path": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/EXPORT/02-TT-VOICE-la-mala-hora.txt",
+      "sha256": "37380894da84d32bf3ca3a7c964c775fde191fce35730b442d382fa5d79ad13f"
+    },
+    "03_timeline_csv": {
+      "path": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/EXPORT/03-TT-TIMELINE-la-mala-hora.csv",
+      "sha256": "d787b2cddb3251c1794bb6878bc9dcbe9afc814d09fc6309dbf6eaf9a2388024"
+    }
+  },
+  "locked_at": "2026-11-22T06:24:07.884190+00:00"
+}

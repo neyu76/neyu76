@@ -1,0 +1,92 @@
+{
+  "schema": "TIKTOK_SCRIPT_STATE_V1",
+  "assembler_version": "4.0-DA1",
+  "topic_id": "TT-001",
+  "slug": "la-mala-hora",
+  "track": "creator_rewards",
+  "mode": "clean_voiceover",
+  "count_unit": "words",
+  "clean_tts": true,
+  "strict_natural_speech": true,
+  "profile_id": "darkatlas-us-states-en",
+  "profile_revision": 1,
+  "channel_template": "DARK_ATLAS_10_BEAT",
+  "max_beat_sec": 6.0,
+  "max_open_sentence_units": 20,
+  "frame0_text": "IN NEW MEXICO, IF...",
+  "blueprint_version": 1,
+  "script_version": 1,
+  "current_workflow": "WF06_SCRIPT_LOCKED",
+  "state": "SCRIPT_LOCKED",
+  "rate_spec": {
+    "rate_center_upm": 146.0,
+    "rate_min_upm": 138.0,
+    "rate_max_upm": 152.0,
+    "rate_basis": "MEASURED_SAMPLE",
+    "total_unit_budget": 172,
+    "non_speech_budget_seconds": 0.0,
+    "planned_spoken_center_seconds": 70.7,
+    "planned_center_seconds": 70.7,
+    "planned_range_seconds": [
+      67.9,
+      74.8
+    ]
+  },
+  "parts_expected": 4,
+  "parts_delivered": 4,
+  "next_part": null,
+  "parts_registry": {
+    "P01": {
+      "part_id": "P01",
+      "budget_units": 42,
+      "revision": 1,
+      "file": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/PARTS/P01.txt",
+      "status": "SECTION_PASSED",
+      "actual_units": 43,
+      "chunk_count": 4,
+      "sha256": "208d856445c0abcbf6e92b9a75f64454380e2b4e8a595ecc5288bba1f6139388",
+      "first_sentence": "In New Mexico, if you walk home alone at night,",
+      "last_sentence": "They call her La Mala Hora. The Evil Hour."
+    },
+    "P02": {
+      "part_id": "P02",
+      "budget_units": 50,
+      "revision": 2,
+      "file": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/PARTS/P02.txt",
+      "status": "SECTION_PASSED",
+      "actual_units": 56,
+      "chunk_count": 6,
+      "sha256": "8529ff274f6ca51bd33c4d049c7b9496dd348ae24fab382d3e68e339f5e8ed17",
+      "first_sentence": "In 1910, a folklorist recording Spanish folklore in New Mexico wrote about her.",
+      "last_sentence": "According to the legend, she can also become a woman in black."
+    },
+    "P03": {
+      "part_id": "P03",
+      "budget_units": 46,
+      "revision": 1,
+      "file": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/PARTS/P03.txt",
+      "status": "SECTION_PASSED",
+      "actual_units": 46,
+      "chunk_count": 6,
+      "sha256": "e6ed6f7685d6e66c0b4cd063a32256005dd090d07d5b292bda12e447627234bf",
+      "first_sentence": "But here's the terrifying part.",
+      "last_sentence": "She just watches you walk home... to see which door you open."
+    },
+    "P04": {
+      "part_id": "P04",
+      "budget_units": 34,
+      "revision": 1,
+      "file": "/home/user/neyu76/dark_atlas/TT/TT-001_la-mala-hora/PARTS/P04.txt",
+      "status": "SECTION_PASSED",
+      "actual_units": 31,
+      "chunk_count": 4,
+      "sha256": "1e00b4296fd829cc21fbc68dfaccba98f646d3de6b9e3f4b3b491ebe878b9d16",
+      "first_sentence": "So if you're ever on a dark New Mexico road tonight,",
+      "last_sentence": "It's waiting to see who you'll lose."
+    }
+  },
+  "cumulative_units": 176,
+  "cumulative_chunks": 20,
+  "last_delivered_boundary": "P02: According to the legend, she can also become a woman in black.",
+  "updated_at": "2026-11-22T06:24:07.884281+00:00"
+}

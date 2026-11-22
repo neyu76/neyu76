@@ -1,0 +1,17 @@
+{
+  "_note": "EP06 palette: northern New Mexico village at night, near-monochrome indigo + moon-silver, the ONLY warm accents are chile-red ristras and farolito candle amber. La Mala Hora: black rebozo, ash-grey split-tone skin, very long tangled black hair, hollow eyes with pinpoint silver glints, stylised teeth, no blood. Walker: muted denim hoodie (not white, sits behind captions). Distinct from EP05 (warm red rock) and EP04 (cold teal/moss).",
+  "country": "New Mexico, USA",
+  "sky_top": [8, 10, 24], "sky_bot": [30, 36, 64],
+  "adobe": [92, 86, 104], "adobe_d": [54, 50, 66], "adobe_l": [138, 132, 150],
+  "dirt": [70, 68, 84], "dirt_d": [40, 38, 50],
+  "moon_silver": [214, 220, 236],
+  "ristra": [176, 34, 30], "ristra_d": [110, 20, 20],
+  "farolito": [255, 196, 120], "door_blue": [48, 92, 128], "door_turq": [56, 128, 128],
+  "mala_rebozo": [14, 14, 18], "mala_rebozo_l": [40, 40, 50],
+  "mala_skin": [120, 122, 128], "mala_skin_d": [70, 72, 80], "mala_hair": [10, 10, 12],
+  "wool": [22, 20, 24], "wool_l": [48, 46, 54],
+  "walker_hoodie": [58, 70, 92], "walker_hoodie_d": [34, 42, 58],
+  "flash": [236, 240, 255],
+  "_culture_markers": ["flat-roof adobe houses + small adobe church with bell", "red chile ristras by blue/turquoise doors", "farolitos (paper-bag candle lanterns) along adobe walls", "wooden descanso cross on the roadside", "New Mexico Zia-sun state route marker", "mesa silhouette + yucca and cholla under the moon"],
+  "_variants": {"title_card": "farolitos ignite left to right, title rises", "soft_transition": "black rebozo wipe 0.27 s", "camera": "long lateral dolly", "color": "indigo-silver mono + chile red", "face_reveal": "slow head turn over the shoulder", "hook_card_accent": "shawl shadow passes", "signature_sfx": "distant adobe church bell + wool dragging", "jumpscare": "silver-white flash, whip-in from left"}
+}

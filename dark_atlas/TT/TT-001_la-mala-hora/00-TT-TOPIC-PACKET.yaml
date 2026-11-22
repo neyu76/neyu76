@@ -1,0 +1,149 @@
+schema_version: TT_TOPIC_PACKET_V1
+packet_spec_revision: "4.0-DA1"
+identity:
+  topic_id: "TT-001"
+  slug: "la-mala-hora"
+  packet_revision: 1
+  niche_profile_id: "darkatlas-us-states-en"
+  profile_revision: 1
+  base_versions: "darkatlas-tiktok-topic-studio@4.0-DA1 | darkatlas-tiktok-script-all-in-one@4.0-DA1"
+selection_and_scope:
+  selection_status: DELEGATED_SELECTED
+  decision_source: USER_DELEGATED          # người dùng 22/11/2026: "ủy quyền bạn tự nghiên cứu ... chọn 1 đề tài đỉnh nhất"
+  execution_mode: AGENT_AUTONOMOUS_STEP_LOOP
+  execution_scope: FULL_SCRIPT_PIPELINE     # dừng trước TTS/render
+  adaptation_route: ORIGINAL_BUILD
+  readiness: READY_FOR_SCRIPT
+  blockers_and_limitations:
+    - "Toàn văn Espinosa 1910 (JSTOR) chưa đọc trực tiếp; chi tiết 'len/lông cừu' lấy từ trích dẫn tr.400-402 trong chương sách Springer. Lời đọc giữ ở mức đó."
+    - "Trang encyclopedia (erenow) bị chặn mạng; nội dung lấy qua đoạn trích kết quả tìm kiếm, khớp thư mục sách của West."
+    - "Thứ tự series đổi: kế hoạch ghi EP06 = Water Babies (Nevada), nhưng Water Babies trùng EP04 (tiếng trẻ khóc bên nước) -> lùi lại, cần đổi góc trước khi làm."
+niche_and_psychological_avatar:
+  niche_name: "US state horror legends (Dark Atlas)"
+  content_archetype_and_story_engine: "DARK_ATLAS_10_BEAT + Forensic (1910 record -> thing that can't be explained)"
+  brand_posture: OMNISCIENT_NARRATOR
+  channel_stage: STAGE_1A_FOLLOWER_SPRINT   # H5, chưa có số follower
+  target_person_and_inner_question: "Người Mỹ 16-34 lướt đêm, nhất là người ở Tây Nam/New Mexico và cộng đồng gốc Hispanic: 'Đường mình đi về nhà tối nay có thứ gì đang chờ ở ngã tư không?'"
+  emotional_posture: CUSTOM_SINGLE_POSTURE  # SAFE_DREAD_WARNING
+  avatar_purity_check: "Đúng chân dung lõi: truyền thuyết 1 bang + quy tắc sống sót + mối nguy 'you'. Không lệch sang hài/true-crime."
+  target_fyp_region_and_qualified_geo: "US / US"
+  script_language: "en-US"
+  format_track: creator_rewards
+  fiction_and_fact_policy: "STRICT_NONFICTION facts (Espinosa 1910, West 1988 encyclopedia) + framed legend"
+  identity_and_non_stereotype_lock: UNSPECIFIED   # không gán định kiến cho người Hispano; truyền thuyết kể như văn hoá được ghi chép
+  exploration_element_tested: "Frame-0 là VẬT THỂ lạ không phải sinh vật (một đống len đen nằm giữa ngã tư) trước cú jumpscare, thay cho âm thanh dụ dỗ (EP04 tiếng khóc, EP05 tiếng động nhỏ)"
+angle_and_packaging_9x16:
+  core_question_and_viewer_promise: "Ở New Mexico, đi một mình qua ngã tư ban đêm có gì nguy hiểm? Hứa: một ghi chép thật năm 1910 + một lời khuyên cụ thể cho tối nay."
+  concrete_stage_and_opening_object: "Ngã tư đường đất giữa sa mạc, cây thánh giá gỗ descanso bên đường, ở giữa là một đống len đen — và nó vừa nhúc nhích."
+  unique_angle_familiar_plus_new: "Quen: hồn ma nữ áo đen kiểu Tây Nam (cầu thị trường La Llorona). Mới: hình dạng gốc là một túm lông cừu ở ngã tư (Espinosa 1910) + nó không đến bắt bạn mà báo trước người thân của bạn."
+  format_stack:
+    aaaa_or_story_engine: "Forensic + Immersive POV 'you'"
+    outer_container: DARK_ATLAS_10_BEAT
+    inner_escalation_engine: "Point of No Return: một khi đã thấy cô ta, điềm đã được báo"
+  visual_hook_archetype_1_to_8: "Vật thể bất thường giữa khung (object anomaly) -> mặt lao vào ống kính"
+  frame_0_four_elements:
+    motion_at_0s: "Camera trượt ngang chậm qua ngã tư; đống len đen phập phồng như đang thở; bụi lăn qua đường"
+    audio_hit_at_0s: "Giọng Milo vào 0,0 s + tiếng len kéo lê trên đất; 0,85 s jumpscare bằng tiếng thở rít của chính La Mala Hora x3 lớp + sub_boom"
+    frame0_safezone_text: "IN NEW MEXICO, IF..."
+    spoken_hook_what_plus_why: "chọn ở bước 3-5 hook của Skill 2"
+  tiktok_search_seo_keywords: ["la mala hora", "new mexico urban legend", "new mexico folklore", "crossroads legend", "woman in black legend"]
+  fyp_throttle_word_check: "PASS"
+  spectacle_or_emotional_peak_at_55_65pct: "But here's the terrifying part: cô ta không đến vì bạn — cô ta báo ai trong nhà bạn sắp mất"
+  ending_loop_or_part2_plan: "SEAMLESS_LOOP: câu cuối nối lại ngã tư/đống len ở câu mở"
+runtime_and_part_budgets:
+  target_seconds_range: "68-78 (kit QA), center ~71 s @146"
+  voice_delivery_mode: clean_voiceover
+  count_unit: words
+  rate_basis: MEASURED_SAMPLE
+  speaking_rate_center_min_max: [146, 138, 152]
+  non_speech_budget_seconds: 0
+  part_budgets_csv: "42,50,46,34"
+market_twin_and_source_governance:
+  evidence_confidence: MODERATE_MIXED   # FACT mạnh (1910 + encyclopedia), cầu thị trường gián tiếp (cụm Hispanic SW)
+  outlier_references:
+    - "@dreadarchives1 La Llorona (2D, 'If you ever hear a woman crying by the river at night') 3M views, 19.6x median, 2026-11-12 — cầu cụm hồn nữ Tây Nam"
+    - "@amidnight0 'If You Hear a Woman Crying at 1 AM… NEVER Answer Her' 268.9K, 28.6x median, 2026-11-16 — khuôn hook mệnh lệnh"
+    - "@mitchelfilms El Cadejo ('If a white dog follows you home, thank God. If it's black, run.') 116.4K, 137.1x — hook quy tắc"
+    - "@dreadarchives1 El Charro Negro 2.9M, 5.8x — cụm truyền thuyết đường đêm Mexico"
+    - "@fenhallow 'Appalachian Rule 7' 2.4M, 390.8x — quy tắc + đường đêm"
+    - "Không tìm thấy outlier trực tiếp về La Mala Hora -> ô Emerging/Blue Ocean (cầu cụm có, cung trực tiếp thấp)"
+  five_axis_twin_check:
+    closest_matches_scored:
+      - "EP04 Kushtaka (own): Q0 Stage0 Ladder0.5(đổi hình) Payoff0 Look0 = 0.5/5"
+      - "EP05 Nimerigar (own): Q0.5(đêm, đừng đi theo/đừng đi qua) Stage0 Ladder0 Payoff0 Look0 = 0.5/5"
+      - "EP02 Belsnickel (own): 0/5"
+      - "V03 @darkatlastales 'look at her feet' (tham chiếu): Q0 Stage1(đường đêm) Ladder0 Payoff0 Look1(người phụ nữ) = 2/5 -> đổi Stage thành NGÃ TƯ đất + descanso, Look mở bằng túm len, không cảnh xin đi nhờ"
+      - "@amidnight0 La Llorona: Q0.5 Stage0(sông) Ladder0 Payoff0 Look1 = 1.5/5"
+    verdict: CLEAR
+    lexical_twin_seo_check: "dark_atlas/TT/TT-001_la-mala-hora/00-twin-seo-check.json (max Jaccard 0.261, CLEAR)"
+  source_register: "dark_atlas/TT/TT-001_la-mala-hora/SOURCES.md"
+  claim_ledger:
+    - {claim: "A folklorist wrote it down in 1910", tag: FACT, source: "Espinosa, JAF 23 (1910) 395-418"}
+    - {claim: "Waits at dark crossroads, hunts people walking alone at night", tag: FACT, source: "Espinosa via Springer quote pp.400-402"}
+    - {claim: "Often looks like a lump of wool / a sheep's fleece", tag: FACT, source: "Espinosa via Springer quote"}
+    - {claim: "Name means 'The Evil Hour'", tag: FACT, source: "Espinosa (mala hora = bad hour)"}
+    - {claim: "Seeing her means someone you love will die soon", tag: FACT_ABOUT_BELIEF, source: "Encyclopedia of American Folklore entry citing West 1988"}
+    - {claim: "Appears as a woman in black", tag: LEGEND_MODERN_VARIANT, framing: "they say / one version"}
+    - {claim: "Advice: don't cross alone", tag: CREATIVE_NARRATOR_ADVICE, basis: "derived from FACT 'hunts lone travelers'"}
+  scorecard_100: {premise_frame0: 27, outlier_seo: 15, twin_originality: 14, avatar_purity_ladder: 13, runtime_fit: 10, sources_kit_feasibility_clean: 9, total: 88}
+  rejected_candidates:
+    - "Water Babies (NV): TWIN EP04 (Question+Payoff: tiếng trẻ khóc bên nước) -> BLOCKER"
+    - "Pukwudgie (MA), Ircenrraat (AK): TWIN EP05 (người tí hon, mũi tên/đá) -> BLOCKER"
+    - "Qallupilluit (AK Arctic): Stage+Question gần EP04 (nước/băng, dụ trẻ) và lại Alaska -> 3/5 BLOCKER"
+    - "El Sombrerón (TX): không tìm thấy nguồn nối với Texas -> fail cổng bang (NEEDS_EVIDENCE); Look người tí hon gần EP05"
+    - "Dead Children's Playground (AL): cầu hình xích đu mạnh (654x) nhưng jumpscare mặt trẻ em đã mất + tin đồn bắt cóc trẻ không kiểm chứng -> rủi ro an toàn/FYP; để sau với góc khác"
+    - "Walking Sam (SD): cần xử lý nhạy cảm 988, không làm tập đầu của bộ quy trình mới"
+ordered_modular_outline:
+  parts:
+    - part_id: "P01"
+      budget_units: 42
+      function_and_state_delta: "Nhịp 1-4: ngã tư + đống len (DANGER) -> mệnh lệnh thẻ hook -> Because (nó chọn người đi một mình) -> They call her La Mala Hora. The Evil Hour. (INFORMATION)"
+      concrete_action_and_9x16_data_cards: ["caption IN NEW MEXICO, IF...", "thẻ hook đen chữ đỏ", "thẻ tiêu đề NEW MEXICO · LEGEND + farolitos thắp dần"]
+      exit_bridge: "tên gọi -> 'In 1910...'"
+    - part_id: "P02"
+      budget_units: 50
+      function_and_state_delta: "Nhịp 5-6: 1910 folklorist ghi lại ở làng phía bắc (TRUST) -> According to the legend: túm len / áo đen, chỉ người đi một mình thấy (SCALE)"
+      concrete_action_and_9x16_data_cards: ["con dấu năm 1910 + trang tạp chí cũ", "biển đường có biểu tượng Zia", "túm len lăn ra giữa đường"]
+      exit_bridge: "mô tả hình dạng -> 'But here's the terrifying part.'"
+    - part_id: "P03"
+      budget_units: 46
+      function_and_state_delta: "Nhịp 7-8: cô ta không đến vì bạn; thấy cô ta = người thân sắp mất (POWER đảo chiều, đỉnh 55-62%) -> They say... câu thoại cao trào sau '...'"
+      concrete_action_and_9x16_data_cards: ["cửa sổ nhà adobe sáng đèn phía xa", "dòng chữ quy tắc"]
+      exit_bridge: "-> 'So if you're ever...'"
+    - part_id: "P04"
+      budget_units: 34
+      function_and_state_delta: "Nhịp 9-10: lời khuyên tối nay (TIME, 'you') -> câu đảo ngược nối về ngã tư/đống len; lộ mặt quay đầu chậm"
+      concrete_action_and_9x16_data_cards: ["descanso cross", "mặt quay lại"]
+      exit_bridge: "Loop -> 0.0s ngã tư"
+  open_loop_payoff_map:
+    - "Mở: 'something is waiting at the crossroads' -> trả ở P02 (túm len/áo đen) và P03 (nó chờ để báo tin)"
+    - "Mở: 'don't cross alone' -> trả ở P02 (chỉ người đi một mình thấy) và P04 (lời khuyên)"
+  voice_and_must_keep_constraints:
+    voice_guide_summary: "Milo trầm chậm; câu 6-14 từ; '...' đúng 2 lần; không thẻ TTS; không '—'"
+    user_must_keep: ["khuôn 10 nhịp", "thẻ hook đen chữ đỏ", "jumpscare 0,8-1,7 s bằng tiếng của chính sinh vật", "nhạc us_bed_master_5min.wav -25 LUFS", "≥4 dấu hiệu New Mexico", "dữ kiện có nguồn", "không máu"]
+    strictly_do_not_copy: ["lời/cảnh V03 'look at her feet' (người phụ nữ xin đi nhờ trên đường)", "tiêu đề/khung 'Urban Legends for Every State'", "lời các video La Llorona đối thủ"]
+dark_atlas_kit:
+  episode_dir: "dark_atlas/EP06_la_mala_hora"
+  state: "New Mexico"
+  people_named: "Hispano communities of northern New Mexico (không phải truyền thuyết bản địa)"
+  state_markers_min4: ["nhà và nhà thờ nhỏ bằng adobe mái phẳng", "chuỗi ớt đỏ ristra treo cửa", "biển đường hình biểu tượng Zia", "thánh giá gỗ descanso bên đường", "farolitos (đèn túi giấy) dọc tường", "mesa và cây yucca/cholla dưới trăng"]
+  palette_note: "Gần đơn sắc chàm-bạc ánh trăng (khác đất đỏ ấm EP05 và xanh rêu EP04), điểm nhấn duy nhất đỏ ớt ristra; La Mala Hora: rebozo đen, da xám tro, tóc đen dài rối"
+  variant_choices:
+    title_card: "Hàng farolitos tự thắp sáng từ trái sang phải, chữ LA MALA HORA hiện theo ánh nến"
+    soft_transition: "Wipe bằng tấm khăn đen (rebozo) quét ngang khung"
+    camera_language: "Trượt ngang dài, chậm (dolly ngang) qua tường adobe và ngã tư"
+    color: "Đơn sắc chàm-bạc + đỏ ớt"
+    face_reveal: "Quay đầu chậm: lưng quay về camera, đầu xoay dần lộ mặt"
+    hook_card_accent: "Bóng đen đi ngang qua thẻ (bóng người choàng khăn)"
+    signature_sfx: "Chuông nhà thờ adobe ngân 1 tiếng xa + len kéo lê trên đất"
+  jumpscare: {flash_color: "trắng bạc", entry: "lao vào từ cạnh trái (whip-in ngang) chiếm trọn khung", creature_sound: "tiếng thở rít khàn của người đàn bà, 3 lớp + sub_boom"}
+  custom_sfx_quote:
+    - "mala_hora_breath_hiss.mp3 — hoarse female breath turning into hiss, 2.0 s"
+    - "wool_drag_dirt.mp3 — heavy wet wool dragged over dry dirt road, 2.5 s"
+    - "adobe_church_bell_far.mp3 — single distant small church bell toll in open desert, 3.0 s"
+    - "Tổng 7,5 s qua dark_atlas/tools/hub_sfx.py (ElevenLabs proxy). Ước tính ~300 credit ElevenLabs (giả định 40 credit/s; chưa đo) trên ~41.500 còn lại. CHƯA TẠO."
+  render_template_base: "tools/render_ep05.py"
+  safety_notes:
+    - "Không máu, không xác; 'die' chỉ ở dạng điềm báo, không mô tả cái chết"
+    - "Không gán truyền thuyết cho dân tộc bản địa; nói 'the old Spanish-speaking villages'/'northern New Mexico'"
+    - "Không nhắc Tây Ban Nha như quốc gia trong lời đọc (tránh phải chèn cờ nước khác)"
