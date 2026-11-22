@@ -23,9 +23,10 @@ CT, MU, ST, SF = 390, 420, 450, 480
 ct = court((CT, 0, 0)); mu = music_room((MU, 0, 0)); st = school_store((ST, 0, 0)); sf = science_fair((SF, 0, 0)); lights((0, 0, 0))
 SUN = bpy.data.objects["sun"]
 FILLS = {}
-for nm, loc, en, sz in (("fill_ct", (CT, -1.0, 4.0), 0, 6), ("fill_mu", (MU, -1.0, 3.2), 650, 6), ("fill_st", (ST, -1.0, 3.0), 420, 5),
+for nm, loc, en, sz in (("fill_ct", (CT, -4.0, 3.2), 0, 10), ("fill_mu", (MU, -1.0, 3.2), 650, 6), ("fill_st", (ST, -1.0, 3.0), 420, 5),
                         ("fill_sf", (SF, -1.0, 3.4), 650, 7)):
     L = bpy.data.lights.new(nm, "AREA"); L.energy = en; L.size = sz; fo = bpy.data.objects.new(nm, L); bpy.context.scene.collection.objects.link(fo); fo.location = loc; FILLS[nm] = L
+    if nm == "fill_ct": fo.rotation_euler = (R(58), 0, 0)   # aim toward +Y (faces) instead of straight down
 
 MK = lambda name, **kw: Char(name, **kw)
 tyler = MK("ME", skin="f1c7a0", shirt="ffd23f", pants="3a3f47", shoes="f4f4f4", hair="1e1a18", hair_style="messy", print_img=P("assets/hb/prints/me_paused.png"))
@@ -148,7 +149,8 @@ TX, TY = CT - 1.1, -0.2          # Tyler near the top of the key, lunchbox under
 BX, BY = CT + 0.15, -0.35        # where Bryce skids to a stop, facing Tyler
 TYAW, BYAW = yaw_to((TX, TY), (BX, BY)) + 35, yaw_to((BX, BY), (TX, TY)) - 35
 def scene_ct(n, bry_at=True):
-    all_off("out")
+    all_off("out"); FILLS["fill_ct"].energy = 300
+    SUN.rotation_euler = (R(52), R(18), R(165)); SUN.keyframe_insert("rotation_euler", frame=1)   # morning sun from the camera side (faces lit)
     tyler.place(1, TX, TY, 0, TYAW); tyler.stand(1); tyler.pose(1, sh_L=(-15, 0, 18), el_L=(-80, 0, 0)); show([lunchbox], True)
     tyler.expr("deadpan", 1); breathe(tyler, 1, n, 1.0, 96, 1)
     if bry_at: bry.place(1, BX, BY, 0, BYAW); bry.stand(1); bry.expr("smug", 1); breathe(bry, 1, n, 1.4, 60, 2)
