@@ -1,0 +1,4 @@
+# EP05 Nimerigar — nguồn
+- Nimerigar: tộc người tí hon trong văn hoá dân gian Shoshone, tên thường được dịch là "people eaters"; sống ở vùng Wind River và núi Pedro (Wyoming); bắn tên tẩm độc; giết người già yếu hoặc ốm của chính tộc bằng một cú đánh vào đầu: https://en.wikipedia.org/wiki/Nimerigar ; https://www.legendsofamerica.com/wy-littlepeople/
+- Xác ướp núi Pedro: hai người tìm vàng (Cecil Mayne, Frank Carr) phát hiện năm 1932 hoặc 1934 khi nổ mìn ở núi San Pedro, hạt Carbon; cao khoảng 14 inch, ngồi xếp bằng; thất lạc sau khoảng năm 1950: https://en.wikipedia.org/wiki/San_Pedro_Mountains_mummy
+- Kịch bản ghi "In the 1930s" (vì nguồn lệch giữa 1932 và 1934) và "Years later, it disappeared". Phần siêu nhiên mở bằng "According to the legend" / "They say". Không khẳng định xác ướp là Nimerigar (các phân tích sau cho rằng đó có thể là xác trẻ sơ sinh bị dị tật).

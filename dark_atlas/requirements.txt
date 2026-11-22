@@ -1,0 +1,8 @@
+# Python 3.11+ (đã chạy trên 3.12). Cần thêm ffmpeg/ffprobe trong PATH.
+numpy
+opencv-python
+pillow
+soundfile
+scipy
+requests
+faster-whisper      # lần chạy đầu tự tải model large-v3 (~3 GB); chạy CPU int8

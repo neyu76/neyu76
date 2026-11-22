@@ -1,0 +1,6 @@
+Dùng $darkatlas-tiktok-script-all-in-one ở AGENT_AUTONOMOUS_STEP_LOOP. Nhận TT_TOPIC_PACKET_V1 tại
+dark_atlas/TT/TT-001_la-mala-hora/00-TT-TOPIC-PACKET.yaml (TT-001, slug la-mala-hora, New Mexico, EP06):
+soạn 3-5 hook (>=16/20) chọn 1, init assembler (creator_rewards, words, 146/138/152, budgets "42,50,46,34",
+frame0 "IN NEW MEXICO, IF..."), viết tuần tự P01..P04 mỗi phần 1 lượt + verify-part, opening-audit --p01-only,
+stitch-draft, beat-audit, QA 8 trục, lock-export 4 file, rồi kit-bridge xuất script.txt vào dark_atlas/EP06_la_mala_hora
++ 05-TT-SHOTLIST khớp render_ep05.py. Dừng trước TTS/render. Chỉ dùng dữ kiện trong SOURCES.md.

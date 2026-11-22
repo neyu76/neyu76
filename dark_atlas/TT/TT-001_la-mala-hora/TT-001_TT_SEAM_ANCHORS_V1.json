@@ -1,0 +1,22 @@
+[
+  {
+    "seam": "P01->P02",
+    "prev_closing": "They call her La Mala Hora. The Evil Hour.",
+    "next_opening": "In 1910, a folklorist recording Spanish folklore in New Mexico wrote about her."
+  },
+  {
+    "seam": "P02->P03",
+    "prev_closing": "According to the legend, she can also become a woman in black.",
+    "next_opening": "But here's the terrifying part."
+  },
+  {
+    "seam": "P03->P04",
+    "prev_closing": "She just watches you walk home... to see which door you open.",
+    "next_opening": "So if you're ever on a dark New Mexico road tonight,"
+  },
+  {
+    "seam": "FINAL->0.0s_LOOP_OR_PART2",
+    "prev_closing": "It's waiting to see who you'll lose.",
+    "next_opening": "In New Mexico, if you walk home alone at night,"
+  }
+]

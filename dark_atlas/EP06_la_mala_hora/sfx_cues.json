@@ -1,0 +1,190 @@
+{
+ "duration": 73.65,
+ "cues": [
+  {
+   "file": "horror/wind_night_loop.mp3",
+   "t": 0,
+   "db": -22,
+   "len": 73.65,
+   "loop": true
+  },
+  {
+   "file": "ep06_la_mala_hora/wool_drag_dirt.mp3",
+   "t": 0.0,
+   "db": -6,
+   "duck": 8
+  },
+  {
+   "file": "ep06_la_mala_hora/mala_hora_breath_hiss.mp3",
+   "t": 0.83,
+   "db": 1,
+   "len": 1.6
+  },
+  {
+   "file": "ep06_la_mala_hora/mala_hora_breath_hiss.mp3",
+   "t": 0.85,
+   "db": -2,
+   "pitch": -4,
+   "len": 1.5
+  },
+  {
+   "file": "ep06_la_mala_hora/mala_hora_breath_hiss.mp3",
+   "t": 0.87,
+   "db": -5,
+   "pitch": 5,
+   "len": 1.2
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 0.85,
+   "db": -2
+  },
+  {
+   "file": "horror/drone_low_loop.mp3",
+   "t": 1.68,
+   "db": -14,
+   "duck": 6,
+   "len": 5
+  },
+  {
+   "file": "ep06_la_mala_hora/wool_drag_dirt.mp3",
+   "t": 3.7,
+   "db": -8,
+   "duck": 8
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 6.58,
+   "db": -4
+  },
+  {
+   "file": "horror/whispers.mp3",
+   "t": 7.2,
+   "db": -16,
+   "duck": 8,
+   "len": 1.6
+  },
+  {
+   "file": "horror/creature_growl.mp3",
+   "t": 8.76,
+   "db": -18,
+   "pitch": -5,
+   "duck": 10
+  },
+  {
+   "file": "ep06_la_mala_hora/adobe_church_bell_far.mp3",
+   "t": 13.16,
+   "db": -4,
+   "duck": 6
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 18.44,
+   "db": -10
+  },
+  {
+   "file": "horror/breath_fear_man_a.mp3",
+   "t": 28.62,
+   "db": -16,
+   "duck": 10
+  },
+  {
+   "file": "ep06_la_mala_hora/wool_drag_dirt.mp3",
+   "t": 30.84,
+   "db": -10,
+   "duck": 8
+  },
+  {
+   "file": "horror/creature_growl.mp3",
+   "t": 33.92,
+   "db": -20,
+   "pitch": -3,
+   "duck": 10
+  },
+  {
+   "file": "horror/riser_tension.mp3",
+   "t": 37.28,
+   "db": -12,
+   "duck": 8,
+   "len": 1.7
+  },
+  {
+   "file": "horror/whispers.mp3",
+   "t": 38.96,
+   "db": -18,
+   "duck": 10
+  },
+  {
+   "file": "ep06_la_mala_hora/adobe_church_bell_far.mp3",
+   "t": 41.62,
+   "db": -4,
+   "duck": 4
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 42.16,
+   "db": -8
+  },
+  {
+   "file": "horror/breath_fear_man_b.mp3",
+   "t": 44.64,
+   "db": -14,
+   "duck": 8
+  },
+  {
+   "file": "horror/heartbeat_loop.mp3",
+   "t": 46.34,
+   "db": -14,
+   "duck": 6,
+   "len": 5
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 51.33,
+   "db": -6
+  },
+  {
+   "file": "horror/running_panic_gravel.mp3",
+   "t": 53.78,
+   "db": -16,
+   "pitch": 2,
+   "duck": 10,
+   "len": 2
+  },
+  {
+   "file": "horror/whispers.mp3",
+   "t": 55.92,
+   "db": -20,
+   "pitch": -2,
+   "duck": 10
+  },
+  {
+   "file": "horror/gasp_b.mp3",
+   "t": 60.3,
+   "db": -12
+  },
+  {
+   "file": "ep06_la_mala_hora/wool_drag_dirt.mp3",
+   "t": 66.98,
+   "db": -8,
+   "duck": 8
+  },
+  {
+   "file": "horror/riser_tension.mp3",
+   "t": 69.16,
+   "db": -10,
+   "duck": 8,
+   "len": 1.4
+  },
+  {
+   "file": "ep06_la_mala_hora/mala_hora_breath_hiss.mp3",
+   "t": 71.95,
+   "db": -2
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 72.62,
+   "db": -2
+  }
+ ]
+}

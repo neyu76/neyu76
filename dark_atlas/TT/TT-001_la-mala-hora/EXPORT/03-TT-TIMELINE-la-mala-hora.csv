@@ -1,0 +1,21 @@
+beat_id,part_id,speaker,fyp_window_bucket,est_start_sec,est_end_sec,est_duration_sec,units,contiguity_anchors,spoken_text
+b001,P01,NARRATOR,00_03s_FRAME0_SWIPE_GATE,0.00,4.11,4.11,10,,"In New Mexico, if you walk home alone at night,"
+b002,P01,NARRATOR,03_15s_PREMISE_ANCHOR,4.11,8.63,4.52,11,,and black wool is lying at the crossroads... don't cross it.
+b003,P01,NARRATOR,03_15s_PREMISE_ANCHOR,8.63,13.97,5.34,13,,Because that isn't wool. And it only waits for people who are alone.
+b004,P01,NARRATOR,03_15s_PREMISE_ANCHOR,13.97,17.67,3.70,9,,They call her La Mala Hora. The Evil Hour.
+b005,P02,NARRATOR,15_30s_ESCALATION_ZONE,17.67,23.01,5.34,13,1910,"In 1910, a folklorist recording Spanish folklore in New Mexico wrote about her."
+b006,P02,NARRATOR,15_30s_ESCALATION_ZONE,23.01,26.30,3.29,8,,"He described a spirit that haunts dark crossroads,"
+b007,P02,NARRATOR,15_30s_ESCALATION_ZONE,26.30,29.18,2.88,7,,terrorizing people who walk alone at night.
+b008,P02,NARRATOR,15_30s_ESCALATION_ZONE,29.18,33.70,4.52,11,,"Most of the time, it looks like a lock of wool."
+b009,P02,NARRATOR,30_60s_CLIFF_BRIDGE,33.70,35.75,2.05,5,,"Sometimes, a whole sheep's fleece."
+b010,P02,NARRATOR,30_60s_CLIFF_BRIDGE,35.75,40.68,4.93,12,,"According to the legend, she can also become a woman in black."
+b011,P03,NARRATOR,30_60s_CLIFF_BRIDGE,40.68,42.73,2.05,5,,But here's the terrifying part.
+b012,P03,NARRATOR,30_60s_CLIFF_BRIDGE,42.73,44.78,2.05,5,,She isn't there for you.
+b013,P03,NARRATOR,30_60s_CLIFF_BRIDGE,44.78,48.48,3.70,9,,"They say if you see her at the crossroads,"
+b014,P03,NARRATOR,30_60s_CLIFF_BRIDGE,48.48,50.95,2.47,6,,someone you love will die soon.
+b015,P03,NARRATOR,30_60s_CLIFF_BRIDGE,50.95,54.65,3.70,9,,She doesn't chase you. She doesn't make a sound.
+b016,P03,NARRATOR,30_60s_CLIFF_BRIDGE,54.65,59.58,4.93,12,,She just watches you walk home... to see which door you open.
+b017,P04,NARRATOR,30_60s_CLIFF_BRIDGE,59.58,64.10,4.52,11,,"So if you're ever on a dark New Mexico road tonight,"
+b018,P04,NARRATOR,60s_PLUS_REWARDS_ZONE,64.10,65.33,1.23,3,,don't cross alone.
+b019,P04,NARRATOR,60s_PLUS_REWARDS_ZONE,65.33,69.44,4.11,10,,Because that wool isn't lying in the road by accident.
+b020,P04,NARRATOR,60s_PLUS_REWARDS_ZONE,69.44,72.32,2.88,7,,It's waiting to see who you'll lose.

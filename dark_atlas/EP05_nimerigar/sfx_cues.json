@@ -1,0 +1,169 @@
+{
+ "duration": 72.65,
+ "cues": [
+  {
+   "file": "horror/wind_night_loop.mp3",
+   "t": 0.0,
+   "db": -21,
+   "len": 72.65,
+   "loop": true
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 0.83,
+   "db": 1,
+   "len": 1.6
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 0.85,
+   "db": -2,
+   "pitch": -4,
+   "len": 1.5
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 0.87,
+   "db": -5,
+   "pitch": 5,
+   "len": 1.2
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 0.85,
+   "db": -2
+  },
+  {
+   "file": "ep05_nimerigar/tiny_footsteps_gravel.mp3",
+   "t": 1.7,
+   "db": -3,
+   "duck": 6
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 3.2,
+   "db": -7,
+   "duck": 8
+  },
+  {
+   "file": "ep05_nimerigar/arrow_whistle_thunk.mp3",
+   "t": 4.62,
+   "db": -1
+  },
+  {
+   "file": "horror/stinger_jumpscare.mp3",
+   "t": 5.13,
+   "db": -4
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 11.76,
+   "db": -2
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 19.07,
+   "db": -2,
+   "pitch": -2
+  },
+  {
+   "file": "horror/whispers.mp3",
+   "t": 22.0,
+   "db": -16,
+   "duck": 10,
+   "pitch": 1
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 40.5,
+   "db": -10,
+   "duck": 8,
+   "pitch": -1
+  },
+  {
+   "file": "horror/gasp_b.mp3",
+   "t": 43.55,
+   "db": -5
+  },
+  {
+   "file": "horror/breath_fear_woman_a.mp3",
+   "t": 44.3,
+   "db": -13,
+   "duck": 8
+  },
+  {
+   "file": "ep05_nimerigar/arrow_whistle_thunk.mp3",
+   "t": 47.8,
+   "db": -4,
+   "duck": 6
+  },
+  {
+   "file": "ep05_nimerigar/arrow_whistle_thunk.mp3",
+   "t": 48.4,
+   "db": -5,
+   "duck": 6,
+   "pitch": 2
+  },
+  {
+   "file": "ep05_nimerigar/arrow_whistle_thunk.mp3",
+   "t": 49.05,
+   "db": -4,
+   "duck": 6,
+   "pitch": -1
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 59.4,
+   "db": -3,
+   "pitch": -3
+  },
+  {
+   "file": "horror/heartbeat_loop.mp3",
+   "t": 63.8,
+   "db": -14,
+   "duck": 6,
+   "len": 3.2,
+   "loop": true
+  },
+  {
+   "file": "ep05_nimerigar/tiny_footsteps_gravel.mp3",
+   "t": 64.5,
+   "db": -6,
+   "duck": 6
+  },
+  {
+   "file": "ep05_nimerigar/tiny_footsteps_gravel.mp3",
+   "t": 65.9,
+   "db": -7,
+   "duck": 6,
+   "pitch": 1
+  },
+  {
+   "file": "horror/swallow_nervous.mp3",
+   "t": 66.6,
+   "db": -6
+  },
+  {
+   "file": "horror/riser_tension.mp3",
+   "t": 67.6,
+   "db": -10,
+   "duck": 8
+  },
+  {
+   "file": "ep05_nimerigar/little_people_chitter.mp3",
+   "t": 70.55,
+   "db": -2,
+   "duck": 4
+  },
+  {
+   "file": "horror/stinger_jumpscare.mp3",
+   "t": 70.62,
+   "db": -3
+  },
+  {
+   "file": "horror/sub_boom.mp3",
+   "t": 70.62,
+   "db": -4
+  }
+ ]
+}
