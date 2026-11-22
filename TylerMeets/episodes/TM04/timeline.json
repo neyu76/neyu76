@@ -1,0 +1,494 @@
+{
+ "out": "episodes/TM04/out/TM04_bryce.mp4",
+ "fps": 30,
+ "w": 1080,
+ "h": 1920,
+ "vo": "episodes/TM04/audio/vo.wav",
+ "words": "episodes/TM04/audio/vo16k.cap.json",
+ "tail": 0.6,
+ "music": null,
+ "font": "C:/Users/ADMIN/AppData/Local/Microsoft/Windows/Fonts/Roboto-BlackItalic.ttf",
+ "shots": [
+  {
+   "key": "OPEN_BRY_RUN",
+   "start": 0.0,
+   "beats": [
+    "L00 [BRY] Bro-bro-bro, I was in Miami!"
+   ],
+   "end": 1.7667,
+   "id": "S01",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_HYPE",
+   "start": 1.7667,
+   "beats": [
+    "L00 [BRY] Like, yesterday, bro!"
+   ],
+   "end": 3.7333,
+   "id": "S02",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_ME_WTF",
+   "start": 3.7333,
+   "beats": [
+    "L01 [NARR] What the fuck is wrong with this dude?"
+   ],
+   "end": 5.8667,
+   "id": "S03",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_COURT_BRY",
+   "start": 5.8667,
+   "beats": [
+    "L02 [NARR] This is Bryce."
+   ],
+   "end": 7.0,
+   "id": "S04",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_BRY_GRIN",
+   "start": 7.0,
+   "beats": [
+    "L02 [NARR] He has never told the truth."
+   ],
+   "end": 8.8667,
+   "id": "S05",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_SLIP_DATE",
+   "start": 8.8667,
+   "beats": [
+    "L02 [NARR] Yesterday he was in my math class."
+   ],
+   "end": 11.2667,
+   "id": "S06",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_BRY_BALL",
+   "start": 11.2667,
+   "beats": [
+    "L03 [BRY] Then I dunked on a pro. Twice."
+   ],
+   "end": 14.1667,
+   "id": "S07",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_BRY_JUMP",
+   "start": 14.1667,
+   "beats": [
+    "L04 [NARR] He jumps for the rim."
+   ],
+   "end": 15.5,
+   "id": "S08",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_BALLFACE",
+   "start": 15.5,
+   "beats": [
+    "L04 [NARR] The ball hits him right in the face."
+   ],
+   "end": 17.9,
+   "id": "S09",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_MUSIC_ROOM",
+   "start": 17.9,
+   "beats": [
+    "L05 [NARR] Second period. Music."
+   ],
+   "end": 19.8,
+   "id": "S10",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_BRY_BRAG",
+   "start": 19.8,
+   "beats": [
+    "L05 [NARR] Bryce says he toured with a band."
+   ],
+   "end": 22.2667,
+   "id": "S11",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_COUNT",
+   "start": 22.2667,
+   "beats": [
+    "L06 [BRY] Drums, bass, piano. I did everything."
+   ],
+   "end": 25.3,
+   "id": "S12",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_TEACH_RECORDER",
+   "start": 25.3,
+   "beats": [
+    "L07 [NARR] The teacher hands him a recorder."
+   ],
+   "end": 27.5,
+   "id": "S13",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_SQUEAK",
+   "start": 27.5,
+   "beats": [
+    "L08 [BRY] Fweee! Fweee! FWEEEE!"
+   ],
+   "end": 30.1667,
+   "id": "S14",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_ME_FLINCH",
+   "start": 30.1667,
+   "beats": [
+    "L09 [NARR] That's not a note."
+   ],
+   "end": 31.7,
+   "id": "S15",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_MUSIC_EARS",
+   "start": 31.7,
+   "beats": [
+    "L09 [NARR] That's a smoke alarm."
+   ],
+   "end": 33.3667,
+   "id": "S16",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_STORE",
+   "start": 33.3667,
+   "beats": [
+    "L10 [NARR] Lunch at the school store."
+   ],
+   "end": 34.7667,
+   "id": "S17",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_ME_SANDWICH",
+   "start": 34.7667,
+   "beats": [
+    "L10 [NARR] I unwrap my sandwich."
+   ],
+   "end": 36.7333,
+   "id": "S18",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_GASP",
+   "start": 36.7333,
+   "beats": [
+    "L11 [BRY] Bro, put that away."
+   ],
+   "end": 37.9333,
+   "id": "S19",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_BRY_BACKUP",
+   "start": 37.9333,
+   "beats": [
+    "L11 [BRY] I'm allergic to bread."
+   ],
+   "end": 39.2667,
+   "id": "S20",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_ME_SQUINT",
+   "start": 39.2667,
+   "beats": [
+    "L12 [NARR] Allergic. To bread."
+   ],
+   "end": 41.2333,
+   "id": "S21",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_PHONE_BURGER",
+   "start": 41.2333,
+   "beats": [
+    "L12 [NARR] He ate a burger yesterday."
+   ],
+   "end": 43.0667,
+   "id": "S22",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_ME_PAY",
+   "start": 43.0667,
+   "beats": [
+    "L13 [NARR] I turn around to pay."
+   ],
+   "end": 44.8667,
+   "id": "S23",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_CHEWING",
+   "start": 44.8667,
+   "beats": [
+    "L13 [NARR] I turn back."
+   ],
+   "end": 46.2333,
+   "id": "S24",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_SALAD",
+   "start": 46.2333,
+   "beats": [
+    "L14 [BRY] Relax. This is a salad."
+   ],
+   "end": 48.1,
+   "id": "S25",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_SANDWICH_BITTEN",
+   "start": 48.1,
+   "beats": [
+    "L15 [NARR] It was my sandwich."
+   ],
+   "end": 49.8667,
+   "id": "S26",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "WIDE_FAIR",
+   "start": 49.8667,
+   "beats": [
+    "L16 [NARR] After school. Science fair."
+   ],
+   "end": 52.1333,
+   "id": "S27",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_LIE_DETECTOR",
+   "start": 52.1333,
+   "beats": [
+    "L16 [NARR] I built a lie detector."
+   ],
+   "end": 53.9667,
+   "id": "S28",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_ME_ASK",
+   "start": 53.9667,
+   "beats": [
+    "L17 [NARR] Bryce, were you in Miami?"
+   ],
+   "end": 56.3333,
+   "id": "S29",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_BRY_SMUG",
+   "start": 56.3333,
+   "beats": [
+    "L18 [BRY] Yes. Obviously, bro."
+   ],
+   "end": 57.6333,
+   "id": "S30",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_DETECTOR_GREEN",
+   "start": 57.6333,
+   "beats": [
+    "L19 [NARR] Green light. Nothing."
+   ],
+   "end": 60.1667,
+   "id": "S31",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_HARG_ASK",
+   "start": 60.1667,
+   "beats": [
+    "L20 [HARG] Tyler, did you build this yourself?"
+   ],
+   "end": 62.5333,
+   "id": "S32",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_DETECTOR_RED",
+   "start": 62.5333,
+   "beats": [
+    "L21 [NARR] I said yes. It went off."
+   ],
+   "end": 65.1667,
+   "id": "S33",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_HARG_POINT",
+   "start": 65.1667,
+   "beats": [
+    "L22 [HARG] Disqualified. Lying to a judge."
+   ],
+   "end": 68.4333,
+   "id": "S34",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "MS_BRY_RIBBON",
+   "start": 68.4333,
+   "beats": [
+    "L23 [NARR] Bryce won first place."
+   ],
+   "end": 70.0,
+   "id": "S35",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "INS_DETENTION_SLIP",
+   "start": 70.0,
+   "beats": [
+    "L23 [NARR] I got detention."
+   ],
+   "end": 71.3667,
+   "id": "S36",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  },
+  {
+   "key": "CU_ME_CRUMBS",
+   "start": 71.3667,
+   "beats": [
+    "L23 [NARR] And my sandwich is still a salad."
+   ],
+   "end": 74.02,
+   "id": "S37",
+   "src": "PLACEHOLDER",
+   "kind": "still",
+   "push": 1.0,
+   "snap": false
+  }
+ ]
+}

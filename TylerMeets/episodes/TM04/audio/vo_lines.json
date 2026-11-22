@@ -1,0 +1,170 @@
+[
+ {
+  "line": "L00",
+  "speaker": "BRY",
+  "text": "Bro-bro-bro, I was in Miami!  Like, yesterday, bro!",
+  "start": 0.0,
+  "end": 3.343
+ },
+ {
+  "line": "L01",
+  "speaker": "NARR",
+  "text": "What the fuck is wrong with this dude?",
+  "start": 3.793,
+  "end": 5.547
+ },
+ {
+  "line": "L02",
+  "speaker": "NARR",
+  "text": "This is Bryce.  He has never told the truth.  Yesterday he was in my math class.",
+  "start": 5.997,
+  "end": 10.893
+ },
+ {
+  "line": "L03",
+  "speaker": "BRY",
+  "text": "Then I dunked on a pro. Twice.",
+  "start": 11.343,
+  "end": 13.857
+ },
+ {
+  "line": "L04",
+  "speaker": "NARR",
+  "text": "He jumps for the rim.  The ball hits him right in the face.",
+  "start": 14.307,
+  "end": 17.418
+ },
+ {
+  "line": "L05",
+  "speaker": "NARR",
+  "text": "Second period. Music.  Bryce says he toured with a band.",
+  "start": 17.868,
+  "end": 21.871
+ },
+ {
+  "line": "L06",
+  "speaker": "BRY",
+  "text": "Drums, bass, piano. I did everything.",
+  "start": 22.321,
+  "end": 25.06
+ },
+ {
+  "line": "L07",
+  "speaker": "NARR",
+  "text": "The teacher hands him a recorder.",
+  "start": 25.51,
+  "end": 27.182
+ },
+ {
+  "line": "L08",
+  "speaker": "BRY",
+  "text": "Fweee! Fweee! FWEEEE!",
+  "start": 27.632,
+  "end": 30.063
+ },
+ {
+  "line": "L09",
+  "speaker": "NARR",
+  "text": "That's not a note.  That's a smoke alarm.",
+  "start": 30.513,
+  "end": 32.779
+ },
+ {
+  "line": "L10",
+  "speaker": "NARR",
+  "text": "Lunch at the school store.  I unwrap my sandwich.",
+  "start": 33.229,
+  "end": 36.228
+ },
+ {
+  "line": "L11",
+  "speaker": "BRY",
+  "text": "Bro, put that away.  I'm allergic to bread.",
+  "start": 36.678,
+  "end": 38.807
+ },
+ {
+  "line": "L12",
+  "speaker": "NARR",
+  "text": "Allergic. To bread.  He ate a burger yesterday.",
+  "start": 39.257,
+  "end": 42.746
+ },
+ {
+  "line": "L13",
+  "speaker": "NARR",
+  "text": "I turn around to pay.  I turn back.",
+  "start": 43.196,
+  "end": 45.745
+ },
+ {
+  "line": "L14",
+  "speaker": "BRY",
+  "text": "Relax. This is a salad.",
+  "start": 46.195,
+  "end": 47.776
+ },
+ {
+  "line": "L15",
+  "speaker": "NARR",
+  "text": "It was my sandwich.",
+  "start": 48.226,
+  "end": 49.493
+ },
+ {
+  "line": "L16",
+  "speaker": "NARR",
+  "text": "After school. Science fair.  I built a lie detector.",
+  "start": 49.943,
+  "end": 53.544
+ },
+ {
+  "line": "L17",
+  "speaker": "NARR",
+  "text": "Bryce, were you in Miami?",
+  "start": 53.994,
+  "end": 55.461
+ },
+ {
+  "line": "L18",
+  "speaker": "BRY",
+  "text": "Yes. Obviously, bro.",
+  "start": 55.911,
+  "end": 57.234
+ },
+ {
+  "line": "L19",
+  "speaker": "NARR",
+  "text": "Green light. Nothing.",
+  "start": 57.684,
+  "end": 59.72
+ },
+ {
+  "line": "L20",
+  "speaker": "HARG",
+  "text": "Tyler, did you build this yourself?",
+  "start": 60.17,
+  "end": 62.211
+ },
+ {
+  "line": "L21",
+  "speaker": "NARR",
+  "text": "I said yes. It went off.",
+  "start": 62.661,
+  "end": 64.603
+ },
+ {
+  "line": "L22",
+  "speaker": "HARG",
+  "text": "Disqualified. Lying to a judge.",
+  "start": 65.053,
+  "end": 67.517
+ },
+ {
+  "line": "L23",
+  "speaker": "NARR",
+  "text": "Bryce won first place.  I got detention.  And my sandwich is still a salad.",
+  "start": 68.517,
+  "end": 73.484
+ }
+]
