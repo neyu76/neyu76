@@ -1,0 +1,11 @@
+{
+  "_note": "EP05 palette: Wyoming high desert at night. Warm red rock and ochre dust under moonlight, sage green-grey brush, lantern amber. Little people: grey-brown leathery skin, black eyes with pinpoint glints. Camper: red flannel + mustard beanie. Distinct from EP04 (cold teal) and EP02 (brown fur, candle).",
+  "country": "Wyoming, USA",
+  "rock": [120, 62, 44], "rock_d": [70, 36, 28], "rock_l": [160, 92, 64],
+  "dust": [176, 132, 96], "sage": [86, 96, 80], "sage_d": [52, 60, 50],
+  "nim_skin": [96, 80, 66], "nim_skin_d": [60, 50, 42], "nim_hair": [24, 20, 18],
+  "mummy": [84, 60, 40], "mummy_d": [52, 36, 24],
+  "flannel": [150, 40, 36], "flannel_d": [90, 24, 22], "beanie": [196, 150, 40],
+  "lantern": [255, 190, 100], "poison": [120, 210, 90],
+  "_culture_markers": ["red-rock buttes and mesas + sagebrush plain", "Wind River snowy peaks", "Milky Way over the high desert", "1930s gold prospectors: Model A pickup, pickaxe, dynamite plunger", "canvas camping tent + kerosene lantern", "Shoshone camp silhouettes (lodges) by firelight"]
+}

@@ -122,3 +122,23 @@ accent + gender** (fixes male→female voice flips and wrong-character lip-sync)
 **LatAm pipeline:** `topic-animal-drama-latam` → `script-animal-drama-latam` →
 `markets/latam/MASTER-PROMPT-latam.md`. Recommended: run two channels —
 `@patasykarma` (es) and `@patasekarma` (pt).
+
+---
+
+## 👻 Dark Atlas Tales — US States legend series (`dark_atlas/`)
+
+A separate kit for 72-second 9:16 monster-legend shorts (2D vector art drawn in Python,
+Sonic Voice "Milo" narration, Oswald captions, shared music bed + SFX library).
+Read `dark_atlas/00_DOC_TRUOC.md` first (Vietnamese), then `dark_atlas/PROJECT_STATE.md`
+and `dark_atlas/SERIES_PLAN_US_STATES.md`. The Claude skill lives in
+`.claude/skills/dark-atlas-tales-production/`.
+
+Setup on a fresh machine (run inside `dark_atlas/`):
+
+```bash
+pip install -r requirements.txt          # + ffmpeg/ffprobe in PATH
+bash tools/fetch_kit_media.sh            # restores music beds, sfx.wav, sample videos (not in git)
+python -I tools/render_ep05.py . "0.9,15,70.8" test.jpg   # smoke test
+```
+
+Voice generation needs `SONIC_API_KEY` set in the environment (never commit it).

@@ -1,0 +1,20 @@
+{"duration": 73.45, "cues": [
+ {"file": "ep04_kushtaka/waves_rocks_loop.mp3", "t": 0.0, "db": -22, "len": 73.4, "loop": true},
+ {"file": "ep04_kushtaka/baby_cry_over_water.mp3", "t": 0.0, "db": -4, "duck": 6},
+ {"file": "ep04_kushtaka/otter_creature_hiss.mp3", "t": 1.2, "db": -3, "len": 1.2},
+ {"file": "horror/breath_fear_man_a.mp3", "t": 4.0, "db": -8, "duck": 8},
+ {"file": "ep04_kushtaka/cry_morph_screech.mp3", "t": 4.6, "db": -4, "duck": 8},
+ {"file": "horror/scream_woman_a.mp3", "t": 6.35, "db": -3},
+ {"file": "horror/stinger_jumpscare.mp3", "t": 6.42, "db": -2},
+ {"file": "ep04_kushtaka/otter_creature_hiss.mp3", "t": 10.5, "db": -9, "duck": 10, "pitch": -2},
+ {"file": "horror/sub_boom.mp3", "t": 13.85, "db": -4},
+ {"file": "horror/gasp_a.mp3", "t": 41.4, "db": -5},
+ {"file": "horror/breath_fear_man_b.mp3", "t": 42.2, "db": -12, "duck": 8},
+ {"file": "ep04_kushtaka/water_splash_grab.mp3", "t": 44.25, "db": -2, "duck": 4},
+ {"file": "horror/creature_growl.mp3", "t": 44.6, "db": -6, "duck": 6},
+ {"file": "ep04_kushtaka/baby_cry_over_water.mp3", "t": 56.9, "db": -14, "duck": 8, "pitch": -1, "len": 3.5},
+ {"file": "horror/riser_tension.mp3", "t": 66.4, "db": -10, "duck": 8},
+ {"file": "horror/stinger_jumpscare.mp3", "t": 70.42, "db": -3},
+ {"file": "ep04_kushtaka/otter_creature_hiss.mp3", "t": 70.7, "db": -4, "duck": 6},
+ {"file": "horror/sub_boom.mp3", "t": 70.42, "db": -3}
+]}

@@ -1,0 +1,17 @@
+{
+  "_note": "EP02 palette: Pennsylvania Dutch winter. Ragged brown-grey fur, soot-black face, warm candle orange vs cold blue snow. Different from EP01 red coat.",
+  "country": "Pennsylvania, USA",
+  "fur_top": [92, 78, 64],
+  "fur_bot": [58, 48, 40],
+  "fur_dark": [36, 30, 26],
+  "fur_light": [130, 112, 92],
+  "soot_face": [34, 30, 30],
+  "soot_face_d": [22, 20, 20],
+  "child_shirt": [44, 70, 104],
+  "child_trim": [176, 150, 108],
+  "candle": [255, 176, 80],
+  "snow": [196, 210, 228],
+  "barn_red": [122, 34, 30],
+  "hex_colors": [[214, 172, 60], [196, 52, 44], [40, 92, 150], [230, 226, 210]],
+  "_culture_markers": ["stone farmhouse with candle in each window", "red bank barn with painted hex signs", "covered wooden bridge in snow", "1800s Pennsylvania Dutch interior: wood stove, plank floor, Fraktur-style wall chart", "horse-drawn sleigh lanterns", "German-English sign 'Belsnickel Nacht' / 'Lancaster County'"]
+}

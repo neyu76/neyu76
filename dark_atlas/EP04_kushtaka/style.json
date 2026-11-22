@@ -1,0 +1,12 @@
+{
+  "_note": "EP04 palette: Southeast Alaska coast at night. Wet dark otter fur with silver sheen, pale green eye glow, yellow fisherman's slicker, cedar planks, red/black formline accents, black water and grey fog. Distinct from EP01 red coat and EP02 brown fur/candle orange.",
+  "country": "Alaska, USA",
+  "fur": [40, 34, 30], "fur_d": [24, 20, 18], "fur_sheen": [112, 116, 120],
+  "eye_glow": [196, 232, 196],
+  "slicker": [212, 168, 38], "slicker_d": [150, 112, 22],
+  "cedar": [86, 60, 42], "cedar_d": [56, 40, 30],
+  "formline_red": [150, 40, 34], "formline_black": [16, 16, 18],
+  "water_t": [16, 26, 38], "water_b": [4, 8, 14],
+  "fog": [84, 96, 112],
+  "_culture_markers": ["snow-capped fjord mountains + Sitka spruce/cedar rainforest", "Tlingit plank clan houses with painted formline fronts, totem poles, dugout canoes", "Russian Orthodox onion-dome church (Sitka)", "stilt houses + fishing boats on the waterfront", "early-1900s steamship at a wooden wharf", "yellow fisherman's slicker"]
+}

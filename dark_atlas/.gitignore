@@ -1,0 +1,7 @@
+# Heavy media: not committed. Restore with: bash tools/fetch_kit_media.sh
+*.wav
+*.mp4
+assets/music/*.mp3
+# Render/QA outputs
+*.jpg
+__pycache__/
