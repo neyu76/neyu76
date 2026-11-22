@@ -50,3 +50,9 @@ Ghi theo dạng: mốc giờ · lỗi · bằng chứng · mức độ · nguyê
 | 72,5 s | 30 | 2,34 s | 3,9 s | 9,3 % | 150 | 8 | −16,0 | 1,8 dB | 0 |
 Ghi chú: giọng Milo gốc dài 79,7 s (vượt 78 s). Đã rút các khoảng nghỉ (7 chỗ kịch tính giữ 0,5–0,6 s, còn lại 0,33 s) và giãn tốc độ 0,97 (không đổi cao độ); không tạo lại giọng.
 | EP05 v2 (jumpscare mở đầu) | 72,5 s | 31 | 2,27 s | 3,9 s | 9,2 % | 150 | 8 | −16,0 | — | 0 |
+
+## Kết quả QA EP06 La Mala Hora (New Mexico, TT-001, 22/11/2026), tất cả nằm trong khoảng cho phép
+| Thời lượng | Cắt | Cảnh TB | Dài nhất | Khung đứng yên | Từ/phút | Nghỉ | LUFS | Nói − nghỉ | Lặng |
+|---|---|---|---|---|---|---|---|---|---|
+| 73,5 s | 28 | 2,54 s | 4,73 s | 5,9 % | 145 | 11 | −16,0 | 3,9 dB | 0 |
+Ghi chú: giọng Milo 73,6 s, không cần fit_voice. Render trong container cloud bị OOM (13,4 GB) nếu chạy liền → render theo dải khung (`RANGE=a:b`) rồi `ffmpeg concat -c copy`.

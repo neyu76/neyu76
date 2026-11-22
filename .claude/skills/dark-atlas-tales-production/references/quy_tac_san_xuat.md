@@ -37,15 +37,15 @@
 12. "Đừng làm tập nào cũng rập khuôn một mẫu edit giống nhau, mỗi kịch bản xử lí khác và hay hơn" (19/11/2026) → **chỉ giữ cố định phần nhận diện kênh**: khuôn 10 nhịp, thẻ hook đen chữ đỏ, kiểu phụ đề, giọng Milo, nhạc nền chung. **Mọi thứ khác phải đổi mỗi tập**, chọn trong bảng biến thể bên dưới. Không dùng lại lựa chọn của 2 tập gần nhất.
 
 ## Bảng biến thể mỗi tập (ghi lại để không lặp)
-| Hạng mục | EP01 Kuchisake | EP02 Belsnickel | EP04 Kushtaka | EP05 Nimerigar | Ý tưởng cho tập sau |
-|---|---|---|---|---|---|
-| Thẻ tiêu đề | Trăng lớn + bóng người | Trăng lớn + bóng người | Bóng in ngược trên nước gợn sóng, chữ trồi lên | Vách đá nổ, mảnh đá bay, bụi tan lộ chữ | khói/sương tan lộ chữ; ngọn lửa; khung cửa sổ; bản đồ bang; dấu chân trên tuyết |
-| Chuyển cảnh mềm | Dissolve thường | Dissolve thường | Dissolve qua làn sương | Lia nhanh theo mũi tên (whip-pan) | wipe bằng bóng đi ngang; chớp đèn; mực loang; lật trang |
-| Ngôn ngữ camera | Đẩy/kéo đều | Đẩy/kéo đều | Dập dềnh như trên thuyền | Góc thấp sát đất, tiền cảnh cây ngải trượt nhanh | rung cầm tay; trượt ngang dài; góc thấp; nhìn từ trên xuống |
-| Màu | Gốc | Gốc, cam nến đối lập xanh tuyết | Lạnh, xanh rêu, giảm bão hoà | Ấm, đất đỏ/nâu đất | đỏ đất sa mạc; sepia ảnh cũ; xanh lục đầm lầy; đơn sắc |
-| Cách lộ mặt | Chớp sáng nhấp nháy | Chớp sáng nhấp nháy | Trồi lên từ mặt nước, mắt sáng trước | Đèn quét miệng hang đầy mắt, rồi một khuôn mặt | bước ra từ bóng tối; hiện trong gương/kính xe; tia chớp; quay đầu chậm |
-| Thẻ hook | Chữ đỏ + glow | Chữ đỏ + glow | + vòng sóng âm phía sau | + mũi tên cắm phập, rung khung | + vết cào; + hơi thở mờ kính; + bóng đi qua |
-| SFX đặc trưng | 3 tiếng boom | boom + roi quất | tiếng khóc than vọng + nước té + boom | bước chân nhỏ trên sỏi, tên rít/cắm, ríu rít the thé | tiếng gõ cửa; tiếng xích đu; tiếng chuông; tiếng bước chân |
+| Hạng mục | EP01 Kuchisake | EP02 Belsnickel | EP04 Kushtaka | EP05 Nimerigar | EP06 La Mala Hora | Ý tưởng cho tập sau |
+|---|---|---|---|---|---|---|
+| Thẻ tiêu đề | Trăng lớn + bóng người | Trăng lớn + bóng người | Bóng in ngược trên nước gợn sóng, chữ trồi lên | Vách đá nổ, mảnh đá bay, bụi tan lộ chữ | Hàng farolitos thắp dần trái→phải, chữ trồi lên | khói/sương tan lộ chữ; ngọn lửa; khung cửa sổ; bản đồ bang; dấu chân trên tuyết |
+| Chuyển cảnh mềm | Dissolve thường | Dissolve thường | Dissolve qua làn sương | Lia nhanh theo mũi tên (whip-pan) | Wipe bằng khăn rebozo đen, mép tua rua | wipe bằng bóng đi ngang; chớp đèn; mực loang; lật trang |
+| Ngôn ngữ camera | Đẩy/kéo đều | Đẩy/kéo đều | Dập dềnh như trên thuyền | Góc thấp sát đất, tiền cảnh cây ngải trượt nhanh | Trượt ngang dài, chậm | rung cầm tay; trượt ngang dài; góc thấp; nhìn từ trên xuống |
+| Màu | Gốc | Gốc, cam nến đối lập xanh tuyết | Lạnh, xanh rêu, giảm bão hoà | Ấm, đất đỏ/nâu đất | Gần đơn sắc chàm–bạc, điểm đỏ ớt | đỏ đất sa mạc; sepia ảnh cũ; xanh lục đầm lầy; đơn sắc |
+| Cách lộ mặt | Chớp sáng nhấp nháy | Chớp sáng nhấp nháy | Trồi lên từ mặt nước, mắt sáng trước | Đèn quét miệng hang đầy mắt, rồi một khuôn mặt | Quay đầu chậm: gáy → 3/4 → chính diện | bước ra từ bóng tối; hiện trong gương/kính xe; tia chớp; quay đầu chậm |
+| Thẻ hook | Chữ đỏ + glow | Chữ đỏ + glow | + vòng sóng âm phía sau | + mũi tên cắm phập, rung khung | + bóng người choàng khăn đi ngang | + vết cào; + hơi thở mờ kính; + bóng đi qua |
+| SFX đặc trưng | 3 tiếng boom | boom + roi quất | tiếng khóc than vọng + nước té + boom | bước chân nhỏ trên sỏi, tên rít/cắm, ríu rít the thé | chuông nhà thờ adobe xa + len kéo lê + tiếng thở rít | tiếng gõ cửa; tiếng xích đu; tiếng chuông; tiếng bước chân |
 13. Giọng Milo dài quá 78 s → **không tạo lại giọng**: rút các khoảng nghỉ (chỗ kịch tính giữ 0,5–0,6 s, còn lại 0,33 s) rồi giãn tốc độ bằng `atempo` 0,97–1,03 để tốc độ đọc về 140–150 từ/phút. Sau đó luôn đối chiếu transcript với kịch bản (difflib) để bắt từ whisper bỏ sót hoặc bịa ra.
 
 ## Gợi ý dấu hiệu văn hoá theo nước (ĐX, phải kiểm lại khi làm)
