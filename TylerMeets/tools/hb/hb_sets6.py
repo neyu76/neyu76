@@ -79,7 +79,7 @@ def court(o):
         box(f"ct_lamp{sx}", (0.1, 0.1, 5.5), (ox + sx * 9.5, oy + 6.9, oz + 2.75), C("2c3e50", 0.4))
         box(f"ct_lamphead{sx}", (0.6, 0.3, 0.15), (ox + sx * 9.5, oy + 6.6, oz + 5.5), C("dfe6ee", 0.3))
     ball = _sph("ct_ball", 0.12, (ox, oy - 80, oz), C("e67e22", 0.6), 14, 10)
-    for k in range(2): box(f"ct_ballseam{k}", (0.245, 0.245, 0.008), (0, 0, 0), C("1b1b1b", 0.6), ball).rotation_euler = (R(90 * k), 0, 0)
+    for k in range(2): _cyl(f"ct_ballseam{k}", 0.1225, 0.008, (0, 0, 0), C("1b1b1b", 0.6), rot=(R(90 * k), 0, 0), v=28, parent=ball)   # thin disc: only its rim shows = seam line
     return dict(rim=rim, bench=(ox - 5.0, oy + 5.4), ball=ball)
 
 # ---------------------------------------------------------------- 2 MUSIC ROOM
