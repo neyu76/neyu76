@@ -141,4 +141,10 @@ bash tools/fetch_kit_media.sh            # restores music beds, sfx.wav, sample 
 python -I tools/render_ep05.py . "0.9,15,70.8" test.jpg   # smoke test
 ```
 
-Voice generation needs `SONIC_API_KEY` set in the environment (never commit it).
+**ThuyenMCP hub** (`https://sound.thuyenlabs.io.vn/mcp`) replaces the local keys:
+- Voice: `tools/sonic_tts.py` goes through the hub's Sonic proxy automatically when `SONIC_API_KEY` is not set (Milo `GUDYcgRAONiI1nXDcNQQ` available).
+- Monster SFX: `tools/hub_sfx.py OUT.mp3 "prompt" --dur 2.5` (ElevenLabs proxy; costs credits — quote first).
+- Any hub tool: `python -I tools/thuyenmcp.py list | schema <tool> | call <tool> '<json>'`.
+- Auth: set `THUYENMCP_TOKEN` (agent sub-token) locally; in Claude cloud sessions the environment's network secret injects it. Never commit the token.
+
+Whisper large-v3 downloads from Hugging Face on first `transcribe.py` run; in cloud sessions set `HF_HUB_DISABLE_XET=1`.

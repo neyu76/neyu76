@@ -10,11 +10,18 @@ Usage:
   python sonic_tts.py estimate TEXT_FILE [--model eleven_v4]   # characters x credit_ratio, no job created
   python sonic_tts.py speak TEXT_FILE OUT.(wav|mp3) --voice VOICE_ID [--provider eleven] [--model eleven_v4]
                       [--language English] [--speed 1.0] [--stability 0.5] [--similarity 0.75] [--srt]
-Docs: https://sonicvoice.pro/api (pasted by the user 12/11/2026)."""
+Docs: https://sonicvoice.pro/api (pasted by the user 12/11/2026).
+
+No SONIC_API_KEY? The script then goes through the ThuyenMCP hub proxy
+(https://sound.thuyenlabs.io.vn/proxy/sonicvoice), which injects the Sonic key server-side.
+Auth to the hub: THUYENMCP_TOKEN (Bearer) or, in Claude cloud sessions, the network proxy.
+Override the base URL with SONIC_BASE."""
 import os, sys, time, json, argparse
 import requests
 
-BASE = "https://sonicvoice.pro/api"
+DIRECT = "https://sonicvoice.pro/api"
+HUB = "https://sound.thuyenlabs.io.vn/proxy/sonicvoice"
+BASE = os.environ.get("SONIC_BASE") or DIRECT
 
 def session():
     key = os.environ.get("SONIC_API_KEY")
@@ -23,8 +30,15 @@ def session():
             import winreg
             with winreg.OpenKey(winreg.HKEY_CURRENT_USER, "Environment") as k: key = winreg.QueryValueEx(k, "SONIC_API_KEY")[0]
         except OSError: key = None
-    if not key: sys.exit("SONIC_API_KEY chưa được đặt. Chạy: setx SONIC_API_KEY \"wp_...\" rồi mở lại terminal.")
-    s = requests.Session(); s.headers["X-API-Key"] = key; return s
+    global BASE
+    s = requests.Session()
+    if key and BASE == DIRECT:
+        s.headers["X-API-Key"] = key; return s
+    if BASE == DIRECT: BASE = HUB                    # no Sonic key: route through the ThuyenMCP hub
+    tok = os.environ.get("THUYENMCP_TOKEN")
+    if tok: s.headers["Authorization"] = f"Bearer {tok}"
+    print(f"(qua ThuyenMCP: {BASE})", file=sys.stderr)
+    return s
 
 def die(r):
     msg = {401: "sai/thiếu khoá", 402: "không đủ ký tự", 404: "không tìm thấy", 422: "tham số không hợp lệ", 429: "quá nhiều request"}.get(r.status_code, "")
