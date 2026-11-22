@@ -1,0 +1,75 @@
+{
+  "profile_id": "tylermeets-westbrook",
+  "candidate": {
+    "question": "why does he answer everything in meme slang even the exam twin",
+    "stage": "art room science fair rooftop school store",
+    "ladder": "calls teacher twin writes slang on the exam says six seven in class",
+    "payoff": "teacher starts talking slang tyler fails for writing normal",
+    "look": "curly hair oversized hoodie twin shirt"
+  },
+  "sets": [
+    "art_room",
+    "science_fair",
+    "rooftop",
+    "school_store"
+  ],
+  "reused_sets": [],
+  "new_sets_not_in_free_list": [],
+  "per_episode": [
+    {
+      "episode": "TM01",
+      "axis_similarity": {
+        "question": 0.25,
+        "stage": 0.111,
+        "ladder": 0.053,
+        "payoff": 0.062,
+        "look": 0.083
+      },
+      "matched_axes": [
+        "question"
+      ],
+      "score_of_5": 1,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM02",
+      "axis_similarity": {
+        "question": 0.111,
+        "stage": 0.0,
+        "ladder": 0.053,
+        "payoff": 0.0,
+        "look": 0.091
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TMG01",
+      "axis_similarity": {
+        "question": 0.158,
+        "stage": 0.0,
+        "ladder": 0.0,
+        "payoff": 0.0,
+        "look": 0.083
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM03",
+      "axis_similarity": {
+        "question": 0.118,
+        "stage": 0.0,
+        "ladder": 0.0,
+        "payoff": 0.077,
+        "look": 0.091
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    }
+  ],
+  "overall_verdict": "CLEAR"
+}

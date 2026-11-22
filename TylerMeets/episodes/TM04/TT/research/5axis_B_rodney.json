@@ -1,0 +1,77 @@
+{
+  "profile_id": "tylermeets-westbrook",
+  "candidate": {
+    "question": "does the girl actually like the overconfident flirt rizz",
+    "stage": "art room pool rooftop bus stop",
+    "ladder": "perfume spray louder pickup lines asks girls you like stuff",
+    "payoff": "perfume evacuates the class tyler gets blamed",
+    "look": "bowl cut braces giant perfume bottle rizz god shirt"
+  },
+  "sets": [
+    "art_room",
+    "pool",
+    "rooftop",
+    "bus_stop"
+  ],
+  "reused_sets": [],
+  "new_sets_not_in_free_list": [],
+  "per_episode": [
+    {
+      "episode": "TM01",
+      "axis_similarity": {
+        "question": 0.067,
+        "stage": 0.125,
+        "ladder": 0.0,
+        "payoff": 0.25,
+        "look": 0.0
+      },
+      "matched_axes": [
+        "payoff"
+      ],
+      "score_of_5": 1,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM02",
+      "axis_similarity": {
+        "question": 0.455,
+        "stage": 0.0,
+        "ladder": 0.062,
+        "payoff": 0.059,
+        "look": 0.0
+      },
+      "matched_axes": [
+        "question"
+      ],
+      "score_of_5": 1,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TMG01",
+      "axis_similarity": {
+        "question": 0.059,
+        "stage": 0.0,
+        "ladder": 0.053,
+        "payoff": 0.062,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM03",
+      "axis_similarity": {
+        "question": 0.0,
+        "stage": 0.0,
+        "ladder": 0.0,
+        "payoff": 0.2,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    }
+  ],
+  "overall_verdict": "CLEAR"
+}

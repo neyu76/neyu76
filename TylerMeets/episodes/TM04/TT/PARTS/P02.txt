@@ -1,0 +1,5 @@
+L05 [NARR] Second period. Music. / Bryce says he toured with a band. | WIDE_MUSIC_ROOM / MS_BRY_BRAG
+L06 [BRY] Drums, bass, piano. I did everything. | CU_BRY_COUNT
+L07 [NARR] The teacher hands him a recorder. | MS_TEACH_RECORDER
+L08 [BRY] Fweee! Fweee! FWEEEE! | CU_BRY_SQUEAK
+L09 [NARR] That's not a note. / That's a smoke alarm. | CU_ME_FLINCH / WIDE_MUSIC_EARS

@@ -1,0 +1,8 @@
+Dùng $tiktok-script-all-in-one. Nhận TT_TOPIC_PACKET_V1 episodes/TM04/TT/TT-001_TT_TOPIC_PACKET_V1.yaml.
+Chạy AGENT_AUTONOMOUS_STEP_LOOP qua .claude/skills/tiktok-script-all-in-one/scripts/tiktok_script_assembler.py:
+init --workspace episodes/TM04/TT --topic-id TT-001 --slug bryce-never-told-the-truth --kit-id TM04 --track creator_rewards
+     --part-budgets "52,33,42,51" --sets "outdoor_basketball_court,music_room,school_store,science_fair"
+     --cast "BRY=Bryce,HARG=Principal Hargrove" --hero BRY --est-lines 24
+-> P01 (3-5 hook, chọn 1 >= 16/20) -> verify-part -> opening-audit --p01-only
+-> P02, P03, P04 mỗi phần một lượt + verify-part -> stitch-draft -> beat-audit -> opening-audit -> QA 8 trục P0/P1
+-> lock-export --out-dir episodes/TM04/TT/out. Dừng trước TTS và render; gửi người dùng duyệt.

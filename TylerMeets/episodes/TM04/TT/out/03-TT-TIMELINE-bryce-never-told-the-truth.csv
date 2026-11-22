@@ -1,0 +1,38 @@
+beat_id,part_id,line_id,speaker,scene_key,set,fyp_window_bucket,est_start_sec,est_end_sec,est_duration_sec,units,contiguity_anchors,spoken_text
+b001,P01,L00,Bryce,OPEN_BRY_RUN,outdoor_basketball_court,00_03s_FRAME0_SWIPE_GATE,0.00,1.75,1.75,5,,"Bro-bro-bro, I was in Miami!"
+b002,P01,L00,Bryce,CU_BRY_HYPE,outdoor_basketball_court,00_03s_FRAME0_SWIPE_GATE,1.75,2.81,1.05,3,,"Like, yesterday, bro!"
+b003,P01,L01,Tyler,CU_ME_WTF,outdoor_basketball_court,03_15s_PREMISE_ANCHOR,3.26,6.06,2.81,8,,What the fuck is wrong with this dude?
+b004,P01,L02,Tyler,WIDE_COURT_BRY,outdoor_basketball_court,03_15s_PREMISE_ANCHOR,6.51,7.57,1.05,3,,This is Bryce.
+b005,P01,L02,Tyler,MS_BRY_GRIN,outdoor_basketball_court,03_15s_PREMISE_ANCHOR,7.57,9.67,2.11,6,,He has never told the truth.
+b006,P01,L02,Tyler,INS_SLIP_DATE,outdoor_basketball_court,03_15s_PREMISE_ANCHOR,9.67,12.13,2.46,7,,Yesterday he was in my math class.
+b007,P01,L03,Bryce,MS_BRY_BALL,outdoor_basketball_court,03_15s_PREMISE_ANCHOR,12.58,15.03,2.46,7,,Then I dunked on a pro. Twice.
+b008,P01,L04,Tyler,WIDE_BRY_JUMP,outdoor_basketball_court,15_30s_ESCALATION_ZONE,15.48,17.24,1.75,5,,He jumps for the rim.
+b009,P01,L04,Tyler,CU_BRY_BALLFACE,outdoor_basketball_court,15_30s_ESCALATION_ZONE,17.24,20.05,2.81,8,,The ball hits him right in the face.
+b010,P02,L05,Tyler,WIDE_MUSIC_ROOM,music_room,15_30s_ESCALATION_ZONE,20.50,21.55,1.05,3,second,Second period. Music.
+b011,P02,L05,Tyler,MS_BRY_BRAG,music_room,15_30s_ESCALATION_ZONE,21.55,24.00,2.46,7,,Bryce says he toured with a band.
+b012,P02,L06,Bryce,CU_BRY_COUNT,music_room,15_30s_ESCALATION_ZONE,24.45,26.56,2.11,6,,"Drums, bass, piano. I did everything."
+b013,P02,L07,Tyler,MS_TEACH_RECORDER,music_room,15_30s_ESCALATION_ZONE,27.01,29.11,2.11,6,,The teacher hands him a recorder.
+b014,P02,L08,Bryce,CU_BRY_SQUEAK,music_room,15_30s_ESCALATION_ZONE,29.56,30.62,1.05,3,,Fweee! Fweee! FWEEEE!
+b015,P02,L09,Tyler,CU_ME_FLINCH,music_room,30_60s_CLIFF_BRIDGE,31.07,32.47,1.40,4,,That's not a note.
+b016,P02,L09,Tyler,WIDE_MUSIC_EARS,music_room,30_60s_CLIFF_BRIDGE,32.47,33.87,1.40,4,,That's a smoke alarm.
+b017,P03,L10,Tyler,WIDE_STORE,school_store,30_60s_CLIFF_BRIDGE,34.32,36.08,1.75,5,,Lunch at the school store.
+b018,P03,L10,Tyler,INS_ME_SANDWICH,school_store,30_60s_CLIFF_BRIDGE,36.08,37.48,1.40,4,,I unwrap my sandwich.
+b019,P03,L11,Bryce,CU_BRY_GASP,school_store,30_60s_CLIFF_BRIDGE,37.93,39.34,1.40,4,,"Bro, put that away."
+b020,P03,L11,Bryce,MS_BRY_BACKUP,school_store,30_60s_CLIFF_BRIDGE,39.34,40.74,1.40,4,,I'm allergic to bread.
+b021,P03,L12,Tyler,CU_ME_SQUINT,school_store,30_60s_CLIFF_BRIDGE,41.19,42.24,1.05,3,,Allergic. To bread.
+b022,P03,L12,Tyler,INS_PHONE_BURGER,insert_2d,30_60s_CLIFF_BRIDGE,42.24,44.00,1.75,5,,He ate a burger yesterday.
+b023,P03,L13,Tyler,MS_ME_PAY,school_store,30_60s_CLIFF_BRIDGE,44.45,46.20,1.75,5,,I turn around to pay.
+b024,P03,L13,Tyler,CU_BRY_CHEWING,school_store,30_60s_CLIFF_BRIDGE,46.20,47.25,1.05,3,,I turn back.
+b025,P03,L14,Bryce,CU_BRY_SALAD,school_store,30_60s_CLIFF_BRIDGE,47.70,49.46,1.75,5,,Relax. This is a salad.
+b026,P03,L15,Tyler,INS_SANDWICH_BITTEN,school_store,30_60s_CLIFF_BRIDGE,49.91,51.31,1.40,4,,It was my sandwich.
+b027,P04,L16,Tyler,WIDE_FAIR,science_fair,30_60s_CLIFF_BRIDGE,51.76,53.16,1.40,4,,After school. Science fair.
+b028,P04,L16,Tyler,INS_LIE_DETECTOR,science_fair,30_60s_CLIFF_BRIDGE,53.16,54.92,1.75,5,,I built a lie detector.
+b029,P04,L17,Tyler,CU_ME_ASK,science_fair,30_60s_CLIFF_BRIDGE,55.37,57.12,1.75,5,,"Bryce, were you in Miami?"
+b030,P04,L18,Bryce,CU_BRY_SMUG,science_fair,30_60s_CLIFF_BRIDGE,57.57,58.63,1.05,3,,"Yes. Obviously, bro."
+b031,P04,L19,Tyler,INS_DETECTOR_GREEN,science_fair,30_60s_CLIFF_BRIDGE,59.08,60.13,1.05,3,,Green light. Nothing.
+b032,P04,L20,Principal Hargrove,MS_HARG_ASK,science_fair,60s_PLUS_REWARDS_ZONE,60.58,62.68,2.11,6,,"Tyler, did you build this yourself?"
+b033,P04,L21,Tyler,INS_DETECTOR_RED,science_fair,60s_PLUS_REWARDS_ZONE,63.13,65.24,2.11,6,,I said yes. It went off.
+b034,P04,L22,Principal Hargrove,CU_HARG_POINT,science_fair,60s_PLUS_REWARDS_ZONE,65.69,67.44,1.75,5,,Disqualified. Lying to a judge.
+b035,P04,L23,Tyler,MS_BRY_RIBBON,science_fair,60s_PLUS_REWARDS_ZONE,68.44,69.85,1.40,4,first,Bryce won first place.
+b036,P04,L23,Tyler,INS_DETENTION_SLIP,science_fair,60s_PLUS_REWARDS_ZONE,69.85,70.90,1.05,3,,I got detention.
+b037,P04,L23,Tyler,CU_ME_CRUMBS,science_fair,60s_PLUS_REWARDS_ZONE,70.90,73.36,2.46,7,,And my sandwich is still a salad.

@@ -1,0 +1,10 @@
+.env*
+!.env.sonicvoice.example
+work/
+*.blend1
+__pycache__/
+
+# media nặng: giữ trong zip trên Drive, không đưa lên git
+*.mp4
+*.wav
+work/

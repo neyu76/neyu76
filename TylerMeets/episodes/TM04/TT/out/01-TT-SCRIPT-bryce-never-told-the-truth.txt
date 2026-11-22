@@ -1,0 +1,27 @@
+L00 BRYCE: Bro-bro-bro, I was in Miami! Like, yesterday, bro!
+L01 TYLER: What the fuck is wrong with this dude?
+L02 TYLER: This is Bryce. He has never told the truth. Yesterday he was in my math class.
+L03 BRYCE: Then I dunked on a pro. Twice.
+L04 TYLER: He jumps for the rim. The ball hits him right in the face.
+
+L05 TYLER: Second period. Music. Bryce says he toured with a band.
+L06 BRYCE: Drums, bass, piano. I did everything.
+L07 TYLER: The teacher hands him a recorder.
+L08 BRYCE: Fweee! Fweee! FWEEEE!
+L09 TYLER: That's not a note. That's a smoke alarm.
+
+L10 TYLER: Lunch at the school store. I unwrap my sandwich.
+L11 BRYCE: Bro, put that away. I'm allergic to bread.
+L12 TYLER: Allergic. To bread. He ate a burger yesterday.
+L13 TYLER: I turn around to pay. I turn back.
+L14 BRYCE: Relax. This is a salad.
+L15 TYLER: It was my sandwich.
+
+L16 TYLER: After school. Science fair. I built a lie detector.
+L17 TYLER: Bryce, were you in Miami?
+L18 BRYCE: Yes. Obviously, bro.
+L19 TYLER: Green light. Nothing.
+L20 PRINCIPAL HARGROVE: Tyler, did you build this yourself?
+L21 TYLER: I said yes. It went off.
+L22 PRINCIPAL HARGROVE: Disqualified. Lying to a judge.
+L23 TYLER: Bryce won first place. I got detention. And my sandwich is still a salad.

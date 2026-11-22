@@ -1,0 +1,22 @@
+[
+  {
+    "seam": "P01->P02",
+    "prev_closing": "L04 [NARR] He jumps for the rim. / The ball hits him right in the face. | WIDE_BRY_JUMP / CU_BRY_BALLFACE",
+    "next_opening": "L05 [NARR] Second period. Music. / Bryce says he toured with a band. | WIDE_MUSIC_ROOM / MS_BRY_BRAG"
+  },
+  {
+    "seam": "P02->P03",
+    "prev_closing": "L09 [NARR] That's not a note. / That's a smoke alarm. | CU_ME_FLINCH / WIDE_MUSIC_EARS",
+    "next_opening": "L10 [NARR] Lunch at the school store. / I unwrap my sandwich. | WIDE_STORE / INS_ME_SANDWICH"
+  },
+  {
+    "seam": "P03->P04",
+    "prev_closing": "L15 [NARR] It was my sandwich. | INS_SANDWICH_BITTEN",
+    "next_opening": "L16 [NARR] After school. Science fair. / I built a lie detector. | WIDE_FAIR / INS_LIE_DETECTOR"
+  },
+  {
+    "seam": "FINAL->0.0s_LOOP",
+    "prev_closing": "L23 [NARR] Bryce won first place. / I got detention. / And my sandwich is still a salad. | MS_BRY_RIBBON / INS_DETENTION_SLIP / CU_ME_CRUMBS",
+    "next_opening": "L00 [BRY] Bro-bro-bro, I was in Miami! / Like, yesterday, bro! | OPEN_BRY_RUN / CU_BRY_HYPE"
+  }
+]

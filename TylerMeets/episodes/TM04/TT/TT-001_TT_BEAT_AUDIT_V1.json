@@ -1,0 +1,20 @@
+{
+  "total_beats": 37,
+  "est_shots_after_kit_merge": 37,
+  "est_total_sec": 74.0,
+  "cuts_per_10s": 5.0,
+  "max_beat_threshold_sec": 4.0,
+  "beats_exceeding_threshold": [],
+  "beats_likely_merged_by_kit_lt_0p6s": [],
+  "dead_air_gt_3s": [],
+  "unique_scene_keys": 37,
+  "peak_window_55_65pct_sec": [
+    40.7,
+    48.1
+  ],
+  "lines_in_peak_window": [
+    "L12",
+    "L13",
+    "L14"
+  ]
+}

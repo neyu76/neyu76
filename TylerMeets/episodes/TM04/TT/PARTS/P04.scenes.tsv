@@ -1,0 +1,11 @@
+WIDE_FAIR	science_fair	Toàn cảnh hội chợ khoa học trong phòng mỹ thuật cải tạo: dãy bàn gấp phủ khăn, bảng ba mặt, mô hình hệ mặt trời treo dây, cây trồng trong cốc, cuộn băng dính. Phụ huynh và học sinh đi xem, chỉ trỏ, 1 bạn chỉnh mô hình. Bàn của Bryce có núi lửa dán nhãn 'MADE IN JAPAN'.
+INS_LIE_DETECTOR	science_fair	Cận máy phát hiện nói dối của Tyler: hộp carton, 2 bóng đèn (xanh, đỏ), kim đồng hồ vẽ tay, dây kẹp ngón tay, chữ viết tay 'LIE DETECTOR' trên mặt hộp (tex_quad).
+CU_ME_ASK	science_fair	Cận Tyler nghiêm mặt, tay cầm bìa kẹp hồ sơ như luật sư, nhìn sang Bryce.
+CU_BRY_SMUG	science_fair	Cận Bryce ngồi ghế cạnh máy, ngón tay kẹp dây, ngả người, cười tỉnh (smug).
+INS_DETECTOR_GREEN	science_fair	Cận máy: bóng xanh sáng đều, bóng đỏ tắt, kim đứng im (flash bóng xanh nhẹ). Nhịp lặng ngắn trước khi hiệu trưởng nói.
+MS_HARG_ASK	science_fair	Trung cảnh Principal Hargrove (hói, ria rậm, cà vạt in vịt vàng, đeo thẻ JUDGE) cầm bút và bảng chấm điểm, cúi nhìn Tyler; Tyler đã kẹp dây vào ngón tay mình.
+INS_DETECTOR_RED	science_fair	Cận máy: bóng đỏ nhấp nháy liên tục (flash nhanh), kim quay vòng, hộp rung; tay Tyler kẹp dây giật lại.
+CU_HARG_POINT	science_fair	Cận hiệu trưởng chỉ thẳng tay vào Tyler, mặt kịch tính (expr angry).
+MS_BRY_RIBBON	science_fair	Trung cảnh Bryce đứng cạnh núi lửa 'MADE IN JAPAN', ngực cài ruy băng xanh '1st PLACE', vẫy tay với khán giả; phụ huynh vỗ tay phía sau.
+INS_DETENTION_SLIP	science_fair	Cận phiếu DETENTION màu hồng ghi tên 'TYLER' đặt lên bàn cạnh máy phát hiện nói dối (tex_quad, chữ đọc đúng).
+CU_ME_CRUMBS	science_fair	Cận Tyler mặt đơ, cầm tờ giấy gói sandwich rỗng từ giờ trưa (còn vết sốt), nhìn xuống; hậu cảnh mờ có ruy băng xanh của Bryce.

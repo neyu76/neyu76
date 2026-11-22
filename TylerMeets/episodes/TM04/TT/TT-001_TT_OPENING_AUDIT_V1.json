@@ -1,0 +1,19 @@
+{
+  "first_beat_est_sec": 1.75,
+  "cold_open_end_sec": 2.81,
+  "wtf_line_end_sec": 6.06,
+  "intro_this_is_start_sec": 6.51,
+  "frame0_caption_beat": "Bro-bro-bro, I was in Miami!",
+  "frame0_rule": "Frame-0 text = burned-in caption of L00 beat 1 (kit rule 9: captions only)",
+  "sentences_0_15s": 8,
+  "long_sentences_0_15s": [],
+  "contiguity_anchors_0_30s": [
+    "second"
+  ],
+  "contiguity_anchor_scene_keys": [
+    "WIDE_MUSIC_ROOM"
+  ],
+  "contiguity_rule": "each anchor must be SHOWN in-world in its key (INS_/CU_ prop, sign, phone insert), never as an overlay card",
+  "fyp_watchlist_hits_0_30s": [],
+  "warnings": []
+}

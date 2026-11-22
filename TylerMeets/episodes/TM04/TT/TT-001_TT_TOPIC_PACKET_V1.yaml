@@ -1,0 +1,131 @@
+schema_version: TT_TOPIC_PACKET_V1
+packet_spec_revision: "4.0-tm1"
+identity:
+  topic_id: "TT-001"
+  kit_episode_id: "TM04"
+  slug: "bryce-never-told-the-truth"
+  packet_revision: 1
+  niche_profile_id: "tylermeets-westbrook"
+  profile_revision: 1
+  base_versions: "tiktok-topic-studio@4.0-tm1 | tiktok-script-all-in-one@4.0-tm1"
+selection_and_scope:
+  selection_status: "DELEGATED_SELECTED"
+  decision_source: "USER_DELEGATED"   # người dùng 22/11/2026: "Ủy quyền bạn tự nghiên cứu ... chọn 1 đề tài đỉnh nhất làm TT-001" + "làm t001"
+  execution_mode: "AGENT_AUTONOMOUS_STEP_LOOP"
+  execution_scope: "FULL_SCRIPT_PIPELINE"   # dừng trước TTS/render
+  adaptation_route: "ORIGINAL_BUILD"
+  readiness: "READY_FOR_SCRIPT"
+  blockers_and_limitations:
+    - "Không có MCP vidIQ/Apify trong phiên: không đo được outlier median-multiplier; evidence_confidence hạ xuống MODERATE_MIXED."
+    - "Chưa có số liệu TikTok Studio của TM01/TM02/TMG01: tư thế RECOGNITION và giai đoạn kênh là giả thuyết."
+    - "Mã kit TM04 dùng vì TM03 (Destiny) đang chờ duyệt; đổi số được nếu người dùng muốn giữ thứ tự 20 tính cách."
+niche_and_psychological_avatar:
+  niche_name: "US high-school friend-type comedy, 3D low-poly (Blender)"
+  content_archetype_and_story_engine: "Friend-type exposé × Forensic/'receipts' escalation; Tyler chủ động phản công lần đầu (máy phát hiện nói dối) và thua"
+  brand_posture: "FICTION_CHARACTER"
+  channel_stage: "STAGE_1A_FOLLOWER_SPRINT"
+  target_person_and_inner_question: "Học sinh 13-24 ở Mỹ có một đứa bạn bịa chuyện liên tục. Câu hỏi thầm: 'Why do I know someone EXACTLY like this?'"
+  emotional_posture: "RECOGNITION_SECOND_ACT"
+  avatar_purity_check: "Kiểu bạn đời thường của trường học Mỹ, đúng chân dung cốt lõi (không phải trend ngoài lề)."
+  target_fyp_region_and_qualified_geo: "US; qualified US/UK/CA/AU"
+  script_language: "en-US"
+  format_track: "creator_rewards"
+  fiction_and_fact_policy: "FICTION_CREATIVE"
+  identity_and_non_stereotype_lock: "UNSPECIFIED"
+  exploration_element_tested: "Tyler chủ động phản công bằng một 'bằng chứng' (lie detector) ở bối cảnh 4, thay vì chỉ đứng xem rồi bị phạt"
+angle_and_packaging_9x16:
+  core_question_and_viewer_promise: "Is ANYTHING Bryce says true? Hứa: Tyler sẽ bắt quả tang nó."
+  concrete_stage_and_opening_object: "Sân bóng rổ ngoài trời buổi sáng; Bryce chạy vào vẫy phiếu bài tập Toán ghi ngày hôm qua"
+  unique_angle_familiar_plus_new: "Quen: thằng bạn nói dối. Mới: máy phát hiện nói dối tự chế tin Bryce và bắt tội Tyler; nói dối 'dị ứng bánh mì' để ăn sandwich"
+  format_stack:
+    aaaa_or_story_engine: "Friend-type exposé"
+    outer_container: "Forensic / receipts"
+    inner_escalation_engine: "Escalation 4 nấc: Miami → dunk on a pro → toured with a band → allergic to bread"
+  visual_hook_archetype_1_to_8: "3 — Hành động + vật thể mâu thuẫn ngay khung đầu (khoe Miami, tay cầm bài tập Toán hôm qua)"
+  frame_0_four_elements:
+    motion_at_0s: "Bryce chạy vào khung, phanh gấp trước Tyler, vẫy tờ phiếu bài tập"
+    audio_hit_at_0s: "Bryce hét nhanh 'Bro-bro-bro, I was in Miami!' (tiếng miệng 'Bro-bro-bro' kiểm ASR)"
+    frame0_safezone_text: "Bro-bro-bro, I was in Miami!"   # = phụ đề beat 1 của L00, không thêm chữ
+    spoken_hook_what_plus_why: "What: Bryce khoe đi Miami. Why lạ: L02 lộ ra hôm qua nó ngồi trong lớp Toán của Tyler"
+  tiktok_search_seo_keywords: ["friend who lies", "my homeboy", "types of friends in school", "lie detector", "compulsive liar friend"]
+  fyp_throttle_word_check: "PASS (twin-seo-check: 0 hit; chỉ câu WTF có chửi, OWNER_LOCKED)"
+  spectacle_or_emotional_peak_at_55_65pct: "Sandwich: 'I'm allergic to bread' → Tyler quay lại thì Bryce đang nhai: 'Relax. This is a salad.'"
+  ending_loop_or_part2_plan: "Máy phát hiện nói dối bật xanh với Bryce, kêu đỏ với Tyler → Tyler bị loại + detention; câu chốt gọi lại 'salad'"
+  post_title_one_line: "My homeboy has never told the truth once… not even to the lie detector 💀"
+runtime_and_part_budgets:
+  target_seconds_range: "68-77"
+  voice_delivery_mode: "dialogue_scenes"
+  count_unit: "words"
+  rate_basis: "MEASURED_SAMPLE"
+  speaking_rate_center_min_max: [171, 159, 176]
+  non_speech_budget_seconds: "kit gap model: 0.45 s × (lines−2) + 1.0 s + 0.6 s tail"
+  part_budgets_csv: "52,33,42,51"
+  sets_csv: "outdoor_basketball_court,music_room,school_store,science_fair"
+  cast_csv: "BRY=Bryce,HARG=Principal Hargrove"
+  hero_code: "BRY"
+  est_lines: 24
+market_twin_and_source_governance:
+  evidence_confidence: "MODERATE_MIXED"
+  outlier_references:
+    - "OBSERVED_MARKET_EVIDENCE: kiểu nội dung 'friend who lies about everything' / 'types of friends' là định dạng evergreen trên TikTok (không có số outlier đo được trong phiên này)"
+    - "OBSERVED_MARKET_EVIDENCE: Daily Dot 18/11/2026, bài TikTok về học sinh viết meme vào bài kiểm tra đạt 461.3K like, >70K share: chủ đề trường học + bài kiểm tra đang được chia sẻ mạnh (dùng làm lý do giữ bối cảnh trường, không dùng slang đó)"
+    - "MEASURED_BASELINE nội bộ: TM01 76.6 s, TM02 76.3 s, TMG01 70.9 s; lời 159-174 wpm"
+  five_axis_twin_check:
+    closest_matches_scored:
+      - "TM01 Jaylen: 0/5 (máy) · 0/5 (người)"
+      - "TM02 Marcus: 0/5 (máy) · 0/5 (người)"
+      - "TMG01 Brody: 0/5 (máy) · 1/5 người: Look (cùng là nam đội mũ? không — Bryce snapback, Brody headset) → 0/5"
+      - "TM03 Destiny: 0/5"
+    candidates_rejected:
+      - "B #18 Rodney (flirt + nước hoa): máy 1/5; người 2/5 (Question + Ladder 'tán gái' gần TM02) → giữ lại sau, Scorecard 74"
+      - "C #11 Big Mo (sandwich): 0/5 nhưng rủi ro chê ngoại hình (thiết kế 'tròn trịa') + Payoff 'ăn sandwich' trùng TM01 → Scorecard 72"
+      - "D #05 Kevin (bạn gái tưởng tượng / delulu): người chấm Question + Payoff trùng TM02 ('cô gái không như nó nghĩ') → TWIN_BLOCKER"
+      - "E Trend 'Twin' slang kid: 0/5 nhưng bằng chứng trend 1 bài, rủi ro lỗi thời nhanh → Scorecard 79"
+    scorecard_TT-001: "Tiền đề+Frame-0 27/30 · Thị trường/SEO 13/20 · Twin 15/15 · Độ thuần 13/15 · Thời lượng 10/10 · Dựng được+sạch 9/10 = 87/100"
+    verdict: "CLEAR"
+    evidence_files: ["research/5axis_A_bryce.json", "research/5axis_B_rodney.json", "research/5axis_C_mo.json", "research/5axis_D_kevin.json", "research/5axis_E_twin.json", "research/twinseo_A.json"]
+  source_register:
+    - "docs/homeboy/SERIES_TYLER_MEETS.md #14 Bryce (chỉ lấy tính cách + hành động mở đầu; tình huống viết mới)"
+    - "https://dailydot.com/tiktok-creator-shares-students-meme-filled-exam-paper-people-are-questioning-the-education-system"
+    - "https://newengen.com/insights/tiktok-trends/"
+  claim_ledger:
+    - "CREATIVE: toàn bộ tình huống là hư cấu; không có số liệu thật cần kiểm"
+ordered_modular_outline:
+  parts:
+    - part_id: "P01"
+      set: "outdoor_basketball_court"
+      budget_units: 52
+      function_and_state_delta: "Cold open + WTF + giới thiệu; INFORMATION: khán giả biết Bryce nói dối; nấc 1 (dunk on a pro) sụp ngay trên sân"
+      concrete_action_and_in_world_visual_anchors: ["phiếu bài tập MATH ghi ngày hôm qua (INS)", "quả bóng đập mặt (CU)", "rổ, lưới, 2 bạn ném rổ"]
+      exit_bridge: "Bryce xoa mặt → cắt sang phòng nhạc"
+    - part_id: "P02"
+      set: "music_room"
+      budget_units: 33
+      function_and_state_delta: "Nấc 2: 'toured with a band'; POWER: cả lớp chứng kiến, Bryce vẫn không nhận"
+      concrete_action_and_in_world_visual_anchors: ["cây sáo recorder (cô giáo đưa)", "bạn học bịt tai"]
+      exit_bridge: "tiếng 'Fweee' → sang giờ trưa"
+    - part_id: "P03"
+      set: "school_store"
+      budget_units: 42
+      function_and_state_delta: "Nấc 3 + đỉnh 55-65 %: OWNERSHIP sandwich chuyển từ Tyler sang Bryce bằng một lời nói dối"
+      concrete_action_and_in_world_visual_anchors: ["sandwich của Tyler (INS)", "ảnh burger trên điện thoại Bryce (ảnh chèn 2D)", "sandwich bị cắn dở"]
+      exit_bridge: "Tyler nhìn sandwich bị cắn → quyết định đi tìm bằng chứng"
+    - part_id: "P04"
+      set: "science_fair"
+      budget_units: 51
+      function_and_state_delta: "Cú lật: TRUST: máy (và hiệu trưởng) tin Bryce, bắt tội Tyler; hệ quả + câu chốt"
+      concrete_action_and_in_world_visual_anchors: ["máy phát hiện nói dối tự chế (đèn xanh/đỏ nhấp nháy)", "núi lửa của Bryce dán nhãn 'MADE IN JAPAN'", "ruy băng giải nhất", "phiếu detention"]
+      exit_bridge: "Câu chốt 3 vế, cắt 0.6 s sau từ cuối"
+  open_loop_payoff_map:
+    - "Miami (L00) → burger 'yesterday' (P03) → câu hỏi máy 'were you in Miami?' (P04)"
+    - "allergic to bread / salad (P03) → 'my sandwich is still a salad' (câu chốt)"
+  voice_and_must_keep_constraints:
+    voice_guide_summary: "Tyler: clone Ant Just Cant, deadpan. Bryce: nam teen nói nhanh như bắn, tự tin, hype (stability 0.12, speed 1.12). Hiệu trưởng Hargrove: nam trung niên kịch tính (0.2:1.08)."
+    user_must_keep: ["Cold open + 'What the fuck is wrong with this dude?'", "Sandwich bị phá", "Câu chốt 3 vế", "Chỉ phụ đề trên video", "4 bối cảnh mới", "Vai phụ ≤ 8 từ", "Tối đa 1 người lớn có thoại"]
+    strictly_do_not_copy: ["Lời, câu đùa, tình huống trong source/Character_Scripts*.txt", "câu 'Lunch. I finally sit down with my sandwich.' (TMG01)"]
+kit_build_plan:
+  new_sets_to_code: ["outdoor_basketball_court (rổ, vạch sân, hàng rào lưới, ghế băng, bình nước)", "music_room (giá nhạc, trống, đàn piano đứng, bậc ghế bán nguyệt, poster nốt nhạc)", "school_store (quầy, kệ snack, tủ lạnh nước, máy tính tiền, áo đồng phục treo)", "science_fair (bàn gấp, bảng ba mặt, núi lửa, mô hình hệ mặt trời, ruy băng)"]
+  new_props: ["phiếu bài tập Toán có ngày", "recorder", "máy phát hiện nói dối bìa carton + 2 bóng đèn (flash)", "núi lửa 'MADE IN JAPAN'", "ruy băng xanh 1st PLACE", "sandwich bị cắn"]
+  new_hair_or_accessories: ["snapback (đội xuôi)", "thắt lưng khóa vàng giả", "đồng hồ nhựa vàng", "áo in '100% REAL'"]
+  inserts_2d: ["phone_burger.png (ảnh burger 'Miami' trên điện thoại Bryce, giao diện tự vẽ)"]
+  voice_search_terms: {BRY: "young male fast talking hype teen", HARG: "dramatic middle-aged male principal"}

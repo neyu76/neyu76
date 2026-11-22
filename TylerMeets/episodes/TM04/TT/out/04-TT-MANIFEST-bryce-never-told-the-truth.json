@@ -1,0 +1,135 @@
+{
+  "schema": "TIKTOK_LOCK_MANIFEST_V4",
+  "profile_id": "tylermeets-westbrook",
+  "profile_revision": 1,
+  "assembler_version": "4.0-tm1",
+  "topic_id": "TT-001",
+  "kit_episode_id": "TM04",
+  "slug": "bryce-never-told-the-truth",
+  "track": "creator_rewards",
+  "mode": "dialogue_scenes",
+  "script_version": 1,
+  "timing_status": "ESTIMATED",
+  "cast": {
+    "BRY": "Bryce",
+    "HARG": "Principal Hargrove",
+    "NARR": "Tyler"
+  },
+  "hero_code": "BRY",
+  "sets": [
+    "outdoor_basketball_court",
+    "music_room",
+    "school_store",
+    "science_fair"
+  ],
+  "total_lines": 24,
+  "total_beats": 37,
+  "unique_scene_keys": 37,
+  "total_spoken_words": 178,
+  "non_speech_seconds_kit_model": 11.5,
+  "estimated_center_seconds": 74.0,
+  "estimated_range_seconds": [
+    72.2,
+    78.7
+  ],
+  "series_runtime_window": [
+    68.0,
+    77.0
+  ],
+  "creator_rewards_60s_safe": true,
+  "lossless_token_roundtrip": true,
+  "seams": [
+    {
+      "seam": "P01->P02",
+      "prev_closing": "L04 [NARR] He jumps for the rim. / The ball hits him right in the face. | WIDE_BRY_JUMP / CU_BRY_BALLFACE",
+      "next_opening": "L05 [NARR] Second period. Music. / Bryce says he toured with a band. | WIDE_MUSIC_ROOM / MS_BRY_BRAG"
+    },
+    {
+      "seam": "P02->P03",
+      "prev_closing": "L09 [NARR] That's not a note. / That's a smoke alarm. | CU_ME_FLINCH / WIDE_MUSIC_EARS",
+      "next_opening": "L10 [NARR] Lunch at the school store. / I unwrap my sandwich. | WIDE_STORE / INS_ME_SANDWICH"
+    },
+    {
+      "seam": "P03->P04",
+      "prev_closing": "L15 [NARR] It was my sandwich. | INS_SANDWICH_BITTEN",
+      "next_opening": "L16 [NARR] After school. Science fair. / I built a lie detector. | WIDE_FAIR / INS_LIE_DETECTOR"
+    },
+    {
+      "seam": "FINAL->0.0s_LOOP",
+      "prev_closing": "L23 [NARR] Bryce won first place. / I got detention. / And my sandwich is still a salad. | MS_BRY_RIBBON / INS_DETENTION_SLIP / CU_ME_CRUMBS",
+      "next_opening": "L00 [BRY] Bro-bro-bro, I was in Miami! / Like, yesterday, bro! | OPEN_BRY_RUN / CU_BRY_HYPE"
+    }
+  ],
+  "beat_pacing_summary": {
+    "total_beats": 37,
+    "est_shots_after_kit_merge": 37,
+    "est_total_sec": 74.0,
+    "cuts_per_10s": 5.0,
+    "max_beat_threshold_sec": 4.0,
+    "beats_exceeding_threshold": [],
+    "beats_likely_merged_by_kit_lt_0p6s": [],
+    "dead_air_gt_3s": [],
+    "unique_scene_keys": 37,
+    "peak_window_55_65pct_sec": [
+      40.7,
+      48.1
+    ],
+    "lines_in_peak_window": [
+      "L12",
+      "L13",
+      "L14"
+    ]
+  },
+  "opening_fyp_audit": {
+    "first_beat_est_sec": 1.75,
+    "cold_open_end_sec": 2.81,
+    "wtf_line_end_sec": 6.06,
+    "intro_this_is_start_sec": 6.51,
+    "frame0_caption_beat": "Bro-bro-bro, I was in Miami!",
+    "frame0_rule": "Frame-0 text = burned-in caption of L00 beat 1 (kit rule 9: captions only)",
+    "sentences_0_15s": 8,
+    "long_sentences_0_15s": [],
+    "contiguity_anchors_0_30s": [
+      "second"
+    ],
+    "contiguity_anchor_scene_keys": [
+      "WIDE_MUSIC_ROOM"
+    ],
+    "contiguity_rule": "each anchor must be SHOWN in-world in its key (INS_/CU_ prop, sign, phone insert), never as an overlay card",
+    "fyp_watchlist_hits_0_30s": [],
+    "warnings": []
+  },
+  "kit_handoff": {
+    "copy_shots_to": "episodes/TM04/shots.txt",
+    "next_steps_not_run": [
+      "python tools/make_library.py episodes/TM04/shots.txt episodes/TM04/library.json",
+      "python tools/sonicvoice_tts.py episodes/TM04/shots.txt episodes/TM04/audio --voice uv_1883_1ae2d9e41df6 --voice-map <SPK>=<id> --gap 0.45 --stability 0.4",
+      "python tools/asr.py episodes/TM04/audio episodes/TM04/audio/vo16k.wav",
+      "Blender: tools/hb/<id>_scene.py (one KEY(n) function per scene key in 06-KIT-SCENES)"
+    ],
+    "status": "TTS_AND_RENDER_NOT_RUN"
+  },
+  "files": {
+    "01_script": {
+      "path": "/home/user/neyu76/TylerMeets/episodes/TM04/TT/out/01-TT-SCRIPT-bryce-never-told-the-truth.txt",
+      "sha256": "869294bfb9910f94993114f29d56d5102e94ce88a6ceb38077c0a337152ab863"
+    },
+    "02_voice": {
+      "path": "/home/user/neyu76/TylerMeets/episodes/TM04/TT/out/02-TT-VOICE-bryce-never-told-the-truth.txt",
+      "sha256": "8e4208f783a6341c8a2a7c864ee540a1c0a74e883a9dddf511ab1172f8f08148"
+    },
+    "03_timeline_csv": {
+      "path": "/home/user/neyu76/TylerMeets/episodes/TM04/TT/out/03-TT-TIMELINE-bryce-never-told-the-truth.csv",
+      "sha256": "b3ef54cfc73ceeadd87c8a46637db94769b098d184c6e21a4c8b286cc23f966e"
+    },
+    "05_kit_shots": {
+      "path": "/home/user/neyu76/TylerMeets/episodes/TM04/TT/out/05-KIT-shots.txt",
+      "sha256": "940ee12458f1755d98f3e8cd08ead4af6e6268f363e44393611ded85777783bb"
+    },
+    "06_kit_scenes": {
+      "path": "/home/user/neyu76/TylerMeets/episodes/TM04/TT/out/06-KIT-SCENES-bryce-never-told-the-truth.csv",
+      "sha256": "2c90a694c7ea59d5292ec819a62964b8f2fa59bdcdf0c98dc0302c978b646b41"
+    }
+  },
+  "locked_at": "2026-11-22T08:28:03.562648+00:00"
+}

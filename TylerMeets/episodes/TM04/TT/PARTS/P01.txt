@@ -1,0 +1,5 @@
+L00 [BRY] Bro-bro-bro, I was in Miami! / Like, yesterday, bro! | OPEN_BRY_RUN / CU_BRY_HYPE
+L01 [NARR] What the fuck is wrong with this dude? | CU_ME_WTF
+L02 [NARR] This is Bryce. / He has never told the truth. / Yesterday he was in my math class. | WIDE_COURT_BRY / MS_BRY_GRIN / INS_SLIP_DATE
+L03 [BRY] Then I dunked on a pro. Twice. | MS_BRY_BALL
+L04 [NARR] He jumps for the rim. / The ball hits him right in the face. | WIDE_BRY_JUMP / CU_BRY_BALLFACE

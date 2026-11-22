@@ -1,0 +1,6 @@
+L10 [NARR] Lunch at the school store. / I unwrap my sandwich. | WIDE_STORE / INS_ME_SANDWICH
+L11 [BRY] Bro, put that away. / I'm allergic to bread. | CU_BRY_GASP / MS_BRY_BACKUP
+L12 [NARR] Allergic. To bread. / He ate a burger yesterday. | CU_ME_SQUINT / INS_PHONE_BURGER
+L13 [NARR] I turn around to pay. / I turn back. | MS_ME_PAY / CU_BRY_CHEWING
+L14 [BRY] Relax. This is a salad. | CU_BRY_SALAD
+L15 [NARR] It was my sandwich. | INS_SANDWICH_BITTEN

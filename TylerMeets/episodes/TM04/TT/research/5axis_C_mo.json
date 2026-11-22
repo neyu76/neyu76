@@ -1,0 +1,73 @@
+{
+  "profile_id": "tylermeets-westbrook",
+  "candidate": {
+    "question": "can tyler protect his sandwich from the always hungry friend",
+    "stage": "music room locker room school store rooftop",
+    "ladder": "sniffs sandwich from three rooms tyler hides it in a tuba then a locker",
+    "payoff": "mo eats the sandwich anyway tyler hides it so well he cannot find it",
+    "look": "crumbs on hoodie backpack full of snacks will work for nuggets"
+  },
+  "sets": [
+    "music_room",
+    "locker_room",
+    "school_store",
+    "rooftop"
+  ],
+  "reused_sets": [],
+  "new_sets_not_in_free_list": [],
+  "per_episode": [
+    {
+      "episode": "TM01",
+      "axis_similarity": {
+        "question": 0.0,
+        "stage": 0.125,
+        "ladder": 0.053,
+        "payoff": 0.105,
+        "look": 0.059
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM02",
+      "axis_similarity": {
+        "question": 0.059,
+        "stage": 0.083,
+        "ladder": 0.0,
+        "payoff": 0.043,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TMG01",
+      "axis_similarity": {
+        "question": 0.053,
+        "stage": 0.0,
+        "ladder": 0.045,
+        "payoff": 0.095,
+        "look": 0.059
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM03",
+      "axis_similarity": {
+        "question": 0.0,
+        "stage": 0.0,
+        "ladder": 0.0,
+        "payoff": 0.125,
+        "look": 0.062
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    }
+  ],
+  "overall_verdict": "CLEAR"
+}

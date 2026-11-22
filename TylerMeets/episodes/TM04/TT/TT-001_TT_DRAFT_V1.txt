@@ -1,0 +1,27 @@
+L00 [BRY] Bro-bro-bro, I was in Miami! / Like, yesterday, bro! | OPEN_BRY_RUN / CU_BRY_HYPE
+L01 [NARR] What the fuck is wrong with this dude? | CU_ME_WTF
+L02 [NARR] This is Bryce. / He has never told the truth. / Yesterday he was in my math class. | WIDE_COURT_BRY / MS_BRY_GRIN / INS_SLIP_DATE
+L03 [BRY] Then I dunked on a pro. Twice. | MS_BRY_BALL
+L04 [NARR] He jumps for the rim. / The ball hits him right in the face. | WIDE_BRY_JUMP / CU_BRY_BALLFACE
+
+L05 [NARR] Second period. Music. / Bryce says he toured with a band. | WIDE_MUSIC_ROOM / MS_BRY_BRAG
+L06 [BRY] Drums, bass, piano. I did everything. | CU_BRY_COUNT
+L07 [NARR] The teacher hands him a recorder. | MS_TEACH_RECORDER
+L08 [BRY] Fweee! Fweee! FWEEEE! | CU_BRY_SQUEAK
+L09 [NARR] That's not a note. / That's a smoke alarm. | CU_ME_FLINCH / WIDE_MUSIC_EARS
+
+L10 [NARR] Lunch at the school store. / I unwrap my sandwich. | WIDE_STORE / INS_ME_SANDWICH
+L11 [BRY] Bro, put that away. / I'm allergic to bread. | CU_BRY_GASP / MS_BRY_BACKUP
+L12 [NARR] Allergic. To bread. / He ate a burger yesterday. | CU_ME_SQUINT / INS_PHONE_BURGER
+L13 [NARR] I turn around to pay. / I turn back. | MS_ME_PAY / CU_BRY_CHEWING
+L14 [BRY] Relax. This is a salad. | CU_BRY_SALAD
+L15 [NARR] It was my sandwich. | INS_SANDWICH_BITTEN
+
+L16 [NARR] After school. Science fair. / I built a lie detector. | WIDE_FAIR / INS_LIE_DETECTOR
+L17 [NARR] Bryce, were you in Miami? | CU_ME_ASK
+L18 [BRY] Yes. Obviously, bro. | CU_BRY_SMUG
+L19 [NARR] Green light. Nothing. | INS_DETECTOR_GREEN
+L20 [HARG] Tyler, did you build this yourself? | MS_HARG_ASK
+L21 [NARR] I said yes. It went off. | INS_DETECTOR_RED
+L22 [HARG] Disqualified. Lying to a judge. | CU_HARG_POINT
+L23 [NARR] Bryce won first place. / I got detention. / And my sandwich is still a salad. | MS_BRY_RIBBON / INS_DETENTION_SLIP / CU_ME_CRUMBS

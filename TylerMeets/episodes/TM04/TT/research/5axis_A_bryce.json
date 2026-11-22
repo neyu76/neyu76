@@ -1,0 +1,73 @@
+{
+  "profile_id": "tylermeets-westbrook",
+  "candidate": {
+    "question": "is anything he says true he lies about everything",
+    "stage": "outdoor basketball court music room school store science fair",
+    "ladder": "miami trip dunk on a pro toured with a band allergic to bread",
+    "payoff": "lie detector buzzes on tyler not bryce tyler disqualified bryce wins first place",
+    "look": "snapback fake designer belt 100% real shirt homework slip"
+  },
+  "sets": [
+    "outdoor_basketball_court",
+    "music_room",
+    "school_store",
+    "science_fair"
+  ],
+  "reused_sets": [],
+  "new_sets_not_in_free_list": [],
+  "per_episode": [
+    {
+      "episode": "TM01",
+      "axis_similarity": {
+        "question": 0.231,
+        "stage": 0.091,
+        "ladder": 0.0,
+        "payoff": 0.056,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM02",
+      "axis_similarity": {
+        "question": 0.0,
+        "stage": 0.0,
+        "ladder": 0.0,
+        "payoff": 0.0,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TMG01",
+      "axis_similarity": {
+        "question": 0.125,
+        "stage": 0.059,
+        "ladder": 0.0,
+        "payoff": 0.05,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    },
+    {
+      "episode": "TM03",
+      "axis_similarity": {
+        "question": 0.154,
+        "stage": 0.0,
+        "ladder": 0.048,
+        "payoff": 0.067,
+        "look": 0.0
+      },
+      "matched_axes": [],
+      "score_of_5": 0,
+      "verdict": "CLEAR"
+    }
+  ],
+  "overall_verdict": "CLEAR"
+}

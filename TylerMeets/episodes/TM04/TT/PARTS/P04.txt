@@ -1,0 +1,8 @@
+L16 [NARR] After school. Science fair. / I built a lie detector. | WIDE_FAIR / INS_LIE_DETECTOR
+L17 [NARR] Bryce, were you in Miami? | CU_ME_ASK
+L18 [BRY] Yes. Obviously, bro. | CU_BRY_SMUG
+L19 [NARR] Green light. Nothing. | INS_DETECTOR_GREEN
+L20 [HARG] Tyler, did you build this yourself? | MS_HARG_ASK
+L21 [NARR] I said yes. It went off. | INS_DETECTOR_RED
+L22 [HARG] Disqualified. Lying to a judge. | CU_HARG_POINT
+L23 [NARR] Bryce won first place. / I got detention. / And my sandwich is still a salad. | MS_BRY_RIBBON / INS_DETENTION_SLIP / CU_ME_CRUMBS
