@@ -306,14 +306,14 @@ def MS_ME_PAY(n):
     still_cam(n, (CX - 0.2, CY - 2.6, 1.95), (CX - 0.75, CY - 0.1, 1.05), 24, (CX - 0.22, CY - 2.45, 1.93))
 BEND = (CX - 0.75, CY - 0.85)
 def bry_eating(n, f0=1):
-    bry.place(1, BEND[0], BEND[1], 0, -25); bry.stand(1); bry.pose(1, sh_R=(-120, 0, -5), el_R=(-105, 0, 0), sh_L=(-110, 0, 10), el_L=(-100, 0, 0))
-    bake_to(SWB, bry, "hand_R", 1, n, (-0.06, -0.06, 0.08), (R(10), 0, R(-30)))
+    bry.place(1, BEND[0], BEND[1], 0, -25); bry.stand(1); bry.pose(1, sh_R=(-75, 0, -30), el_R=(-95, 0, 0), sh_L=(-25, 0, 10), el_L=(-40, 0, 0))
+    bake_to(SWB, bry, "hand_R", 1, n, (0, -0.04, 0.06), (R(10), 0, R(-30)))   # sandwich held at the mouth, other arm relaxed
 def CU_BRY_CHEWING(n):
     scene_st(n); bry_eating(n); chew(bry, n, 5); bry.expr("chill", 1)
     tyler.place(1, TSX, TSY, 0, -100)
     fcam(n, bry, -25, 0.95, 0.1, -0.05, 32, -0.15)
 def CU_BRY_SALAD(n):
-    scene_st(n); bry_eating(n); bry.pose(1, sh_R=(-140, 0, -10), el_R=(-60, 0, 0)); chew(bry, n // 2, 6); bry.expr("smug", 1); bry.blink(int(n * 0.6))
+    scene_st(n); bry_eating(n); bry.pose(1, sh_L=(-60, 0, 20), el_L=(-80, 0, 0)); chew(bry, n // 2, 6); bry.expr("smug", 1); bry.blink(int(n * 0.6))
     tyler.place(1, TSX, TSY, 0, -100)
     fcam(n, bry, -25, 1.05, 0.25, -0.02, 30, -0.12)
 def INS_SANDWICH_BITTEN(n):
