@@ -113,11 +113,17 @@ def run(c, f0, f1, p0, p1):
     c.walk(f0, f1, p0, p1, step=5)
     for f in range(f0, f1 + 1, 5): c.rot("chest", f, 10, 0, 0)
 def flash(obj, n, every=6, on=7.0, phase=0):
-    m = obj.data.materials[0]; e = m.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]
+    e = _tint(obj).inputs["Emission Strength"]
     for f in range(1, n + 1, every):
         e.default_value = on if (f // every + phase) % 2 == 0 else 0.0; e.keyframe_insert("default_value", frame=f)
+_EMC = {"sf_green": (0.02, 1.0, 0.08, 1), "sf_red": (1.0, 0.04, 0.02, 1)}
+def _tint(obj):   # mat(emit=0) leaves Emission Color white -> pure bulb colour; dark glass when off so "on" reads
+    m = obj.data.materials[0]; b = m.node_tree.nodes["Principled BSDF"]
+    if m.name in _EMC and not m.get("tinted"):
+        b.inputs["Emission Color"].default_value = _EMC[m.name]; b.inputs["Base Color"].default_value = tuple(c * 0.18 for c in _EMC[m.name][:3]) + (1,); m["tinted"] = 1
+    return b
 def glow(obj, val, f=1):
-    e = obj.data.materials[0].node_tree.nodes["Principled BSDF"].inputs["Emission Strength"]; e.default_value = val; e.keyframe_insert("default_value", frame=f)
+    e = _tint(obj).inputs["Emission Strength"]; e.default_value = val; e.keyframe_insert("default_value", frame=f)
 def chew(c, n, every=6, f0=1):
     for f in range(f0, n + 1, every):
         c.mouth.scale = (1.1, 1, 1.7 if (f // every) % 2 else 0.7); c.mouth.keyframe_insert("scale", frame=f)
@@ -347,7 +353,7 @@ def WIDE_FAIR(n):
     harg.place(1, SF + 3.2, -0.4, 0, 150); harg.stand(1); show([hclip], True); idle(harg, 1, n, "look", 96)
     still_cam(n, (SF + 0.9, -5.2, 2.4), (SF - 0.6, 1.6, 1.05), 20, (SF + 0.85, -4.9, 2.35))
 def INS_LIE_DETECTOR(n):
-    scene_sf(n); h = LDpos(); glow(sf["bulbG"], 0.4); glow(sf["bulbR"], 0.4)
+    scene_sf(n); h = LDpos(); glow(sf["bulbG"], 0.0); glow(sf["bulbR"], 0.0)
     still_cam(n, (h.x, h.y - 1.45, h.z + 0.68), (h.x, h.y, h.z + 0.2), 28, (h.x, h.y - 1.35, h.z + 0.64))
 def CU_ME_ASK(n):
     scene_sf(n); show(clip_objs := [clipb, bpy.data.objects["ME_clippaper"]], True); tyler.pose(1, sh_L=(-60, 0, 15), el_L=(-60, 0, 0)); tyler.expr("focused", 1)
@@ -357,7 +363,7 @@ def CU_BRY_SMUG(n):
     scene_sf(n); bry.expr("smug", 1); bry.pose(1, chest=(-6, 0, 0)); bry.blink(n // 2); bry.rot("head", 1, 0, 0, -12)
     fcam(n, bry, 90, 0.95, -0.15, -0.03, 32, -0.12)
 def INS_DETECTOR_GREEN(n):
-    scene_sf(n); h = LDpos(); glow(sf["bulbG"], 0.35); glow(sf["bulbR"], 0.0)
+    scene_sf(n); h = LDpos(); glow(sf["bulbG"], 1.6); glow(sf["bulbR"], 0.0)
     still_cam(n, (h.x, h.y - 1.2, h.z + 0.55), (h.x, h.y, h.z + 0.25), 28, (h.x, h.y - 1.1, h.z + 0.52))
 def MS_HARG_ASK(n):
     scene_sf(n); harg.place(1, HFX, HFY, 0, yaw_to((HFX, HFY), (TFX, TFY))); harg.stand(1); show([hclip], True)
@@ -367,7 +373,7 @@ def MS_HARG_ASK(n):
     hx, hy, hz = headpos(harg)
     still_cam(n, (TFX + 0.55, TFY + 0.9, hz + 0.25), (hx, hy, hz - 0.25), 30, (TFX + 0.52, TFY + 0.82, hz + 0.24))
 def INS_DETECTOR_RED(n):
-    scene_sf(n); OFF(bry); h = LDpos(); glow(sf["bulbG"], 0.0); flash(sf["bulbR"], n, 3, 0.45)
+    scene_sf(n); OFF(bry); h = LDpos(); glow(sf["bulbG"], 0.0); flash(sf["bulbR"], n, 3, 1.6)
     for f in range(1, n, 2):
         LD.location = (h.x + (0.008 if (f // 2) % 2 else -0.008), h.y, h.z); LD.keyframe_insert("location", frame=f)
         sf["needle"].rotation_euler = (0, R(60 if (f // 2) % 2 else -60), 0); sf["needle"].keyframe_insert("rotation_euler", frame=f)
